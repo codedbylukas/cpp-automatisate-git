@@ -13,11 +13,12 @@ void init() {
   getline(cin, init);
   if (init == "y") {
     system("git init");
-  }
-  if (init == "n" || init == "") {
+  } else if (init == "n" || init == "") {
     cout << "OK I will not init it" << endl;
-  }
-  if (init == "q") {
+  } else if (init == "q") {
+    exit(0);
+  } else {
+    cout << "Invalid input: " << init << endl;
     exit(0);
   }
 }
