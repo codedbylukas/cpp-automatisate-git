@@ -18,9 +18,12 @@ int main() {
   return 0;
 }
 void commit() {
-  cout << "Whats your commit message?";
+  cout << "Write q to exit.\nWhats your commit message?: ";
   string message;
   cin >> message;
+  if (message == "q") {
+    exit(0);
+  }
   system("git add .");
   system(("git commit -m \"" + message + "\"").c_str());
   if (push) {
