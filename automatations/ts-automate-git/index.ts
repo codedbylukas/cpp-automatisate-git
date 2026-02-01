@@ -26,7 +26,7 @@ while (true) {
     gitBranch();
   }  
   else {
-    run(`git add .`);
+    run(`git add -A`);
     run(`git commit -m "${message}"`);
     if (pushing) {
       run("git pull");
