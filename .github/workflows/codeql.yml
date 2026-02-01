@@ -86,7 +86,7 @@ jobs:
       if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        g++ main.cpp -o main
+        g++ main.cpp components/init.cpp components/commit.cpp components/push.cpp  -o main
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v4
