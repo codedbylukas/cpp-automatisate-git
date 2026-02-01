@@ -5,6 +5,18 @@
 using namespace std;
 
 int main() {
-  cout << "Hello, World!" << endl;
+  cout << "--- Starte Git Workflow ---" << endl;
+  cout << "Do you want to init it? (y/n) (default: n) ";
+  string init;
+  cin >> init;
+  if (init == "y") {
+    system("git init");
+  }
+  if (init == "n") {
+    cout << "OK I will not init it" << endl;
+  }
+  if (init == "q") {
+    return 0;
+  }
   return 0;
 }
