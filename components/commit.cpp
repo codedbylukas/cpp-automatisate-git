@@ -9,7 +9,7 @@ extern bool push;
 void commit() {
   cout << "Write q to exit.\nWhats your commit message?: ";
   string message;
-  cin >> message;
+  getline(cin, message);
   if (message == "q") {
     exit(0);
   }
