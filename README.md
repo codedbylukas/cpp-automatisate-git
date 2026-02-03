@@ -41,7 +41,7 @@ cpp_git_automatisate/
   ```
 
 **Windows:**
-- MinGW or MSYS2 with g++
+- install MinGW or MSYS2 with g++
 
 ### Compilation
 
@@ -61,6 +61,11 @@ This script automatically compiles:
 **Linux Only:**
 ```bash
 g++ main.cpp components/init.cpp components/commit.cpp components/push.cpp -o main
+```
+
+**Windows Only:**
+```bash
+g++ main.cpp components/init.cpp components/commit.cpp components/push.cpp -o main.exe
 ```
 
 **Windows 64-bit (Cross-Compile):**
