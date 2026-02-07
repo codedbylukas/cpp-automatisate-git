@@ -7,5 +7,10 @@ g++ -E main.cpp -o build/Preprocessed/main.i && \
 g++ -E components/init.cpp -o build/Preprocessed/init.i && \
 g++ -E components/commit.cpp -o build/Preprocessed/commit.i && \
 g++ -E components/push.cpp -o build/Preprocessed/push.i && \
+g++ -S main.cpp -o build/Assembly/main.s && \
+g++ -S components/init.cpp -o build/Assembly/init.s && \
+g++ -S components/commit.cpp -o build/Assembly/commit.s && \
+g++ -S components/push.cpp -o build/Assembly/push.s && \
+
 cd automatations && \
 echo "Compilation complete" 
