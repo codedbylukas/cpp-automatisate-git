@@ -11,6 +11,9 @@ g++ -S main.cpp -o build/Assembly/main.s && \
 g++ -S components/init.cpp -o build/Assembly/init.s && \
 g++ -S components/commit.cpp -o build/Assembly/commit.s && \
 g++ -S components/push.cpp -o build/Assembly/push.s && \
-
+g++ -c main.cpp -o build/Objectfile/main.o && \
+g++ -c components/init.cpp -o build/Objectfile/init.o && \
+g++ -c components/commit.cpp -o build/Objectfile/commit.o && \
+g++ -c components/push.cpp -o build/Objectfile/push.o && \
 cd automatations && \
 echo "Compilation complete" 
