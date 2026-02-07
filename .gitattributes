@@ -1,4 +1,4 @@
-*cpp linguist-language=C++
+*.cpp linguist-language=C++
 *.hpp linguist-language=C++
 *.i linguist-language=C++
 *.asm linguist-language=Assembly
