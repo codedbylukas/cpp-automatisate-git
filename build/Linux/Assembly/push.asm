@@ -171,14 +171,17 @@ _ZNSt11char_traitsIcE6lengthEPKc:
 	.align 8
 .LC3:
 	.string	"OK I will push it after every modyfire"
+	.align 8
 .LC4:
+	.string	"Press b to switch to branch mode. "
+.LC5:
 	.string	"n"
 	.align 8
-.LC5:
-	.string	"OK I will not push it after every modyfire"
 .LC6:
-	.string	"q"
+	.string	"OK I will not push it after every modyfire"
 .LC7:
+	.string	"q"
+.LC8:
 	.string	"Invalid input: "
 #NO_APP
 	.text
@@ -244,17 +247,35 @@ _Z13configurePushv:
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
 	call	_ZNSolsEPFRSoS_E@PLT
+	leaq	.LC4(%rip), %rdx
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
 	movl	$1, %ebx
 	jmp	.L22
 .L21:
-	leaq	.LC4(%rip), %rdx
+	leaq	.LC5(%rip), %rdx
 	leaq	-48(%rbp), %rax
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
 	call	_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
 	testb	%al, %al
 	je	.L23
-	leaq	.LC5(%rip), %rdx
+	leaq	.LC6(%rip), %rdx
+	leaq	_ZSt4cout(%rip), %rax
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@PLT
+	movq	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_@GOTPCREL(%rip), %rdx
+	movq	%rdx, %rsi
+	movq	%rax, %rdi
+	call	_ZNSolsEPFRSoS_E@PLT
+	leaq	.LC4(%rip), %rdx
 	leaq	_ZSt4cout(%rip), %rax
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
@@ -266,7 +287,7 @@ _Z13configurePushv:
 	movl	$0, %ebx
 	jmp	.L22
 .L23:
-	leaq	.LC6(%rip), %rdx
+	leaq	.LC7(%rip), %rdx
 	leaq	-48(%rbp), %rax
 	movq	%rdx, %rsi
 	movq	%rax, %rdi
@@ -276,7 +297,7 @@ _Z13configurePushv:
 	movl	$0, %edi
 	call	exit@PLT
 .L24:
-	leaq	.LC7(%rip), %rdx
+	leaq	.LC8(%rip), %rdx
 	leaq	_ZSt4cout(%rip), %rax
 	movq	%rdx, %rsi
 	movq	%rax, %rdi

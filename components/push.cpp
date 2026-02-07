@@ -11,10 +11,12 @@ bool configurePush() {
   getline(cin, pushing);
   if (pushing == "y" || pushing == "") {
     cout << "OK I will push it after every modyfire" << endl;
+    cout << "Press b to switch to branch mode. " << endl;
     return true;
   }
   if (pushing == "n") {
     cout << "OK I will not push it after every modyfire" << endl;
+    cout << "Press b to switch to branch mode. " << endl;
     return false;
   }
   if (pushing == "q") {

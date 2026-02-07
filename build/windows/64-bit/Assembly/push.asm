@@ -163,14 +163,17 @@ _ZNSt11char_traitsIcE6lengthEPKc:
 	.align 8
 .LC3:
 	.ascii "OK I will push it after every modyfire\0"
+	.align 8
 .LC4:
+	.ascii "Press b to switch to branch mode. \0"
+.LC5:
 	.ascii "n\0"
 	.align 8
-.LC5:
-	.ascii "OK I will not push it after every modyfire\0"
 .LC6:
-	.ascii "q\0"
+	.ascii "OK I will not push it after every modyfire\0"
 .LC7:
+	.ascii "q\0"
+.LC8:
 	.ascii "Invalid input: \0"
 	.text
 	.globl	_Z13configurePushv
@@ -229,16 +232,32 @@ _Z13configurePushv:
 	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rax
 	movq	%rax, %rdx
 	call	_ZNSolsEPFRSoS_E
+	leaq	.LC4(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rax
+	movq	%rax, %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	%rax, %rcx
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rax
+	movq	%rax, %rdx
+	call	_ZNSolsEPFRSoS_E
 	movl	$1, %ebx
 	jmp	.L22
 .L21:
-	leaq	.LC4(%rip), %rdx
+	leaq	.LC5(%rip), %rdx
 	leaq	-32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
 	testb	%al, %al
 	je	.L23
-	leaq	.LC5(%rip), %rdx
+	leaq	.LC6(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rax
+	movq	%rax, %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	%rax, %rcx
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rax
+	movq	%rax, %rdx
+	call	_ZNSolsEPFRSoS_E
+	leaq	.LC4(%rip), %rdx
 	movq	.refptr._ZSt4cout(%rip), %rax
 	movq	%rax, %rcx
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
@@ -249,7 +268,7 @@ _Z13configurePushv:
 	movl	$0, %ebx
 	jmp	.L22
 .L23:
-	leaq	.LC6(%rip), %rdx
+	leaq	.LC7(%rip), %rdx
 	leaq	-32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
@@ -258,7 +277,7 @@ _Z13configurePushv:
 	movl	$0, %ecx
 	call	exit
 .L24:
-	leaq	.LC7(%rip), %rdx
+	leaq	.LC8(%rip), %rdx
 	movq	.refptr._ZSt4cout(%rip), %rax
 	movq	%rax, %rcx
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc

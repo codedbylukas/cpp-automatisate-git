@@ -166,14 +166,17 @@ LC2:
 	.align 4
 LC3:
 	.ascii "OK I will push it after every modyfire\0"
+	.align 4
 LC4:
+	.ascii "Press b to switch to branch mode. \0"
+LC5:
 	.ascii "n\0"
 	.align 4
-LC5:
-	.ascii "OK I will not push it after every modyfire\0"
 LC6:
-	.ascii "q\0"
+	.ascii "OK I will not push it after every modyfire\0"
 LC7:
+	.ascii "q\0"
+LC8:
 	.ascii "Invalid input: \0"
 	.text
 	.globl	__Z13configurePushv
@@ -231,16 +234,30 @@ L20:
 	movl	%eax, %ecx
 	call	__ZNSolsEPFRSoS_E
 	subl	$4, %esp
+	movl	$LC4, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+	movl	%eax, %ecx
+	call	__ZNSolsEPFRSoS_E
+	subl	$4, %esp
 	movl	$1, %ebx
 	jmp	L22
 L21:
-	movl	$LC4, 4(%esp)
+	movl	$LC5, 4(%esp)
 	leal	-32(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
 	testb	%al, %al
 	je	L23
-	movl	$LC5, 4(%esp)
+	movl	$LC6, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+	movl	%eax, %ecx
+	call	__ZNSolsEPFRSoS_E
+	subl	$4, %esp
+	movl	$LC4, 4(%esp)
 	movl	$__ZSt4cout, (%esp)
 	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
 	movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
@@ -250,7 +267,7 @@ L21:
 	movl	$0, %ebx
 	jmp	L22
 L23:
-	movl	$LC6, 4(%esp)
+	movl	$LC7, 4(%esp)
 	leal	-32(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
@@ -259,7 +276,7 @@ L23:
 	movl	$0, (%esp)
 	call	_exit
 L24:
-	movl	$LC7, 4(%esp)
+	movl	$LC8, 4(%esp)
 	movl	$__ZSt4cout, (%esp)
 	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
 	leal	-32(%ebp), %edx

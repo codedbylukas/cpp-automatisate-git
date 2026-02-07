@@ -6,7 +6,6 @@
 using namespace std;
 
 void init() {
-
   cout << "--- Starte Git Workflow ---" << endl;
   cout << "Do you want to init it? (y/n) (default: n) ";
   string init;
