@@ -194,14 +194,30 @@ _ZNSt11char_traitsIcE4copyEPcPKcy:
 .LC1:
 	.ascii "q\0"
 .LC2:
-	.ascii "git add .\0"
+	.ascii "\0"
 .LC3:
-	.ascii "git commit -m \"\0"
+	.ascii "Please enter a commit message\0"
 .LC4:
-	.ascii "\"\0"
+	.ascii "b\0"
 .LC5:
-	.ascii "git pull\0"
+	.ascii "Switching to branch mode\0"
 .LC6:
+	.ascii "Whats your new branch name?: \0"
+.LC7:
+	.ascii "git switch -c \0"
+.LC8:
+	.ascii "git push origin \0"
+.LC9:
+	.ascii "Branch created\0"
+.LC10:
+	.ascii "git add .\0"
+.LC11:
+	.ascii "git commit -m \"\0"
+.LC12:
+	.ascii "\"\0"
+.LC13:
+	.ascii "git pull\0"
+.LC14:
 	.ascii "git push\0"
 	.text
 	.globl	_Z6commitv
@@ -213,10 +229,10 @@ _Z6commitv:
 	.seh_pushreg	%rbp
 	pushq	%rbx
 	.seh_pushreg	%rbx
-	subq	$136, %rsp
-	.seh_stackalloc	136
-	leaq	128(%rsp), %rbp
-	.seh_setframe	%rbp, 128
+	subq	$232, %rsp
+	.seh_stackalloc	232
+	leaq	224(%rsp), %rbp
+	.seh_setframe	%rbp, 224
 	.seh_endprologue
 	leaq	.LC0(%rip), %rdx
 	movq	.refptr._ZSt4cout(%rip), %rax
@@ -224,16 +240,16 @@ _Z6commitv:
 .LEHB0:
 	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
 .LEHE0:
-	leaq	-96(%rbp), %rax
+	leaq	-160(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev
-	leaq	-96(%rbp), %rdx
+	leaq	-160(%rbp), %rdx
 	movq	.refptr._ZSt3cin(%rip), %rax
 	movq	%rax, %rcx
 .LEHB1:
 	call	_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE
 	leaq	.LC1(%rip), %rdx
-	leaq	-96(%rbp), %rax
+	leaq	-160(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
 	testb	%al, %al
@@ -241,31 +257,129 @@ _Z6commitv:
 	movl	$0, %ecx
 	call	exit
 .L21:
-	leaq	.LC2(%rip), %rax
+	leaq	.LC2(%rip), %rdx
+	leaq	-160(%rbp), %rax
 	movq	%rax, %rcx
-	call	system
-	leaq	-32(%rbp), %rax
-	leaq	-96(%rbp), %rcx
+	call	_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
+	testb	%al, %al
+	je	.L22
 	leaq	.LC3(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rax
+	movq	%rax, %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	%rax, %rcx
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rax
+	movq	%rax, %rdx
+	call	_ZNSolsEPFRSoS_E
+	call	_Z6commitv
+	jmp	.L23
+.L22:
+	leaq	.LC4(%rip), %rdx
+	leaq	-160(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
+	testb	%al, %al
+	je	.L23
+	leaq	.LC5(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rax
+	movq	%rax, %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	%rax, %rcx
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rax
+	movq	%rax, %rdx
+	call	_ZNSolsEPFRSoS_E
+	leaq	.LC6(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rax
+	movq	%rax, %rcx
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+.LEHE1:
+	leaq	-192(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev
+	leaq	-192(%rbp), %rdx
+	movq	.refptr._ZSt3cin(%rip), %rax
+	movq	%rax, %rcx
+.LEHB2:
+	call	_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE
+	leaq	-128(%rbp), %rax
+	leaq	-192(%rbp), %rcx
+	leaq	.LC7(%rip), %rdx
 	movq	%rcx, %r8
 	movq	%rax, %rcx
 	call	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
-.LEHE1:
-	leaq	-64(%rbp), %rax
-	leaq	.LC4(%rip), %rcx
-	leaq	-32(%rbp), %rdx
-	movq	%rcx, %r8
-	movq	%rax, %rcx
-.LEHB2:
-	call	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_
 .LEHE2:
-	leaq	-64(%rbp), %rax
+	leaq	-128(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
 	movq	%rax, %rcx
 .LEHB3:
 	call	system
 .LEHE3:
+	leaq	-128(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	movq	.refptr.push(%rip), %rax
+	movzbl	(%rax), %eax
+	testb	%al, %al
+	je	.L24
+	leaq	-96(%rbp), %rax
+	leaq	-192(%rbp), %rcx
+	leaq	.LC8(%rip), %rdx
+	movq	%rcx, %r8
+	movq	%rax, %rcx
+.LEHB4:
+	call	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
+.LEHE4:
+	leaq	-96(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
+	movq	%rax, %rcx
+.LEHB5:
+	call	system
+.LEHE5:
+	leaq	-96(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+.L24:
+	leaq	.LC9(%rip), %rdx
+	movq	.refptr._ZSt4cout(%rip), %rax
+	movq	%rax, %rcx
+.LEHB6:
+	call	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movq	%rax, %rcx
+	movq	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_(%rip), %rax
+	movq	%rax, %rdx
+	call	_ZNSolsEPFRSoS_E
+.LEHE6:
+	movl	$0, %ecx
+	call	exit
+.L23:
+	leaq	.LC10(%rip), %rax
+	movq	%rax, %rcx
+.LEHB7:
+	call	system
+	leaq	-32(%rbp), %rax
+	leaq	-160(%rbp), %rcx
+	leaq	.LC11(%rip), %rdx
+	movq	%rcx, %r8
+	movq	%rax, %rcx
+	call	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
+.LEHE7:
+	leaq	-64(%rbp), %rax
+	leaq	.LC12(%rip), %rcx
+	leaq	-32(%rbp), %rdx
+	movq	%rcx, %r8
+	movq	%rax, %rcx
+.LEHB8:
+	call	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_
+.LEHE8:
+	leaq	-64(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
+	movq	%rax, %rcx
+.LEHB9:
+	call	system
+.LEHE9:
 	leaq	-64(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
@@ -275,47 +389,66 @@ _Z6commitv:
 	movq	.refptr.push(%rip), %rax
 	movzbl	(%rax), %eax
 	testb	%al, %al
-	je	.L22
-	leaq	.LC5(%rip), %rax
+	je	.L25
+	leaq	.LC13(%rip), %rax
 	movq	%rax, %rcx
-.LEHB4:
+.LEHB10:
 	call	system
-	leaq	.LC6(%rip), %rax
+	leaq	.LC14(%rip), %rax
 	movq	%rax, %rcx
 	call	system
-.LEHE4:
-.L22:
+.LEHE10:
+.L25:
+	leaq	-160(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	jmp	.L38
+.L34:
+	movq	%rax, %rbx
+	leaq	-128(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	jmp	.L27
+.L35:
+	movq	%rax, %rbx
 	leaq	-96(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	jmp	.L27
+.L33:
+	movq	%rax, %rbx
+.L27:
+	leaq	-192(%rbp), %rax
+	movq	%rax, %rcx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
 	jmp	.L29
-.L28:
+.L37:
 	movq	%rax, %rbx
 	leaq	-64(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
-	jmp	.L24
-.L27:
+	jmp	.L31
+.L36:
 	movq	%rax, %rbx
-.L24:
+.L31:
 	leaq	-32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
-	jmp	.L25
-.L26:
+	jmp	.L29
+.L32:
 	movq	%rax, %rbx
-.L25:
-	leaq	-96(%rbp), %rax
+.L29:
+	leaq	-160(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
 	movq	%rbx, %rax
 	movq	%rax, %rcx
-.LEHB5:
+.LEHB11:
 	call	_Unwind_Resume
 	nop
-.LEHE5:
-.L29:
-	addq	$136, %rsp
+.LEHE11:
+.L38:
+	addq	$232, %rsp
 	popq	%rbx
 	popq	%rbp
 	ret
@@ -333,22 +466,46 @@ _Z6commitv:
 	.uleb128 0
 	.uleb128 .LEHB1-.LFB2036
 	.uleb128 .LEHE1-.LEHB1
-	.uleb128 .L26-.LFB2036
+	.uleb128 .L32-.LFB2036
 	.uleb128 0
 	.uleb128 .LEHB2-.LFB2036
 	.uleb128 .LEHE2-.LEHB2
-	.uleb128 .L27-.LFB2036
+	.uleb128 .L33-.LFB2036
 	.uleb128 0
 	.uleb128 .LEHB3-.LFB2036
 	.uleb128 .LEHE3-.LEHB3
-	.uleb128 .L28-.LFB2036
+	.uleb128 .L34-.LFB2036
 	.uleb128 0
 	.uleb128 .LEHB4-.LFB2036
 	.uleb128 .LEHE4-.LEHB4
-	.uleb128 .L26-.LFB2036
+	.uleb128 .L33-.LFB2036
 	.uleb128 0
 	.uleb128 .LEHB5-.LFB2036
 	.uleb128 .LEHE5-.LEHB5
+	.uleb128 .L35-.LFB2036
+	.uleb128 0
+	.uleb128 .LEHB6-.LFB2036
+	.uleb128 .LEHE6-.LEHB6
+	.uleb128 .L33-.LFB2036
+	.uleb128 0
+	.uleb128 .LEHB7-.LFB2036
+	.uleb128 .LEHE7-.LEHB7
+	.uleb128 .L32-.LFB2036
+	.uleb128 0
+	.uleb128 .LEHB8-.LFB2036
+	.uleb128 .LEHE8-.LEHB8
+	.uleb128 .L36-.LFB2036
+	.uleb128 0
+	.uleb128 .LEHB9-.LFB2036
+	.uleb128 .LEHE9-.LEHB9
+	.uleb128 .L37-.LFB2036
+	.uleb128 0
+	.uleb128 .LEHB10-.LFB2036
+	.uleb128 .LEHE10-.LEHB10
+	.uleb128 .L32-.LFB2036
+	.uleb128 0
+	.uleb128 .LEHB11-.LFB2036
+	.uleb128 .LEHE11-.LEHB11
 	.uleb128 0
 	.uleb128 0
 .LLSDACSE2036:
@@ -371,10 +528,10 @@ _ZN9__gnu_cxx11char_traitsIcE6lengthEPKc:
 	.seh_endprologue
 	movq	%rcx, 16(%rbp)
 	movq	$0, -8(%rbp)
-	jmp	.L31
-.L32:
+	jmp	.L40
+.L41:
 	addq	$1, -8(%rbp)
-.L31:
+.L40:
 	movb	$0, -9(%rbp)
 	movq	16(%rbp), %rdx
 	movq	-8(%rbp), %rax
@@ -384,7 +541,7 @@ _ZN9__gnu_cxx11char_traitsIcE6lengthEPKc:
 	call	_ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_
 	xorl	$1, %eax
 	testb	%al, %al
-	jne	.L32
+	jne	.L41
 	movq	-8(%rbp), %rax
 	addq	$48, %rsp
 	popq	%rbp
@@ -575,7 +732,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EOS4_:
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 	testb	%al, %al
-	je	.L41
+	je	.L50
 	movq	32(%rbp), %rax
 	movq	%rax, -16(%rbp)
 	nop
@@ -590,8 +747,8 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EOS4_:
 	movq	%rcx, %r8
 	movq	%rax, %rcx
 	call	_ZNSt11char_traitsIcE4copyEPcPKcy
-	jmp	.L42
-.L41:
+	jmp	.L51
+.L50:
 	movq	40(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -604,7 +761,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1EOS4_:
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEy
-.L42:
+.L51:
 	movq	40(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv
@@ -670,7 +827,7 @@ _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_:
 	movq	%rax, %rcx
 	call	_ZNSt11char_traitsIcE6lengthEPKc
 	cmpq	%rax, %rbx
-	jne	.L45
+	jne	.L54
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
@@ -684,12 +841,12 @@ _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_:
 	movq	%rax, %rdx
 	call	_ZNSt11char_traitsIcE7compareEPKcS2_y
 	testl	%eax, %eax
-	jne	.L45
+	jne	.L54
 	movl	$1, %eax
-	jmp	.L46
-.L45:
+	jmp	.L55
+.L54:
 	movl	$0, %eax
-.L46:
+.L55:
 	addq	$40, %rsp
 	popq	%rbx
 	popq	%rbp
@@ -701,7 +858,7 @@ _ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_:
 	.def	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
 _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_:
-.LFB2316:
+.LFB2318:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rsi
@@ -730,7 +887,7 @@ _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_:
 	movq	%rax, %rsi
 	movq	40(%rbp), %rax
 	movq	%rax, %rcx
-.LEHB6:
+.LEHB12:
 	call	_ZNSt11char_traitsIcE6lengthEPKc
 	movq	%rax, %r8
 	movq	32(%rbp), %rax
@@ -741,14 +898,14 @@ _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_:
 	movq	%rsi, %r9
 	movq	%rax, %rcx
 	call	_ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE
-.LEHE6:
+.LEHE12:
 	nop
 	leaq	-1(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt15__new_allocatorIcED2Ev
 	nop
-	jmp	.L52
-.L51:
+	jmp	.L61
+.L60:
 	movq	%rax, %rbx
 	leaq	-1(%rbp), %rax
 	movq	%rax, %rcx
@@ -756,10 +913,10 @@ _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_:
 	nop
 	movq	%rbx, %rax
 	movq	%rax, %rcx
-.LEHB7:
+.LEHB13:
 	call	_Unwind_Resume
-.LEHE7:
-.L52:
+.LEHE13:
+.L61:
 	movq	32(%rbp), %rax
 	addq	$64, %rsp
 	popq	%rbx
@@ -768,21 +925,21 @@ _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_:
 	ret
 	.seh_handler	__gxx_personality_seh0, @unwind, @except
 	.seh_handlerdata
-.LLSDA2316:
+.LLSDA2318:
 	.byte	0xff
 	.byte	0xff
 	.byte	0x1
-	.uleb128 .LLSDACSE2316-.LLSDACSB2316
-.LLSDACSB2316:
-	.uleb128 .LEHB6-.LFB2316
-	.uleb128 .LEHE6-.LEHB6
-	.uleb128 .L51-.LFB2316
+	.uleb128 .LLSDACSE2318-.LLSDACSB2318
+.LLSDACSB2318:
+	.uleb128 .LEHB12-.LFB2318
+	.uleb128 .LEHE12-.LEHB12
+	.uleb128 .L60-.LFB2318
 	.uleb128 0
-	.uleb128 .LEHB7-.LFB2316
-	.uleb128 .LEHE7-.LEHB7
+	.uleb128 .LEHB13-.LFB2318
+	.uleb128 .LEHE13-.LEHB13
 	.uleb128 0
 	.uleb128 0
-.LLSDACSE2316:
+.LLSDACSE2318:
 	.section	.text$_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_,"x"
 	.linkonce discard
 	.seh_endproc
@@ -792,7 +949,7 @@ _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_:
 	.def	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_
 _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_:
-.LFB2317:
+.LFB2319:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -823,7 +980,7 @@ _ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_:
 	.def	_ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_
 _ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_:
-.LFB2318:
+.LFB2320:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -847,7 +1004,7 @@ _ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv:
-.LFB2321:
+.LFB2323:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -866,7 +1023,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv:
-.LFB2322:
+.LFB2324:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -890,7 +1047,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_:
-.LFB2325:
+.LFB2327:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -928,7 +1085,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEy:
-.LFB2327:
+.LFB2329:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -963,7 +1120,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEy:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv:
-.LFB2328:
+.LFB2330:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -977,13 +1134,13 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv:
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 	xorl	$1, %eax
 	testb	%al, %al
-	je	.L67
+	je	.L76
 	movq	16(%rbp), %rax
 	movq	16(%rax), %rdx
 	movq	16(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEy
-.L67:
+.L76:
 	nop
 	addq	$32, %rsp
 	popq	%rbp
@@ -996,7 +1153,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy:
-.LFB2329:
+.LFB2331:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rbx
@@ -1014,7 +1171,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy:
 	movq	%rax, -8(%rbp)
 	movq	40(%rbp), %rax
 	cmpq	%rax, -8(%rbp)
-	jnb	.L71
+	jnb	.L80
 	movq	-8(%rbp), %rcx
 	leaq	40(%rbp), %rdx
 	movq	32(%rbp), %rax
@@ -1045,10 +1202,10 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy:
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEy
-	jmp	.L68
-.L71:
+	jmp	.L77
+.L80:
 	nop
-.L68:
+.L77:
 	addq	$56, %rsp
 	popq	%rbx
 	popq	%rbp
@@ -1061,7 +1218,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv:
-.LFB2331:
+.LFB2333:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1079,7 +1236,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv:
-.LFB2333:
+.LFB2335:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rbx
@@ -1100,15 +1257,15 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv:
 	cmpq	%rax, %rbx
 	sete	%al
 	testb	%al, %al
-	je	.L75
+	je	.L84
 	movq	32(%rbp), %rax
 	movq	8(%rax), %rax
 	cmpq	$15, %rax
 	movl	$1, %eax
-	jmp	.L77
-.L75:
+	jmp	.L86
+.L84:
 	movl	$0, %eax
-.L77:
+.L86:
 	addq	$40, %rsp
 	popq	%rbx
 	popq	%rbp
@@ -1121,7 +1278,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv:
-.LFB2334:
+.LFB2336:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1144,7 +1301,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc:
-.LFB2335:
+.LFB2337:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1166,7 +1323,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEy:
-.LFB2336:
+.LFB2338:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1188,7 +1345,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEy:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEy:
-.LFB2337:
+.LFB2339:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1210,7 +1367,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEy:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv:
-.LFB2367:
+.LFB2369:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1233,7 +1390,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv:
-.LFB2368:
+.LFB2370:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1263,7 +1420,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv:
 	.def	_ZNSt15__new_allocatorIcED2Ev;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt15__new_allocatorIcED2Ev
 _ZNSt15__new_allocatorIcED2Ev:
-.LFB2373:
+.LFB2375:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1281,7 +1438,7 @@ _ZNSt15__new_allocatorIcED2Ev:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_:
-.LFB2377:
+.LFB2379:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1317,7 +1474,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv:
-.LFB2433:
+.LFB2436:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1351,7 +1508,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv:
 	.def	_ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE
 _ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE:
-.LFB2434:
+.LFB2437:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rbx
@@ -1394,7 +1551,7 @@ _ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_
 	addq	%rax, %rdx
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
-.LEHB8:
+.LEHB14:
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEy
 	movq	48(%rbp), %rcx
 	movq	40(%rbp), %rdx
@@ -1408,19 +1565,19 @@ _ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_
 	movq	%rcx, %r8
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcy
-.LEHE8:
-	jmp	.L98
-.L97:
+.LEHE14:
+	jmp	.L107
+.L106:
 	movq	%rax, %rbx
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
 	movq	%rbx, %rax
 	movq	%rax, %rcx
-.LEHB9:
+.LEHB15:
 	call	_Unwind_Resume
-.LEHE9:
-.L98:
+.LEHE15:
+.L107:
 	movq	32(%rbp), %rax
 	addq	$104, %rsp
 	popq	%rbx
@@ -1428,26 +1585,26 @@ _ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_
 	ret
 	.seh_handler	__gxx_personality_seh0, @unwind, @except
 	.seh_handlerdata
-.LLSDA2434:
+.LLSDA2437:
 	.byte	0xff
 	.byte	0xff
 	.byte	0x1
-	.uleb128 .LLSDACSE2434-.LLSDACSB2434
-.LLSDACSB2434:
-	.uleb128 .LEHB8-.LFB2434
-	.uleb128 .LEHE8-.LEHB8
-	.uleb128 .L97-.LFB2434
+	.uleb128 .LLSDACSE2437-.LLSDACSB2437
+.LLSDACSB2437:
+	.uleb128 .LEHB14-.LFB2437
+	.uleb128 .LEHE14-.LEHB14
+	.uleb128 .L106-.LFB2437
 	.uleb128 0
-	.uleb128 .LEHB9-.LFB2434
-	.uleb128 .LEHE9-.LEHB9
+	.uleb128 .LEHB15-.LFB2437
+	.uleb128 .LEHE15-.LEHB15
 	.uleb128 0
 	.uleb128 0
-.LLSDACSE2434:
+.LLSDACSE2437:
 	.section	.text$_ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE,"x"
 	.linkonce discard
 	.seh_endproc
 	.section .rdata,"dr"
-.LC7:
+.LC15:
 	.ascii "basic_string::append\0"
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc,"x"
 	.linkonce discard
@@ -1456,7 +1613,7 @@ _ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc:
-.LFB2435:
+.LFB2438:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1470,7 +1627,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc:
 	movq	%rax, %rcx
 	call	_ZNSt11char_traitsIcE6lengthEPKc
 	movq	%rax, -8(%rbp)
-	leaq	.LC7(%rip), %rcx
+	leaq	.LC15(%rip), %rcx
 	movq	-8(%rbp), %rdx
 	movq	16(%rbp), %rax
 	movq	%rcx, %r9
@@ -1494,7 +1651,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc:
 	.def	_ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc
 _ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc:
-.LFB2436:
+.LFB2439:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1520,7 +1677,7 @@ _ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEy:
-.LFB2440:
+.LFB2443:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rsi
@@ -1567,7 +1724,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEy:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv:
-.LFB2441:
+.LFB2444:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1580,27 +1737,27 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv:
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 	testb	%al, %al
-	je	.L107
+	je	.L116
 	movq	$15, -8(%rbp)
-	jmp	.L108
-.L107:
+	jmp	.L117
+.L116:
 	movq	16(%rbp), %rax
 	movq	16(%rax), %rax
 	movq	%rax, -8(%rbp)
-.L108:
+.L117:
 	cmpq	$14, -8(%rbp)
-	jbe	.L109
+	jbe	.L118
 	movq	16(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv
 	cmpq	-8(%rbp), %rax
-	jnb	.L110
-.L109:
+	jnb	.L119
+.L118:
 	movl	$1, %eax
-	jmp	.L111
-.L110:
+	jmp	.L120
+.L119:
 	movl	$0, %eax
-.L111:
+.L120:
 	testb	%al, %al
 	movq	-8(%rbp), %rax
 	addq	$48, %rsp
@@ -1608,7 +1765,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv:
 	ret
 	.seh_endproc
 	.section .rdata,"dr"
-.LC8:
+.LC16:
 	.ascii "basic_string::_M_create\0"
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy,"x"
 	.linkonce discard
@@ -1617,7 +1774,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy:
-.LFB2442:
+.LFB2445:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rbx
@@ -1638,21 +1795,21 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy:
 	cmpq	%rbx, %rax
 	setb	%al
 	testb	%al, %al
-	je	.L115
-	leaq	.LC8(%rip), %rax
+	je	.L124
+	leaq	.LC16(%rip), %rax
 	movq	%rax, %rcx
 	call	_ZSt20__throw_length_errorPKc
-.L115:
+.L124:
 	movq	40(%rbp), %rax
 	movq	(%rax), %rax
 	cmpq	%rax, 48(%rbp)
-	jnb	.L116
+	jnb	.L125
 	movq	40(%rbp), %rax
 	movq	(%rax), %rdx
 	movq	48(%rbp), %rax
 	addq	%rax, %rax
 	cmpq	%rax, %rdx
-	jnb	.L116
+	jnb	.L125
 	movq	48(%rbp), %rax
 	leaq	(%rax,%rax), %rdx
 	movq	40(%rbp), %rax
@@ -1665,13 +1822,13 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy:
 	cmpq	%rbx, %rax
 	setb	%al
 	testb	%al, %al
-	je	.L116
+	je	.L125
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv
 	movq	40(%rbp), %rdx
 	movq	%rax, (%rdx)
-.L116:
+.L125:
 	movq	40(%rbp), %rax
 	movq	(%rax), %rax
 	leaq	1(%rax), %rbx
@@ -1692,7 +1849,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy:
-.LFB2443:
+.LFB2446:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1704,20 +1861,20 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy:
 	movq	%rdx, 24(%rbp)
 	movq	%r8, 32(%rbp)
 	cmpq	$1, 32(%rbp)
-	jne	.L119
+	jne	.L128
 	movq	24(%rbp), %rdx
 	movq	16(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt11char_traitsIcE6assignERcRKc
-	jmp	.L121
-.L119:
+	jmp	.L130
+.L128:
 	movq	32(%rbp), %rcx
 	movq	24(%rbp), %rdx
 	movq	16(%rbp), %rax
 	movq	%rcx, %r8
 	movq	%rax, %rcx
 	call	_ZNSt11char_traitsIcE4copyEPcPKcy
-.L121:
+.L130:
 	nop
 	addq	$32, %rsp
 	popq	%rbp
@@ -1730,7 +1887,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv:
-.LFB2444:
+.LFB2447:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1753,7 +1910,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv:
 	.def	_ZSt3minIyERKT_S2_S2_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZSt3minIyERKT_S2_S2_
 _ZSt3minIyERKT_S2_S2_:
-.LFB2468:
+.LFB2471:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1766,12 +1923,12 @@ _ZSt3minIyERKT_S2_S2_:
 	movq	16(%rbp), %rax
 	movq	(%rax), %rax
 	cmpq	%rax, %rdx
-	jnb	.L125
+	jnb	.L134
 	movq	24(%rbp), %rax
-	jmp	.L126
-.L125:
+	jmp	.L135
+.L134:
 	movq	16(%rbp), %rax
-.L126:
+.L135:
 	popq	%rbp
 	ret
 	.seh_endproc
@@ -1782,7 +1939,7 @@ _ZSt3minIyERKT_S2_S2_:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv:
-.LFB2467:
+.LFB2470:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1822,7 +1979,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv:
-.LFB2506:
+.LFB2509:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1840,7 +1997,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_:
-.LFB2510:
+.LFB2513:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rbx
@@ -1881,7 +2038,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcy:
-.LFB2511:
+.LFB2514:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -1892,7 +2049,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcy:
 	movq	%rcx, 16(%rbp)
 	movq	%rdx, 24(%rbp)
 	movq	%r8, 32(%rbp)
-	leaq	.LC7(%rip), %rcx
+	leaq	.LC15(%rip), %rcx
 	movq	32(%rbp), %rdx
 	movq	16(%rbp), %rax
 	movq	%rcx, %r9
@@ -1917,7 +2074,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcy:
 	.def	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEyyPKc;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEyyPKc
 _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEyyPKc:
-.LFB2512:
+.LFB2515:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rbx
@@ -1944,11 +2101,11 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEyyPKc:
 	cmpq	48(%rbp), %rax
 	setb	%al
 	testb	%al, %al
-	je	.L139
+	je	.L148
 	movq	56(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZSt20__throw_length_errorPKc
-.L139:
+.L148:
 	nop
 	addq	$40, %rsp
 	popq	%rbx
@@ -1962,7 +2119,7 @@ _ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEyyPKc:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy:
-.LFB2513:
+.LFB2516:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	pushq	%rbx
@@ -1987,9 +2144,9 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy:
 	cmpq	-8(%rbp), %rax
 	setnb	%al
 	testb	%al, %al
-	je	.L141
+	je	.L150
 	cmpq	$0, 48(%rbp)
-	je	.L142
+	je	.L151
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -2003,8 +2160,8 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy:
 	movq	%rdx, %r8
 	movq	%rax, %rdx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy
-	jmp	.L142
-.L141:
+	jmp	.L151
+.L150:
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
@@ -2018,7 +2175,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy:
 	movq	%rcx, %rdx
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy
-.L142:
+.L151:
 	movq	-8(%rbp), %rdx
 	movq	32(%rbp), %rax
 	movq	%rax, %rcx
@@ -2035,7 +2192,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcy:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_y;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_y
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_y:
-.LFB2519:
+.LFB2522:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -2067,7 +2224,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_y:
 	.def	_ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_
 _ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_:
-.LFB2520:
+.LFB2523:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -2093,7 +2250,7 @@ _ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_:
 	.def	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy
 _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy:
-.LFB2573:
+.LFB2576:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -2129,7 +2286,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy:
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERyy
 	movq	%rax, -16(%rbp)
 	cmpq	$0, 24(%rbp)
-	je	.L152
+	je	.L161
 	movq	16(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -2139,11 +2296,11 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy:
 	movq	%rcx, %r8
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy
-.L152:
+.L161:
 	cmpq	$0, 40(%rbp)
-	je	.L153
+	je	.L162
 	cmpq	$0, 48(%rbp)
-	je	.L153
+	je	.L162
 	movq	-16(%rbp), %rdx
 	movq	24(%rbp), %rax
 	leaq	(%rdx,%rax), %rcx
@@ -2152,9 +2309,9 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy:
 	movq	%rdx, %r8
 	movq	%rax, %rdx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy
-.L153:
+.L162:
 	cmpq	$0, -8(%rbp)
-	je	.L154
+	je	.L163
 	movq	16(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -2171,7 +2328,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy:
 	movq	%rcx, %r8
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcy
-.L154:
+.L163:
 	movq	16(%rbp), %rax
 	movq	%rax, %rcx
 	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
@@ -2195,7 +2352,7 @@ _ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEyyPKcy:
 	.def	_ZNSt15__new_allocatorIcE10deallocateEPcy;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt15__new_allocatorIcE10deallocateEPcy
 _ZNSt15__new_allocatorIcE10deallocateEPcy:
-.LFB2575:
+.LFB2578:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -2222,7 +2379,7 @@ _ZNSt15__new_allocatorIcE10deallocateEPcy:
 	.def	_ZNSt15__new_allocatorIcE8allocateEyPKv;	.scl	2;	.type	32;	.endef
 	.seh_proc	_ZNSt15__new_allocatorIcE8allocateEyPKv
 _ZNSt15__new_allocatorIcE8allocateEyPKv:
-.LFB2602:
+.LFB2605:
 	pushq	%rbp
 	.seh_pushreg	%rbp
 	movq	%rsp, %rbp
@@ -2242,9 +2399,9 @@ _ZNSt15__new_allocatorIcE8allocateEyPKv:
 	testl	%eax, %eax
 	setne	%al
 	testb	%al, %al
-	je	.L159
+	je	.L168
 	call	_ZSt17__throw_bad_allocv
-.L159:
+.L168:
 	movq	24(%rbp), %rax
 	movq	%rax, %rcx
 	call	_Znwy
@@ -2261,6 +2418,7 @@ _ZNSt15__new_allocatorIcE8allocateEyPKv:
 	.def	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;	.scl	2;	.type	32;	.endef
 	.def	_ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE;	.scl	2;	.type	32;	.endef
 	.def	exit;	.scl	2;	.type	32;	.endef
+	.def	_ZNSolsEPFRSoS_E;	.scl	2;	.type	32;	.endef
 	.def	system;	.scl	2;	.type	32;	.endef
 	.def	_Unwind_Resume;	.scl	2;	.type	32;	.endef
 	.def	_ZSt20__throw_length_errorPKc;	.scl	2;	.type	32;	.endef
@@ -2273,6 +2431,12 @@ _ZNSt15__new_allocatorIcE8allocateEyPKv:
 	.linkonce	discard
 .refptr.push:
 	.quad	push
+	.section	.rdata$.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, "dr"
+	.p2align	3, 0
+	.globl	.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
+	.linkonce	discard
+.refptr._ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_:
+	.quad	_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_
 	.section	.rdata$.refptr._ZSt3cin, "dr"
 	.p2align	3, 0
 	.globl	.refptr._ZSt3cin

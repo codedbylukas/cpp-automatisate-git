@@ -196,14 +196,30 @@ LC0:
 LC1:
 	.ascii "q\0"
 LC2:
-	.ascii "git add .\0"
+	.ascii "\0"
 LC3:
-	.ascii "git commit -m \"\0"
+	.ascii "Please enter a commit message\0"
 LC4:
-	.ascii "\"\0"
+	.ascii "b\0"
 LC5:
-	.ascii "git pull\0"
+	.ascii "Switching to branch mode\0"
 LC6:
+	.ascii "Whats your new branch name?: \0"
+LC7:
+	.ascii "git switch -c \0"
+LC8:
+	.ascii "git push origin \0"
+LC9:
+	.ascii "Branch created\0"
+LC10:
+	.ascii "git add .\0"
+LC11:
+	.ascii "git commit -m \"\0"
+LC12:
+	.ascii "\"\0"
+LC13:
+	.ascii "git pull\0"
+LC14:
 	.ascii "git push\0"
 	.text
 	.globl	__Z6commitv
@@ -219,23 +235,23 @@ LFB2031:
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
 	pushl	%ebx
-	subl	$100, %esp
+	subl	$164, %esp
 	.cfi_offset 3, -12
 	movl	$LC0, 4(%esp)
 	movl	$__ZSt4cout, (%esp)
 LEHB0:
 	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
 LEHE0:
-	leal	-80(%ebp), %eax
+	leal	-128(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev
-	leal	-80(%ebp), %eax
+	leal	-128(%ebp), %eax
 	movl	%eax, 4(%esp)
 	movl	$__ZSt3cin, (%esp)
 LEHB1:
 	call	__ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE
 	movl	$LC1, 4(%esp)
-	leal	-80(%ebp), %eax
+	leal	-128(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
 	testb	%al, %al
@@ -243,30 +259,123 @@ LEHB1:
 	movl	$0, (%esp)
 	call	_exit
 L21:
-	movl	$LC2, (%esp)
-	call	_system
-	leal	-32(%ebp), %eax
-	leal	-80(%ebp), %edx
-	movl	%edx, 8(%esp)
+	movl	$LC2, 4(%esp)
+	leal	-128(%ebp), %eax
+	movl	%eax, (%esp)
+	call	__ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
+	testb	%al, %al
+	je	L22
 	movl	$LC3, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+	movl	%eax, %ecx
+	call	__ZNSolsEPFRSoS_E
+	subl	$4, %esp
+	call	__Z6commitv
+	jmp	L23
+L22:
+	movl	$LC4, 4(%esp)
+	leal	-128(%ebp), %eax
+	movl	%eax, (%esp)
+	call	__ZSteqIcSt11char_traitsIcESaIcEEbRKNSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_
+	testb	%al, %al
+	je	L23
+	movl	$LC5, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+	movl	%eax, %ecx
+	call	__ZNSolsEPFRSoS_E
+	subl	$4, %esp
+	movl	$LC6, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+LEHE1:
+	leal	-152(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev
+	leal	-152(%ebp), %eax
+	movl	%eax, 4(%esp)
+	movl	$__ZSt3cin, (%esp)
+LEHB2:
+	call	__ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE
+	leal	-104(%ebp), %eax
+	leal	-152(%ebp), %edx
+	movl	%edx, 8(%esp)
+	movl	$LC7, 4(%esp)
 	movl	%eax, (%esp)
 	call	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
-LEHE1:
-	leal	-56(%ebp), %eax
-	movl	$LC4, 8(%esp)
-	leal	-32(%ebp), %edx
-	movl	%edx, 4(%esp)
-	movl	%eax, (%esp)
-LEHB2:
-	call	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_
 LEHE2:
-	leal	-56(%ebp), %eax
+	leal	-104(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
 	movl	%eax, (%esp)
 LEHB3:
 	call	_system
 LEHE3:
+	leal	-104(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	movzbl	_push, %eax
+	testb	%al, %al
+	je	L24
+	leal	-80(%ebp), %eax
+	leal	-152(%ebp), %edx
+	movl	%edx, 8(%esp)
+	movl	$LC8, 4(%esp)
+	movl	%eax, (%esp)
+LEHB4:
+	call	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
+LEHE4:
+	leal	-80(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
+	movl	%eax, (%esp)
+LEHB5:
+	call	_system
+LEHE5:
+	leal	-80(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+L24:
+	movl	$LC9, 4(%esp)
+	movl	$__ZSt4cout, (%esp)
+LEHB6:
+	call	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+	movl	$__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, (%esp)
+	movl	%eax, %ecx
+	call	__ZNSolsEPFRSoS_E
+LEHE6:
+	subl	$4, %esp
+	movl	$0, (%esp)
+	call	_exit
+L23:
+	movl	$LC10, (%esp)
+LEHB7:
+	call	_system
+	leal	-32(%ebp), %eax
+	leal	-128(%ebp), %edx
+	movl	%edx, 8(%esp)
+	movl	$LC11, 4(%esp)
+	movl	%eax, (%esp)
+	call	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
+LEHE7:
+	leal	-56(%ebp), %eax
+	movl	$LC12, 8(%esp)
+	leal	-32(%ebp), %edx
+	movl	%edx, 4(%esp)
+	movl	%eax, (%esp)
+LEHB8:
+	call	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_
+LEHE8:
+	leal	-56(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv
+	movl	%eax, (%esp)
+LEHB9:
+	call	_system
+LEHE9:
 	leal	-56(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
@@ -275,43 +384,62 @@ LEHE3:
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
 	movzbl	_push, %eax
 	testb	%al, %al
-	je	L22
-	movl	$LC5, (%esp)
-LEHB4:
+	je	L25
+	movl	$LC13, (%esp)
+LEHB10:
 	call	_system
-	movl	$LC6, (%esp)
+	movl	$LC14, (%esp)
 	call	_system
-LEHE4:
-L22:
+LEHE10:
+L25:
+	leal	-128(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	jmp	L38
+L34:
+	movl	%eax, %ebx
+	leal	-104(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	jmp	L27
+L35:
+	movl	%eax, %ebx
 	leal	-80(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
+	jmp	L27
+L33:
+	movl	%eax, %ebx
+L27:
+	leal	-152(%ebp), %eax
+	movl	%eax, %ecx
+	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
 	jmp	L29
-L28:
+L37:
 	movl	%eax, %ebx
 	leal	-56(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
-	jmp	L24
-L27:
+	jmp	L31
+L36:
 	movl	%eax, %ebx
-L24:
+L31:
 	leal	-32(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
-	jmp	L25
-L26:
+	jmp	L29
+L32:
 	movl	%eax, %ebx
-L25:
-	leal	-80(%ebp), %eax
+L29:
+	leal	-128(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
 	movl	%ebx, %eax
 	movl	%eax, (%esp)
-LEHB5:
+LEHB11:
 	call	__Unwind_Resume
-LEHE5:
-L29:
+LEHE11:
+L38:
 	movl	-4(%ebp), %ebx
 	leave
 	.cfi_restore 5
@@ -333,22 +461,46 @@ LLSDACSB2031:
 	.uleb128 0
 	.uleb128 LEHB1-LFB2031
 	.uleb128 LEHE1-LEHB1
-	.uleb128 L26-LFB2031
+	.uleb128 L32-LFB2031
 	.uleb128 0
 	.uleb128 LEHB2-LFB2031
 	.uleb128 LEHE2-LEHB2
-	.uleb128 L27-LFB2031
+	.uleb128 L33-LFB2031
 	.uleb128 0
 	.uleb128 LEHB3-LFB2031
 	.uleb128 LEHE3-LEHB3
-	.uleb128 L28-LFB2031
+	.uleb128 L34-LFB2031
 	.uleb128 0
 	.uleb128 LEHB4-LFB2031
 	.uleb128 LEHE4-LEHB4
-	.uleb128 L26-LFB2031
+	.uleb128 L33-LFB2031
 	.uleb128 0
 	.uleb128 LEHB5-LFB2031
 	.uleb128 LEHE5-LEHB5
+	.uleb128 L35-LFB2031
+	.uleb128 0
+	.uleb128 LEHB6-LFB2031
+	.uleb128 LEHE6-LEHB6
+	.uleb128 L33-LFB2031
+	.uleb128 0
+	.uleb128 LEHB7-LFB2031
+	.uleb128 LEHE7-LEHB7
+	.uleb128 L32-LFB2031
+	.uleb128 0
+	.uleb128 LEHB8-LFB2031
+	.uleb128 LEHE8-LEHB8
+	.uleb128 L36-LFB2031
+	.uleb128 0
+	.uleb128 LEHB9-LFB2031
+	.uleb128 LEHE9-LEHB9
+	.uleb128 L37-LFB2031
+	.uleb128 0
+	.uleb128 LEHB10-LFB2031
+	.uleb128 LEHE10-LEHB10
+	.uleb128 L32-LFB2031
+	.uleb128 0
+	.uleb128 LEHB11-LFB2031
+	.uleb128 LEHE11-LEHB11
 	.uleb128 0
 	.uleb128 0
 LLSDACSE2031:
@@ -368,10 +520,10 @@ LFB2032:
 	.cfi_def_cfa_register 5
 	subl	$40, %esp
 	movl	$0, -12(%ebp)
-	jmp	L31
-L32:
+	jmp	L40
+L41:
 	addl	$1, -12(%ebp)
-L31:
+L40:
 	movb	$0, -13(%ebp)
 	movl	8(%ebp), %edx
 	movl	-12(%ebp), %eax
@@ -382,7 +534,7 @@ L31:
 	call	__ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_
 	xorl	$1, %eax
 	testb	%al, %al
-	jne	L32
+	jne	L41
 	movl	-12(%ebp), %eax
 	leave
 	.cfi_restore 5
@@ -585,7 +737,7 @@ LFB2147:
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 	testb	%al, %al
-	je	L41
+	je	L50
 	movl	-28(%ebp), %eax
 	movl	%eax, -16(%ebp)
 	nop
@@ -601,8 +753,8 @@ LFB2147:
 	movl	%edx, 4(%esp)
 	movl	%eax, (%esp)
 	call	__ZNSt11char_traitsIcE4copyEPcPKcj
-	jmp	L42
-L41:
+	jmp	L51
+L50:
 	movl	8(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -619,7 +771,7 @@ L41:
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEj
 	subl	$4, %esp
-L42:
+L51:
 	movl	8(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv
@@ -691,7 +843,7 @@ LFB2310:
 	movl	%eax, (%esp)
 	call	__ZNSt11char_traitsIcE6lengthEPKc
 	cmpl	%eax, %ebx
-	jne	L45
+	jne	L54
 	movl	8(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
@@ -705,12 +857,12 @@ LFB2310:
 	movl	%eax, (%esp)
 	call	__ZNSt11char_traitsIcE7compareEPKcS2_j
 	testl	%eax, %eax
-	jne	L45
+	jne	L54
 	movl	$1, %eax
-	jmp	L46
-L45:
+	jmp	L55
+L54:
 	movl	$0, %eax
-L46:
+L55:
 	movl	-4(%ebp), %ebx
 	leave
 	.cfi_restore 5
@@ -724,10 +876,10 @@ LFE2310:
 	.globl	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_
 	.def	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_;	.scl	2;	.type	32;	.endef
 __ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_:
-LFB2311:
+LFB2313:
 	.cfi_startproc
 	.cfi_personality 0x9b,LDFCM0
-	.cfi_lsda 0x1b,LLSDA2311
+	.cfi_lsda 0x1b,LLSDA2313
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -754,7 +906,7 @@ LFB2311:
 	movl	%eax, %ebx
 	movl	12(%ebp), %eax
 	movl	%eax, (%esp)
-LEHB6:
+LEHB12:
 	call	__ZNSt11char_traitsIcE6lengthEPKc
 	movl	8(%ebp), %edx
 	leal	-9(%ebp), %ecx
@@ -766,14 +918,14 @@ LEHB6:
 	movl	%eax, 4(%esp)
 	movl	%edx, (%esp)
 	call	__ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE
-LEHE6:
+LEHE12:
 	nop
 	leal	-9(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt15__new_allocatorIcED2Ev
 	nop
-	jmp	L52
-L51:
+	jmp	L61
+L60:
 	movl	%eax, %ebx
 	leal	-9(%ebp), %eax
 	movl	%eax, %ecx
@@ -781,10 +933,10 @@ L51:
 	nop
 	movl	%ebx, %eax
 	movl	%eax, (%esp)
-LEHB7:
+LEHB13:
 	call	__Unwind_Resume
-LEHE7:
-L52:
+LEHE13:
+L61:
 	movl	8(%ebp), %eax
 	leal	-8(%ebp), %esp
 	popl	%ebx
@@ -796,23 +948,23 @@ L52:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2311:
+LFE2313:
 	.section	.gcc_except_table,"w"
-LLSDA2311:
+LLSDA2313:
 	.byte	0xff
 	.byte	0xff
 	.byte	0x1
-	.uleb128 LLSDACSE2311-LLSDACSB2311
-LLSDACSB2311:
-	.uleb128 LEHB6-LFB2311
-	.uleb128 LEHE6-LEHB6
-	.uleb128 L51-LFB2311
+	.uleb128 LLSDACSE2313-LLSDACSB2313
+LLSDACSB2313:
+	.uleb128 LEHB12-LFB2313
+	.uleb128 LEHE12-LEHB12
+	.uleb128 L60-LFB2313
 	.uleb128 0
-	.uleb128 LEHB7-LFB2311
-	.uleb128 LEHE7-LEHB7
+	.uleb128 LEHB13-LFB2313
+	.uleb128 LEHE13-LEHB13
 	.uleb128 0
 	.uleb128 0
-LLSDACSE2311:
+LLSDACSE2313:
 	.section	.text$_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_,"x"
 	.linkonce discard
 	.section	.text$_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_,"x"
@@ -820,7 +972,7 @@ LLSDACSE2311:
 	.globl	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_
 	.def	__ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_;	.scl	2;	.type	32;	.endef
 __ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEOS8_PKS5_:
-LFB2312:
+LFB2314:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -847,13 +999,13 @@ LFB2312:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2312:
+LFE2314:
 	.section	.text$_ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_,"x"
 	.linkonce discard
 	.globl	__ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_
 	.def	__ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_;	.scl	2;	.type	32;	.endef
 __ZN9__gnu_cxx11char_traitsIcE2eqERKcS3_:
-LFB2313:
+LFB2315:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -871,14 +1023,14 @@ LFB2313:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2313:
+LFE2315:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv:
-LFB2316:
+LFB2318:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -894,14 +1046,14 @@ LFB2316:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2316:
+LFE2318:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv:
-LFB2317:
+LFB2319:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -919,14 +1071,14 @@ LFB2317:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2317:
+LFE2319:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcOS3_:
-LFB2320:
+LFB2322:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -956,14 +1108,14 @@ LFB2320:
 	.cfi_def_cfa 4, 4
 	ret	$8
 	.cfi_endproc
-LFE2320:
+LFE2322:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_set_lengthEj:
-LFB2322:
+LFB2324:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -994,14 +1146,14 @@ LFB2322:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2322:
+LFE2324:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv:
-LFB2323:
+LFB2325:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1015,7 +1167,7 @@ LFB2323:
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 	xorl	$1, %eax
 	testb	%al, %al
-	je	L67
+	je	L76
 	movl	-12(%ebp), %eax
 	movl	8(%eax), %edx
 	movl	-12(%ebp), %eax
@@ -1023,21 +1175,21 @@ LFB2323:
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEj
 	subl	$4, %esp
-L67:
+L76:
 	nop
 	leave
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2323:
+LFE2325:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEj:
-LFB2324:
+LFB2326:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1054,7 +1206,7 @@ LFB2324:
 	movl	%eax, -12(%ebp)
 	movl	8(%ebp), %eax
 	cmpl	%eax, -12(%ebp)
-	jnb	L71
+	jnb	L80
 	movl	-28(%ebp), %eax
 	movl	-12(%ebp), %edx
 	movl	%edx, 4(%esp)
@@ -1091,10 +1243,10 @@ LFB2324:
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEj
 	subl	$4, %esp
-	jmp	L68
-L71:
+	jmp	L77
+L80:
 	nop
-L68:
+L77:
 	movl	-4(%ebp), %ebx
 	leave
 	.cfi_restore 5
@@ -1102,14 +1254,14 @@ L68:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2324:
+LFE2326:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv:
-LFB2326:
+LFB2328:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1124,14 +1276,14 @@ LFB2326:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2326:
+LFE2328:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv:
-LFB2328:
+LFB2330:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1152,15 +1304,15 @@ LFB2328:
 	cmpl	%eax, %ebx
 	sete	%al
 	testb	%al, %al
-	je	L75
+	je	L84
 	movl	-12(%ebp), %eax
 	movl	4(%eax), %eax
 	cmpl	$15, %eax
 	movl	$1, %eax
-	jmp	L77
-L75:
+	jmp	L86
+L84:
 	movl	$0, %eax
-L77:
+L86:
 	movl	-4(%ebp), %ebx
 	leave
 	.cfi_restore 5
@@ -1168,14 +1320,14 @@ L77:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2328:
+LFE2330:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6lengthEv:
-LFB2329:
+LFB2331:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1192,14 +1344,14 @@ LFB2329:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2329:
+LFE2331:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEPc:
-LFB2330:
+LFB2332:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1217,14 +1369,14 @@ LFB2330:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2330:
+LFE2332:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_capacityEj:
-LFB2331:
+LFB2333:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1242,14 +1394,14 @@ LFB2331:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2331:
+LFE2333:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_lengthEj:
-LFB2332:
+LFB2334:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1267,14 +1419,14 @@ LFB2332:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2332:
+LFE2334:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4dataEv:
-LFB2362:
+LFB2364:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1291,14 +1443,14 @@ LFB2362:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2362:
+LFE2364:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv:
-LFB2363:
+LFB2365:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1322,14 +1474,14 @@ LFB2363:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2363:
+LFE2365:
 	.section	.text$_ZNSt15__new_allocatorIcED2Ev,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt15__new_allocatorIcED2Ev
 	.def	__ZNSt15__new_allocatorIcED2Ev;	.scl	2;	.type	32;	.endef
 __ZNSt15__new_allocatorIcED2Ev:
-LFB2368:
+LFB2370:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1344,14 +1496,14 @@ LFB2368:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2368:
+LFE2370:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_Alloc_hiderC1EPcRKS3_:
-LFB2372:
+LFB2374:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1379,14 +1531,14 @@ LFB2372:
 	.cfi_def_cfa 4, 4
 	ret	$8
 	.cfi_endproc
-LFE2372:
+LFE2374:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13get_allocatorEv:
-LFB2428:
+LFB2431:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1414,16 +1566,16 @@ LFB2428:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2428:
+LFE2431:
 	.section	.text$_ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE,"x"
 	.linkonce discard
 	.globl	__ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE
 	.def	__ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE;	.scl	2;	.type	32;	.endef
 __ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE:
-LFB2429:
+LFB2432:
 	.cfi_startproc
 	.cfi_personality 0x9b,LDFCM0
-	.cfi_lsda 0x1b,LLSDA2429
+	.cfi_lsda 0x1b,LLSDA2432
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
 	.cfi_offset 5, -8
@@ -1464,7 +1616,7 @@ LFB2429:
 	movl	8(%ebp), %eax
 	movl	%edx, (%esp)
 	movl	%eax, %ecx
-LEHB8:
+LEHB14:
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEj
 	subl	$4, %esp
 	movl	8(%ebp), %eax
@@ -1482,20 +1634,20 @@ LEHB8:
 	movl	%edx, (%esp)
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcj
-LEHE8:
+LEHE14:
 	subl	$8, %esp
-	jmp	L98
-L97:
+	jmp	L107
+L106:
 	movl	%eax, %ebx
 	movl	8(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev
 	movl	%ebx, %eax
 	movl	%eax, (%esp)
-LEHB9:
+LEHB15:
 	call	__Unwind_Resume
-LEHE9:
-L98:
+LEHE15:
+L107:
 	movl	8(%ebp), %eax
 	movl	-4(%ebp), %ebx
 	leave
@@ -1504,27 +1656,27 @@ L98:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2429:
+LFE2432:
 	.section	.gcc_except_table,"w"
-LLSDA2429:
+LLSDA2432:
 	.byte	0xff
 	.byte	0xff
 	.byte	0x1
-	.uleb128 LLSDACSE2429-LLSDACSB2429
-LLSDACSB2429:
-	.uleb128 LEHB8-LFB2429
-	.uleb128 LEHE8-LEHB8
-	.uleb128 L97-LFB2429
+	.uleb128 LLSDACSE2432-LLSDACSB2432
+LLSDACSB2432:
+	.uleb128 LEHB14-LFB2432
+	.uleb128 LEHE14-LEHB14
+	.uleb128 L106-LFB2432
 	.uleb128 0
-	.uleb128 LEHB9-LFB2429
-	.uleb128 LEHE9-LEHB9
+	.uleb128 LEHB15-LFB2432
+	.uleb128 LEHE15-LEHB15
 	.uleb128 0
 	.uleb128 0
-LLSDACSE2429:
+LLSDACSE2432:
 	.section	.text$_ZSt12__str_concatINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEET_PKNS6_10value_typeENS6_9size_typeES9_SA_RKNS6_14allocator_typeE,"x"
 	.linkonce discard
 	.section .rdata,"dr"
-LC7:
+LC15:
 	.ascii "basic_string::append\0"
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc,"x"
 	.linkonce discard
@@ -1532,7 +1684,7 @@ LC7:
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKc:
-LFB2430:
+LFB2433:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1546,7 +1698,7 @@ LFB2430:
 	call	__ZNSt11char_traitsIcE6lengthEPKc
 	movl	%eax, -12(%ebp)
 	movl	-28(%ebp), %eax
-	movl	$LC7, 8(%esp)
+	movl	$LC15, 8(%esp)
 	movl	-12(%ebp), %edx
 	movl	%edx, 4(%esp)
 	movl	$0, (%esp)
@@ -1566,13 +1718,13 @@ LFB2430:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2430:
+LFE2433:
 	.section	.text$_ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc,"x"
 	.linkonce discard
 	.globl	__ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc
 	.def	__ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc;	.scl	2;	.type	32;	.endef
 __ZNSt19__ptr_traits_ptr_toIPccLb0EE10pointer_toERc:
-LFB2431:
+LFB2434:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1591,14 +1743,14 @@ LFB2431:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2431:
+LFE2434:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_destroyEj:
-LFB2435:
+LFB2438:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1643,14 +1795,14 @@ LFB2435:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2435:
+LFE2438:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8capacityEv:
-LFB2436:
+LFB2439:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1663,27 +1815,27 @@ LFB2436:
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_M_is_localEv
 	testb	%al, %al
-	je	L107
+	je	L116
 	movl	$15, -12(%ebp)
-	jmp	L108
-L107:
+	jmp	L117
+L116:
 	movl	-28(%ebp), %eax
 	movl	8(%eax), %eax
 	movl	%eax, -12(%ebp)
-L108:
+L117:
 	cmpl	$14, -12(%ebp)
-	jbe	L109
+	jbe	L118
 	movl	-28(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv
 	cmpl	-12(%ebp), %eax
-	jnb	L110
-L109:
+	jnb	L119
+L118:
 	movl	$1, %eax
-	jmp	L111
-L110:
+	jmp	L120
+L119:
 	movl	$0, %eax
-L111:
+L120:
 	testb	%al, %al
 	movl	-12(%ebp), %eax
 	leave
@@ -1691,9 +1843,9 @@ L111:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2436:
+LFE2439:
 	.section .rdata,"dr"
-LC8:
+LC16:
 	.ascii "basic_string::_M_create\0"
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj,"x"
 	.linkonce discard
@@ -1701,7 +1853,7 @@ LC8:
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERjj:
-LFB2437:
+LFB2440:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1720,20 +1872,20 @@ LFB2437:
 	cmpl	%ebx, %eax
 	setb	%al
 	testb	%al, %al
-	je	L115
-	movl	$LC8, (%esp)
+	je	L124
+	movl	$LC16, (%esp)
 	call	__ZSt20__throw_length_errorPKc
-L115:
+L124:
 	movl	8(%ebp), %eax
 	movl	(%eax), %eax
 	cmpl	%eax, 12(%ebp)
-	jnb	L116
+	jnb	L125
 	movl	8(%ebp), %eax
 	movl	(%eax), %edx
 	movl	12(%ebp), %eax
 	addl	%eax, %eax
 	cmpl	%eax, %edx
-	jnb	L116
+	jnb	L125
 	movl	12(%ebp), %eax
 	leal	(%eax,%eax), %edx
 	movl	8(%ebp), %eax
@@ -1746,13 +1898,13 @@ L115:
 	cmpl	%ebx, %eax
 	setb	%al
 	testb	%al, %al
-	je	L116
+	je	L125
 	movl	-12(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv
 	movl	8(%ebp), %edx
 	movl	%eax, (%edx)
-L116:
+L125:
 	movl	8(%ebp), %eax
 	movl	(%eax), %eax
 	leal	1(%eax), %ebx
@@ -1769,13 +1921,13 @@ L116:
 	.cfi_def_cfa 4, 4
 	ret	$8
 	.cfi_endproc
-LFE2437:
+LFE2440:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj,"x"
 	.linkonce discard
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj:
-LFB2438:
+LFB2441:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1784,14 +1936,14 @@ LFB2438:
 	.cfi_def_cfa_register 5
 	subl	$24, %esp
 	cmpl	$1, 16(%ebp)
-	jne	L119
+	jne	L128
 	movl	12(%ebp), %eax
 	movl	%eax, 4(%esp)
 	movl	8(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__ZNSt11char_traitsIcE6assignERcRKc
-	jmp	L121
-L119:
+	jmp	L130
+L128:
 	movl	16(%ebp), %eax
 	movl	%eax, 8(%esp)
 	movl	12(%ebp), %eax
@@ -1799,21 +1951,21 @@ L119:
 	movl	8(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__ZNSt11char_traitsIcE4copyEPcPKcj
-L121:
+L130:
 	nop
 	leave
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2438:
+LFE2441:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE13_M_local_dataEv:
-LFB2439:
+LFB2442:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1831,13 +1983,13 @@ LFB2439:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2439:
+LFE2442:
 	.section	.text$_ZSt3minIjERKT_S2_S2_,"x"
 	.linkonce discard
 	.globl	__ZSt3minIjERKT_S2_S2_
 	.def	__ZSt3minIjERKT_S2_S2_;	.scl	2;	.type	32;	.endef
 __ZSt3minIjERKT_S2_S2_:
-LFB2463:
+LFB2466:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1849,25 +2001,25 @@ LFB2463:
 	movl	8(%ebp), %eax
 	movl	(%eax), %eax
 	cmpl	%eax, %edx
-	jnb	L125
+	jnb	L134
 	movl	12(%ebp), %eax
-	jmp	L126
-L125:
+	jmp	L135
+L134:
 	movl	8(%ebp), %eax
-L126:
+L135:
 	popl	%ebp
 	.cfi_restore 5
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2463:
+LFE2466:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE8max_sizeEv:
-LFB2462:
+LFB2465:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1901,14 +2053,14 @@ LFB2462:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2462:
+LFE2465:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE16_M_get_allocatorEv:
-LFB2501:
+LFB2504:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1923,14 +2075,14 @@ LFB2501:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2501:
+LFE2504:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS3_:
-LFB2505:
+LFB2508:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1967,14 +2119,14 @@ LFB2505:
 	.cfi_def_cfa 4, 4
 	ret	$4
 	.cfi_endproc
-LFE2505:
+LFE2508:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6appendEPKcj:
-LFB2506:
+LFB2509:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -1984,7 +2136,7 @@ LFB2506:
 	subl	$40, %esp
 	movl	%ecx, -12(%ebp)
 	movl	-12(%ebp), %eax
-	movl	$LC7, 8(%esp)
+	movl	$LC15, 8(%esp)
 	movl	12(%ebp), %edx
 	movl	%edx, 4(%esp)
 	movl	$0, (%esp)
@@ -2004,14 +2156,14 @@ LFB2506:
 	.cfi_def_cfa 4, 4
 	ret	$8
 	.cfi_endproc
-LFE2506:
+LFE2509:
 	.section	.text$_ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEjjPKc,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEjjPKc
 	.def	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEjjPKc;	.scl	2;	.type	32;	.endef
 __ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_check_lengthEjjPKc:
-LFB2507:
+LFB2510:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2035,11 +2187,11 @@ LFB2507:
 	cmpl	12(%ebp), %eax
 	setb	%al
 	testb	%al, %al
-	je	L139
+	je	L148
 	movl	16(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__ZSt20__throw_length_errorPKc
-L139:
+L148:
 	nop
 	movl	-4(%ebp), %ebx
 	leave
@@ -2048,14 +2200,14 @@ L139:
 	.cfi_def_cfa 4, 4
 	ret	$12
 	.cfi_endproc
-LFE2507:
+LFE2510:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_appendEPKcj:
-LFB2508:
+LFB2511:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2078,9 +2230,9 @@ LFB2508:
 	cmpl	-12(%ebp), %eax
 	setnb	%al
 	testb	%al, %al
-	je	L141
+	je	L150
 	cmpl	$0, 12(%ebp)
-	je	L142
+	je	L151
 	movl	-28(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -2095,8 +2247,8 @@ LFB2508:
 	movl	%eax, 4(%esp)
 	movl	%edx, (%esp)
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj
-	jmp	L142
-L141:
+	jmp	L151
+L150:
 	movl	-28(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE4sizeEv
@@ -2111,7 +2263,7 @@ L141:
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEjjPKcj
 	subl	$16, %esp
-L142:
+L151:
 	movl	-28(%ebp), %eax
 	movl	-12(%ebp), %edx
 	movl	%edx, (%esp)
@@ -2126,13 +2278,13 @@ L142:
 	.cfi_def_cfa 4, 4
 	ret	$8
 	.cfi_endproc
-LFE2508:
+LFE2511:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_j,"x"
 	.linkonce discard
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_j
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_j;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE11_S_allocateERS3_j:
-LFB2514:
+LFB2517:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2159,13 +2311,13 @@ LFB2514:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2514:
+LFE2517:
 	.section	.text$_ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_,"x"
 	.linkonce discard
 	.globl	__ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_
 	.def	__ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_;	.scl	2;	.type	32;	.endef
 __ZNSt19__ptr_traits_ptr_toIPKcS0_Lb0EE10pointer_toERS0_:
-LFB2515:
+LFB2518:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2184,14 +2336,14 @@ LFB2515:
 	.cfi_def_cfa 4, 4
 	ret
 	.cfi_endproc
-LFE2515:
+LFE2518:
 	.section	.text$_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEjjPKcj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEjjPKcj
 	.def	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEjjPKcj;	.scl	2;	.type	32;	.endef
 __ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEjjPKcj:
-LFB2568:
+LFB2571:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2226,7 +2378,7 @@ LFB2568:
 	subl	$8, %esp
 	movl	%eax, -16(%ebp)
 	cmpl	$0, 8(%ebp)
-	je	L152
+	je	L161
 	movl	-28(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -2236,11 +2388,11 @@ LFB2568:
 	movl	-16(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj
-L152:
+L161:
 	cmpl	$0, 16(%ebp)
-	je	L153
+	je	L162
 	cmpl	$0, 20(%ebp)
-	je	L153
+	je	L162
 	movl	-16(%ebp), %edx
 	movl	8(%ebp), %eax
 	addl	%eax, %edx
@@ -2250,9 +2402,9 @@ L152:
 	movl	%eax, 4(%esp)
 	movl	%edx, (%esp)
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj
-L153:
+L162:
 	cmpl	$0, -12(%ebp)
-	je	L154
+	je	L163
 	movl	-28(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_M_dataEv
@@ -2270,7 +2422,7 @@ L153:
 	movl	%ecx, 4(%esp)
 	movl	%edx, (%esp)
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7_S_copyEPcPKcj
-L154:
+L163:
 	movl	-28(%ebp), %eax
 	movl	%eax, %ecx
 	call	__ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
@@ -2292,14 +2444,14 @@ L154:
 	.cfi_def_cfa 4, 4
 	ret	$16
 	.cfi_endproc
-LFE2568:
+LFE2571:
 	.section	.text$_ZNSt15__new_allocatorIcE10deallocateEPcj,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt15__new_allocatorIcE10deallocateEPcj
 	.def	__ZNSt15__new_allocatorIcE10deallocateEPcj;	.scl	2;	.type	32;	.endef
 __ZNSt15__new_allocatorIcE10deallocateEPcj:
-LFB2570:
+LFB2573:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2318,14 +2470,14 @@ LFB2570:
 	.cfi_def_cfa 4, 4
 	ret	$8
 	.cfi_endproc
-LFE2570:
+LFE2573:
 	.section	.text$_ZNSt15__new_allocatorIcE8allocateEjPKv,"x"
 	.linkonce discard
 	.align 2
 	.globl	__ZNSt15__new_allocatorIcE8allocateEjPKv
 	.def	__ZNSt15__new_allocatorIcE8allocateEjPKv;	.scl	2;	.type	32;	.endef
 __ZNSt15__new_allocatorIcE8allocateEjPKv:
-LFB2597:
+LFB2600:
 	.cfi_startproc
 	pushl	%ebp
 	.cfi_def_cfa_offset 8
@@ -2343,9 +2495,9 @@ LFB2597:
 	testl	%eax, %eax
 	setne	%al
 	testb	%al, %al
-	je	L159
+	je	L168
 	call	__ZSt17__throw_bad_allocv
-L159:
+L168:
 	movl	8(%ebp), %eax
 	movl	%eax, (%esp)
 	call	__Znwj
@@ -2355,7 +2507,7 @@ L159:
 	.cfi_def_cfa 4, 4
 	ret	$8
 	.cfi_endproc
-LFE2597:
+LFE2600:
 	.data
 	.align 4
 LDFCM0:
@@ -2368,6 +2520,8 @@ LDFCM0:
 	.def	__ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc;	.scl	2;	.type	32;	.endef
 	.def	__ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EE;	.scl	2;	.type	32;	.endef
 	.def	_exit;	.scl	2;	.type	32;	.endef
+	.def	__ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_;	.scl	2;	.type	32;	.endef
+	.def	__ZNSolsEPFRSoS_E;	.scl	2;	.type	32;	.endef
 	.def	_system;	.scl	2;	.type	32;	.endef
 	.def	__Unwind_Resume;	.scl	2;	.type	32;	.endef
 	.def	__ZSt20__throw_length_errorPKc;	.scl	2;	.type	32;	.endef
