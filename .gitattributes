@@ -1,5 +1,10 @@
 *cpp linguist-language=C++
 *.hpp linguist-language=C++
+*.i linguist-language=C++
 *.asm linguist-language=Assembly
 *.o linguist-language=Assembly
-*.i linguist-language=C++
+*.exe linguist-language=Assembly
+*.sh linguist-language=Shell
+*.bat linguist-language=Batchfile
+*.py linguist-language=Python
+
