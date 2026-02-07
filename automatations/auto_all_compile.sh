@@ -42,9 +42,5 @@ x86_64-w64-mingw32-g++ -c main.cpp -o build/windows/64-bit/Objectfile/main.o && 
 x86_64-w64-mingw32-g++ -c components/init.cpp -o build/windows/64-bit/Objectfile/init.o && \
 x86_64-w64-mingw32-g++ -c components/commit.cpp -o build/windows/64-bit/Objectfile/commit.o && \
 x86_64-w64-mingw32-g++ -c components/push.cpp -o build/windows/64-bit/Objectfile/push.o && \
-
 cd automatations && \
 echo "Compilation complete" 
-
-#build/windows/32-bit
-
