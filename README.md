@@ -189,7 +189,3 @@ This project is Open Source (MIT License).
 ## Author 📝 
 
 Lukas
-
-## Repository
-
-[GitHub - cpp-automatisate-git](https://github.com/Lukas-JavaScript/cpp-automatisate-git)
