@@ -106,14 +106,14 @@ windows/64-bit/main.exe
    - Type `y` to execute `git init`
    - Press Enter or type `n` to skip
 
-2. **Push Configuration 📤⚙️**:
+2. **Push Configuration **:
    ```
    Do you want to push it after every modyfire? (y/n) (default: y)
    ```
    - Press Enter or type `y` for automatic push
    - Type `n` to commit locally only
 
-3. **Commit Loop 🔁💾**:
+3. **Commit Loop **:
    ```
    Write q to exit.
    Whats your commit message?:
@@ -175,7 +175,7 @@ Whats your commit message?: q
 - Optional: `git pull` and `git push`
 - Exit option with `q`
 
-## Tips 💡
+## Tips 
 
 -  Use this tool for quick, iterative commits
 - Disable auto-push when working offline
