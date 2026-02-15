@@ -36974,9 +36974,17 @@ namespace std __attribute__ ((__visibility__ ("default")))
 }
 # 3 "components/commit.cpp" 2
 
+# 1 "components/branch_mode.hpp" 1
 
 
-# 5 "components/commit.cpp"
+
+
+
+
+# 6 "components/branch_mode.hpp"
+void branch_mode(bool push);
+# 5 "components/commit.cpp" 2
+
 using namespace std;
 
 extern bool push;
@@ -36987,6 +36995,12 @@ void commit() {
   getline(cin, message);
   if (message == "q") {
     exit(0);
+  } else if (message == "") {
+    cout << "Please enter a commit message" << endl;
+    commit();
+  } else if (message == "b") {
+    branch_mode(push);
+    return;
   }
   system("git add .");
   system(("git commit -m \"" + message + "\"").c_str());

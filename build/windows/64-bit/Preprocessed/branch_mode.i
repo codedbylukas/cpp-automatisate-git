@@ -1,27 +1,23 @@
-# 0 "components/init.cpp"
+# 0 "components/branch_mode.cpp"
 # 0 "<built-in>"
 # 0 "<command-line>"
-# 1 "components/init.cpp"
-# 1 "components/init.hpp" 1
-
-
-
-void init();
-# 2 "components/init.cpp" 2
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 1 3
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 1 3
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
+# 1 "components/branch_mode.cpp"
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iostream" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iostream" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/requires_hosted.h" 1 3
+# 31 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/requires_hosted.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 1 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wvariadic-macros"
 
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 #pragma GCC diagnostic ignored "-Wc++23-extensions"
-# 336 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
+# 336 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
 namespace std
 {
-  typedef unsigned int size_t;
-  typedef int ptrdiff_t;
+  typedef long long unsigned int size_t;
+  typedef long long int ptrdiff_t;
 
 
   typedef decltype(nullptr) nullptr_t;
@@ -38,7 +34,7 @@ namespace std
   }
 #pragma GCC visibility pop
 }
-# 369 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
+# 369 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
 namespace std
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
@@ -47,7 +43,7 @@ namespace __gnu_cxx
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
 }
-# 573 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
+# 573 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
 namespace std
 {
 #pragma GCC visibility push(default)
@@ -71,7 +67,7 @@ namespace std
   }
 #pragma GCC visibility pop
 }
-# 617 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
+# 617 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
 namespace std
 {
 #pragma GCC visibility push(default)
@@ -84,37 +80,132 @@ namespace std
   noexcept;
 #pragma GCC visibility pop
 }
-# 727 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/os_defines.h" 1 3
-# 728 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 2 3
+# 727 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/os_defines.h" 1 3
+# 728 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 2 3
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/cpu_defines.h" 1 3
-# 731 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 2 3
-# 887 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h" 1 3
+# 731 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 2 3
+# 887 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
 namespace __gnu_cxx
 {
   typedef __decltype(0.0bf16) __bfloat16_t;
 }
-# 949 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/pstl/pstl_config.h" 1 3
-# 950 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++config.h" 2 3
+# 949 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/pstl/pstl_config.h" 1 3
+# 950 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++config.h" 2 3
 
 
 
 #pragma GCC diagnostic pop
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 2 3
-# 80 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 3
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpedantic"
+# 32 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/requires_hosted.h" 2 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iostream" 2 3
 
-# 1 "/usr/share/mingw-w64/include/stdlib.h" 1 3
-# 9 "/usr/share/mingw-w64/include/stdlib.h" 3
+
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iosfwd" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iosfwd" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memoryfwd.h" 1 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memoryfwd.h" 3
+namespace std
+{
+
+# 66 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memoryfwd.h" 3
+  template<typename>
+    class allocator;
+
+  template<>
+    class allocator<void>;
+
+
+
+  template<typename, typename>
+    struct uses_allocator;
+
+  template<typename>
+    struct allocator_traits;
+
+
+
+
+
+}
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 2 3
+
+namespace std
+{
+
+
+
+
+
+
+
+
+  template<class _CharT>
+    struct char_traits;
+
+  template<> struct char_traits<char>;
+
+  template<> struct char_traits<wchar_t>;
+
+
+
+
+
+
+  template<> struct char_traits<char16_t>;
+  template<> struct char_traits<char32_t>;
+
+
+namespace __cxx11 {
+
+  template<typename _CharT, typename _Traits = char_traits<_CharT>,
+           typename _Alloc = allocator<_CharT> >
+    class basic_string;
+
+}
+
+
+  typedef basic_string<char> string;
+
+
+  typedef basic_string<wchar_t> wstring;
+# 91 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 3
+  typedef basic_string<char16_t> u16string;
+
+
+  typedef basic_string<char32_t> u32string;
+
+
+
+
+
+}
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iosfwd" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwchar" 1 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwchar" 3
+# 1 "/usr/share/mingw-w64/include/wchar.h" 1 3
+# 9 "/usr/share/mingw-w64/include/wchar.h" 3
 # 1 "/usr/share/mingw-w64/include/corecrt.h" 1 3
 # 10 "/usr/share/mingw-w64/include/corecrt.h" 3
 # 1 "/usr/share/mingw-w64/include/_mingw.h" 1 3
 # 10 "/usr/share/mingw-w64/include/_mingw.h" 3
 # 1 "/usr/share/mingw-w64/include/_mingw_mac.h" 1 3
+# 108 "/usr/share/mingw-w64/include/_mingw_mac.h" 3
+             
+# 117 "/usr/share/mingw-w64/include/_mingw_mac.h" 3
+             
 # 326 "/usr/share/mingw-w64/include/_mingw_mac.h" 3
        
 # 405 "/usr/share/mingw-w64/include/_mingw_mac.h" 3
@@ -212,21 +303,23 @@ const char *__mingw_get_crt_info (void);
 
 
 #pragma pack(push,_CRT_PACKING)
-# 37 "/usr/share/mingw-w64/include/corecrt.h" 3
-typedef unsigned int size_t;
-# 47 "/usr/share/mingw-w64/include/corecrt.h" 3
-typedef int ssize_t;
+# 35 "/usr/share/mingw-w64/include/corecrt.h" 3
+__extension__ typedef unsigned long long size_t;
+# 45 "/usr/share/mingw-w64/include/corecrt.h" 3
+__extension__ typedef long long ssize_t;
+
+
 
 
 
 
 typedef size_t rsize_t;
-# 64 "/usr/share/mingw-w64/include/corecrt.h" 3
-typedef int intptr_t;
-# 77 "/usr/share/mingw-w64/include/corecrt.h" 3
-typedef unsigned int uintptr_t;
-# 90 "/usr/share/mingw-w64/include/corecrt.h" 3
-typedef int ptrdiff_t;
+# 62 "/usr/share/mingw-w64/include/corecrt.h" 3
+__extension__ typedef long long intptr_t;
+# 75 "/usr/share/mingw-w64/include/corecrt.h" 3
+__extension__ typedef unsigned long long uintptr_t;
+# 88 "/usr/share/mingw-w64/include/corecrt.h" 3
+__extension__ typedef long long ptrdiff_t;
 # 106 "/usr/share/mingw-w64/include/corecrt.h" 3
 typedef unsigned short wint_t;
 typedef unsigned short wctype_t;
@@ -246,8 +339,8 @@ typedef long __time32_t;
 
 
 __extension__ typedef long long __time64_t;
-# 136 "/usr/share/mingw-w64/include/corecrt.h" 3
-typedef __time32_t time_t;
+# 138 "/usr/share/mingw-w64/include/corecrt.h" 3
+typedef __time64_t time_t;
 # 430 "/usr/share/mingw-w64/include/corecrt.h" 3
 struct threadlocaleinfostruct;
 struct threadmbcinfostruct;
@@ -304,7 +397,17 @@ typedef struct threadlocaleinfostruct {
 } threadlocinfo;
 # 501 "/usr/share/mingw-w64/include/corecrt.h" 3
 #pragma pack(pop)
-# 10 "/usr/share/mingw-w64/include/stdlib.h" 2 3
+# 10 "/usr/share/mingw-w64/include/wchar.h" 2 3
+# 1 "/usr/share/mingw-w64/include/corecrt_stdio_config.h" 1 3
+# 13 "/usr/share/mingw-w64/include/corecrt_stdio_config.h" 3
+extern "C" {
+
+
+unsigned long long* __attribute__((__cdecl__)) __local_stdio_printf_options(void);
+unsigned long long* __attribute__((__cdecl__)) __local_stdio_scanf_options(void);
+# 39 "/usr/share/mingw-w64/include/corecrt_stdio_config.h" 3
+}
+# 11 "/usr/share/mingw-w64/include/wchar.h" 2 3
 # 1 "/usr/share/mingw-w64/include/corecrt_wstdlib.h" 1 3
 # 12 "/usr/share/mingw-w64/include/corecrt_wstdlib.h" 3
 extern "C" {
@@ -347,986 +450,14 @@ extern "C" {
 
 
 }
-# 11 "/usr/share/mingw-w64/include/stdlib.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/limits.h" 1 3 4
-# 34 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/limits.h" 3 4
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/syslimits.h" 1 3 4
-
-
-
-
-
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpedantic"
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/limits.h" 1 3 4
-# 210 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/limits.h" 3 4
-# 1 "/usr/share/mingw-w64/include/limits.h" 1 3 4
-
-
-
-
-
-# 1 "/usr/share/mingw-w64/include/crtdefs.h" 1 3 4
-# 7 "/usr/share/mingw-w64/include/limits.h" 2 3 4
-# 211 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/limits.h" 2 3 4
-# 10 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/syslimits.h" 2 3 4
-#pragma GCC diagnostic pop
-# 35 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/limits.h" 2 3 4
-# 12 "/usr/share/mingw-w64/include/stdlib.h" 2 3
-# 26 "/usr/share/mingw-w64/include/stdlib.h" 3
-#pragma pack(push,_CRT_PACKING)
-
-
-extern "C" {
-# 50 "/usr/share/mingw-w64/include/stdlib.h" 3
-  typedef int (__attribute__((__cdecl__)) *_onexit_t)(void);
-# 60 "/usr/share/mingw-w64/include/stdlib.h" 3
-  typedef struct _div_t {
-    int quot;
-    int rem;
-  } div_t;
-
-  typedef struct _ldiv_t {
-    long quot;
-    long rem;
-  } ldiv_t;
-
-
-
-
-
-#pragma pack(4)
-  typedef struct {
-    unsigned char ld[10];
-  } _LDOUBLE;
-#pragma pack()
-
-
-
-  typedef struct {
-    double x;
-  } _CRT_DOUBLE;
-
-  typedef struct {
-    float f;
-  } _CRT_FLOAT;
-
-       
-
-
-  typedef struct {
-    long double x;
-  } _LONGDOUBLE;
-
-       
-
-#pragma pack(4)
-  typedef struct {
-    unsigned char ld12[12];
-  } _LDBL12;
-#pragma pack()
-# 113 "/usr/share/mingw-w64/include/stdlib.h" 3
-__attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) ___mb_cur_max_func(void);
-# 135 "/usr/share/mingw-w64/include/stdlib.h" 3
-  typedef void (__attribute__((__cdecl__)) *_purecall_handler)(void);
-
-  __attribute__ ((__dllimport__)) _purecall_handler __attribute__((__cdecl__)) _set_purecall_handler(_purecall_handler _Handler);
-  __attribute__ ((__dllimport__)) _purecall_handler __attribute__((__cdecl__)) _get_purecall_handler(void);
-
-  typedef void (__attribute__((__cdecl__)) *_invalid_parameter_handler)(const wchar_t *,const wchar_t *,const wchar_t *,unsigned int,uintptr_t);
-  __attribute__ ((__dllimport__)) _invalid_parameter_handler __attribute__((__cdecl__)) _set_invalid_parameter_handler(_invalid_parameter_handler _Handler);
-  __attribute__ ((__dllimport__)) _invalid_parameter_handler __attribute__((__cdecl__)) _get_invalid_parameter_handler(void);
-
-
-
-  __attribute__ ((__dllimport__)) extern int *__attribute__((__cdecl__)) _errno(void);
-
-  errno_t __attribute__((__cdecl__)) _set_errno(int _Value);
-  errno_t __attribute__((__cdecl__)) _get_errno(int *_Value);
-
-  __attribute__ ((__dllimport__)) unsigned long *__attribute__((__cdecl__)) __doserrno(void);
-
-  errno_t __attribute__((__cdecl__)) _set_doserrno(unsigned long _Value);
-  errno_t __attribute__((__cdecl__)) _get_doserrno(unsigned long *_Value);
-  __attribute__ ((__dllimport__)) char **__attribute__((__cdecl__)) __sys_errlist(void);
-  __attribute__ ((__dllimport__)) int *__attribute__((__cdecl__)) __sys_nerr(void);
-
-
-
-  __attribute__ ((__dllimport__)) char ***__attribute__((__cdecl__)) __p___argv(void);
-  __attribute__ ((__dllimport__)) int *__attribute__((__cdecl__)) __p__fmode(void);
-  __attribute__ ((__dllimport__)) int *__attribute__((__cdecl__)) __p___argc(void);
-  __attribute__ ((__dllimport__)) wchar_t ***__attribute__((__cdecl__)) __p___wargv(void);
-  __attribute__ ((__dllimport__)) char **__attribute__((__cdecl__)) __p__pgmptr(void);
-  __attribute__ ((__dllimport__)) wchar_t **__attribute__((__cdecl__)) __p__wpgmptr(void);
-
-  errno_t __attribute__((__cdecl__)) _get_pgmptr(char **_Value);
-  errno_t __attribute__((__cdecl__)) _get_wpgmptr(wchar_t **_Value);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _set_fmode(int _Mode);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_fmode(int *_PMode);
-# 221 "/usr/share/mingw-w64/include/stdlib.h" 3
-  __attribute__ ((__dllimport__)) char ***__attribute__((__cdecl__)) __p__environ(void);
-  __attribute__ ((__dllimport__)) wchar_t ***__attribute__((__cdecl__)) __p__wenviron(void);
-# 234 "/usr/share/mingw-w64/include/stdlib.h" 3
-  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__osplatform(void);
-  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__osver(void);
-  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__winver(void);
-  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__winmajor(void);
-  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__winminor(void);
-# 256 "/usr/share/mingw-w64/include/stdlib.h" 3
-  errno_t __attribute__((__cdecl__)) _get_osplatform(unsigned int *_Value);
-  errno_t __attribute__((__cdecl__)) _get_osver(unsigned int *_Value);
-  errno_t __attribute__((__cdecl__)) _get_winver(unsigned int *_Value);
-  errno_t __attribute__((__cdecl__)) _get_winmajor(unsigned int *_Value);
-  errno_t __attribute__((__cdecl__)) _get_winminor(unsigned int *_Value);
-
-
-
-
-  extern "C++" {
-    template <typename _CountofType,size_t _SizeOfArray> char (*__countof_helper( _CountofType (&_Array)[_SizeOfArray]))[_SizeOfArray];
-
-  }
-
-
-
-
-
-  void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) exit(int _Code) __attribute__ ((__noreturn__));
-  void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _exit(int _Code) __attribute__ ((__noreturn__));
-
-
-
-
-
-
-  void __attribute__((__cdecl__)) _Exit(int) __attribute__ ((__noreturn__));
-
-
-
-
-
-
-       
-
-  void __attribute__((__cdecl__)) __attribute__ ((__noreturn__)) abort(void);
-       
-
-
-
-  __attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) _set_abort_behavior(unsigned int _Flags,unsigned int _Mask);
-
-
-
-  int __attribute__((__cdecl__)) abs(int _X);
-  long __attribute__((__cdecl__)) labs(long _X);
-
-
-  __extension__ long long __attribute__((__cdecl__)) _abs64(long long);
-
-  extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) long long __attribute__((__cdecl__)) _abs64(long long x) {
-    return __builtin_llabs(x);
-  }
-
-
-  int __attribute__((__cdecl__)) atexit(void (__attribute__((__cdecl__)) *)(void));
-
-
-
-
-
-  double __attribute__((__cdecl__)) atof(const char *_String);
-  double __attribute__((__cdecl__)) _atof_l(const char *_String,_locale_t _Locale);
-
-  int __attribute__((__cdecl__)) atoi(const char *_Str);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoi_l(const char *_Str,_locale_t _Locale);
-  long __attribute__((__cdecl__)) atol(const char *_Str);
-  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _atol_l(const char *_Str,_locale_t _Locale);
-
-
-  void *__attribute__((__cdecl__)) bsearch(const void *_Key,const void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(const void *,const void *));
-  void __attribute__((__cdecl__)) qsort(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(const void *,const void *));
-
-  unsigned short __attribute__((__cdecl__)) _byteswap_ushort(unsigned short _Short);
-  unsigned long __attribute__((__cdecl__)) _byteswap_ulong (unsigned long _Long);
-  __extension__ unsigned long long __attribute__((__cdecl__)) _byteswap_uint64(unsigned long long _Int64);
-  div_t __attribute__((__cdecl__)) div(int _Numerator,int _Denominator);
-  char *__attribute__((__cdecl__)) getenv(const char *_VarName) ;
-  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _itoa(int _Value,char *_Dest,int _Radix);
-  __extension__ __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _i64toa(long long _Val,char *_DstBuf,int _Radix) ;
-  __extension__ __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ui64toa(unsigned long long _Val,char *_DstBuf,int _Radix) ;
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _atoi64(const char *_String);
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _atoi64_l(const char *_String,_locale_t _Locale);
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _strtoi64(const char *_String,char **_EndPtr,int _Radix);
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _strtoi64_l(const char *_String,char **_EndPtr,int _Radix,_locale_t _Locale);
-  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _strtoui64(const char *_String,char **_EndPtr,int _Radix);
-  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _strtoui64_l(const char *_String,char **_EndPtr,int _Radix,_locale_t _Locale);
-  ldiv_t __attribute__((__cdecl__)) ldiv(long _Numerator,long _Denominator);
-  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ltoa(long _Value,char *_Dest,int _Radix) ;
-  int __attribute__((__cdecl__)) mblen(const char *_Ch,size_t _MaxCount);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _mblen_l(const char *_Ch,size_t _MaxCount,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrlen(const char *_Str);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrlen_l(const char *_Str,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrnlen(const char *_Str,size_t _MaxCount);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrnlen_l(const char *_Str,size_t _MaxCount,_locale_t _Locale);
-  int __attribute__((__cdecl__)) mbtowc(wchar_t * __restrict__ _DstCh,const char * __restrict__ _SrcCh,size_t _SrcSizeInBytes);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _mbtowc_l(wchar_t * __restrict__ _DstCh,const char * __restrict__ _SrcCh,size_t _SrcSizeInBytes,_locale_t _Locale);
-  size_t __attribute__((__cdecl__)) mbstowcs(wchar_t * __restrict__ _Dest,const char * __restrict__ _Source,size_t _MaxCount);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstowcs_l(wchar_t * __restrict__ _Dest,const char * __restrict__ _Source,size_t _MaxCount,_locale_t _Locale);
-  int __attribute__((__cdecl__)) mkstemp(char *template_name);
-  int __attribute__((__cdecl__)) rand(void);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _set_error_mode(int _Mode);
-  void __attribute__((__cdecl__)) srand(unsigned int _Seed);
-# 369 "/usr/share/mingw-w64/include/stdlib.h" 3
-inline __attribute__((__cdecl__))
-double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtod(const char * __restrict__ _Str,char ** __restrict__ _EndPtr)
-{
-  double __attribute__((__cdecl__)) __mingw_strtod (const char * __restrict__, char ** __restrict__);
-  return __mingw_strtod( _Str, _EndPtr);
-}
-
-inline __attribute__((__cdecl__))
-float __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtof(const char * __restrict__ _Str,char ** __restrict__ _EndPtr)
-{
-  float __attribute__((__cdecl__)) __mingw_strtof (const char * __restrict__, char ** __restrict__);
-  return __mingw_strtof( _Str, _EndPtr);
-}
-
-
-
-
-
-
-  long double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtold(const char * __restrict__ , char ** __restrict__ );
-
-
-  extern double __attribute__((__cdecl__)) __attribute__ ((__nothrow__))
-  __strtod (const char * __restrict__ , char ** __restrict__);
-
-
-
-
-
-
-
-  float __attribute__((__cdecl__)) __mingw_strtof (const char * __restrict__, char ** __restrict__);
-  double __attribute__((__cdecl__)) __mingw_strtod (const char * __restrict__, char ** __restrict__);
-  long double __attribute__((__cdecl__)) __mingw_strtold(const char * __restrict__, char ** __restrict__);
-
-  __attribute__ ((__dllimport__)) float __attribute__((__cdecl__)) _strtof_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _strtod_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,_locale_t _Locale);
-  long __attribute__((__cdecl__)) strtol(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix);
-  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _strtol_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
-  unsigned long __attribute__((__cdecl__)) strtoul(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix);
-  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _strtoul_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
-
-
-  int __attribute__((__cdecl__)) system(const char *_Command);
-
-  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ultoa(unsigned long _Value,char *_Dest,int _Radix) ;
-  int __attribute__((__cdecl__)) wctomb(char *_MbCh,wchar_t _WCh) ;
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wctomb_l(char *_MbCh,wchar_t _WCh,_locale_t _Locale) ;
-  size_t __attribute__((__cdecl__)) wcstombs(char * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _MaxCount) ;
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcstombs_l(char * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _MaxCount,_locale_t _Locale) ;
-# 452 "/usr/share/mingw-w64/include/stdlib.h" 3
-  void *__attribute__((__cdecl__)) calloc(size_t _NumOfElements,size_t _SizeOfElements);
-  void __attribute__((__cdecl__)) free(void *_Memory);
-  void *__attribute__((__cdecl__)) malloc(size_t _Size);
-  void *__attribute__((__cdecl__)) realloc(void *_Memory,size_t _NewSize);
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _aligned_free(void *_Memory);
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_malloc(size_t _Size,size_t _Alignment);
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_malloc(size_t _Size,size_t _Alignment,size_t _Offset);
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_realloc(void *_Memory,size_t _Size,size_t _Alignment);
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_realloc(void *_Memory,size_t _Size,size_t _Alignment,size_t _Offset);
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _recalloc(void *_Memory,size_t _Count,size_t _Size);
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_recalloc(void *_Memory,size_t _Count,size_t _Size,size_t _Alignment);
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_recalloc(void *_Memory,size_t _Count,size_t _Size,size_t _Alignment,size_t _Offset);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _aligned_msize(void *_Memory,size_t _Alignment,size_t _Offset);
-# 487 "/usr/share/mingw-w64/include/stdlib.h" 3
-  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _itow(int _Value,wchar_t *_Dest,int _Radix) ;
-  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ltow(long _Value,wchar_t *_Dest,int _Radix) ;
-  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ultow(unsigned long _Value,wchar_t *_Dest,int _Radix) ;
-
-  double __attribute__((__cdecl__)) __mingw_wcstod(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr);
-  float __attribute__((__cdecl__)) __mingw_wcstof(const wchar_t * __restrict__ nptr, wchar_t ** __restrict__ endptr);
-  long double __attribute__((__cdecl__)) __mingw_wcstold(const wchar_t * __restrict__, wchar_t ** __restrict__);
-
-
-  inline __attribute__((__cdecl__))
-  double __attribute__((__cdecl__)) wcstod(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr){
-    return __mingw_wcstod(_Str,_EndPtr);
-  }
-  inline __attribute__((__cdecl__))
-  float __attribute__((__cdecl__)) wcstof(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr){
-    return __mingw_wcstof(_Str,_EndPtr);
-  }
-
-
-
-
-
-
-  long double __attribute__((__cdecl__)) wcstold(const wchar_t * __restrict__, wchar_t ** __restrict__);
-
-  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wcstod_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) float __attribute__((__cdecl__)) _wcstof_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,_locale_t _Locale);
-  long __attribute__((__cdecl__)) wcstol(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix);
-  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wcstol_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
-  unsigned long __attribute__((__cdecl__)) wcstoul(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix);
-  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _wcstoul_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wgetenv(const wchar_t *_VarName) ;
-
-
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wsystem(const wchar_t *_Command);
-
-  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wtof(const wchar_t *_Str);
-  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wtof_l(const wchar_t *_Str,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wtoi(const wchar_t *_Str);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wtoi_l(const wchar_t *_Str,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtol(const wchar_t *_Str);
-  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtol_l(const wchar_t *_Str,_locale_t _Locale);
-
-  __extension__ __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _i64tow(long long _Val,wchar_t *_DstBuf,int _Radix) ;
-  __extension__ __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ui64tow(unsigned long long _Val,wchar_t *_DstBuf,int _Radix) ;
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wtoi64(const wchar_t *_Str);
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wtoi64_l(const wchar_t *_Str,_locale_t _Locale);
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wcstoi64(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix);
-  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wcstoi64_l(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix,_locale_t _Locale);
-  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _wcstoui64(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix);
-  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _wcstoui64_l(const wchar_t *_Str ,wchar_t **_EndPtr,int _Radix,_locale_t _Locale);
-
-
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _putenv(const char *_EnvString);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wputenv(const wchar_t *_EnvString);
-# 550 "/usr/share/mingw-w64/include/stdlib.h" 3
-  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _fullpath(char *_FullPath,const char *_Path,size_t _SizeInBytes);
-
-
-
-
-  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ecvt(double _Val,int _NumOfDigits,int *_PtDec,int *_PtSign) ;
-  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _fcvt(double _Val,int _NumOfDec,int *_PtDec,int *_PtSign) ;
-  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _gcvt(double _Val,int _NumOfDigits,char *_DstBuf) ;
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atodbl(_CRT_DOUBLE *_Result,char *_Str);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoldbl(_LDOUBLE *_Result,char *_Str);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoflt(_CRT_FLOAT *_Result,char *_Str);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atodbl_l(_CRT_DOUBLE *_Result,char *_Str,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoldbl_l(_LDOUBLE *_Result,char *_Str,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoflt_l(_CRT_FLOAT *_Result,char *_Str,_locale_t _Locale);
-# 579 "/usr/share/mingw-w64/include/stdlib.h" 3
-unsigned long __attribute__((__cdecl__)) _lrotl(unsigned long,int);
-unsigned long __attribute__((__cdecl__)) _lrotr(unsigned long,int);
-
-
-
-
-
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _makepath(char *_Path,const char *_Drive,const char *_Dir,const char *_Filename,const char *_Ext);
-  _onexit_t __attribute__((__cdecl__)) _onexit(_onexit_t _Func);
-
-
-
-  void __attribute__((__cdecl__)) perror(const char *_ErrMsg);
-
-       
-       
-
-
-  __extension__ unsigned long long __attribute__((__cdecl__)) _rotl64(unsigned long long _Val,int _Shift);
-  __extension__ unsigned long long __attribute__((__cdecl__)) _rotr64(unsigned long long Value,int Shift);
-       
-       
-       
-       
-
-
-  unsigned int __attribute__((__cdecl__)) _rotr(unsigned int _Val,int _Shift);
-  unsigned int __attribute__((__cdecl__)) _rotl(unsigned int _Val,int _Shift);
-       
-       
-  __extension__ unsigned long long __attribute__((__cdecl__)) _rotr64(unsigned long long _Val,int _Shift);
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _searchenv(const char *_Filename,const char *_EnvVar,char *_ResultPath) ;
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _splitpath(const char *_FullPath,char *_Drive,char *_Dir,char *_Filename,char *_Ext) ;
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _swab(char *_Buf1,char *_Buf2,int _SizeInBytes);
-
-
-
-
-
-
-
-  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wfullpath(wchar_t *_FullPath,const wchar_t *_Path,size_t _SizeInWords);
-
-
-
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wmakepath(wchar_t *_ResultPath,const wchar_t *_Drive,const wchar_t *_Dir,const wchar_t *_Filename,const wchar_t *_Ext);
-
-
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wperror(const wchar_t *_ErrMsg);
-
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wsearchenv(const wchar_t *_Filename,const wchar_t *_EnvVar,wchar_t *_ResultPath) ;
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wsplitpath(const wchar_t *_FullPath,wchar_t *_Drive,wchar_t *_Dir,wchar_t *_Filename,wchar_t *_Ext) ;
-
-
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _beep(unsigned _Frequency,unsigned _Duration) __attribute__ ((__deprecated__));
-
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _seterrormode(int _Mode) __attribute__ ((__deprecated__));
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _sleep(unsigned long _Duration) __attribute__ ((__deprecated__));
-# 657 "/usr/share/mingw-w64/include/stdlib.h" 3
-  char *__attribute__((__cdecl__)) ecvt(double _Val,int _NumOfDigits,int *_PtDec,int *_PtSign) ;
-  char *__attribute__((__cdecl__)) fcvt(double _Val,int _NumOfDec,int *_PtDec,int *_PtSign) ;
-  char *__attribute__((__cdecl__)) gcvt(double _Val,int _NumOfDigits,char *_DstBuf) ;
-  char *__attribute__((__cdecl__)) itoa(int _Val,char *_DstBuf,int _Radix) ;
-  char *__attribute__((__cdecl__)) ltoa(long _Val,char *_DstBuf,int _Radix) ;
-  int __attribute__((__cdecl__)) putenv(const char *_EnvString) ;
-
-
-
-  void __attribute__((__cdecl__)) swab(char *_Buf1,char *_Buf2,int _SizeInBytes) ;
-
-
-  char *__attribute__((__cdecl__)) ultoa(unsigned long _Val,char *_Dstbuf,int _Radix) ;
-  _onexit_t __attribute__((__cdecl__)) onexit(_onexit_t _Func);
-
-
-
-
-
-  typedef struct { __extension__ long long quot, rem; } lldiv_t;
-
-  __extension__ lldiv_t __attribute__((__cdecl__)) lldiv(long long, long long);
-
-  __extension__ long long __attribute__((__cdecl__)) llabs(long long);
-
-
-
-
-  __extension__ long long __attribute__((__cdecl__)) strtoll(const char * __restrict__, char ** __restrict, int);
-  __extension__ unsigned long long __attribute__((__cdecl__)) strtoull(const char * __restrict__, char ** __restrict__, int);
-
-
-  __extension__ long long __attribute__((__cdecl__)) atoll (const char *);
-
-
-  __extension__ long long __attribute__((__cdecl__)) wtoll (const wchar_t *);
-  __extension__ char *__attribute__((__cdecl__)) lltoa (long long, char *, int);
-  __extension__ char *__attribute__((__cdecl__)) ulltoa (unsigned long long , char *, int);
-  __extension__ wchar_t *__attribute__((__cdecl__)) lltow (long long, wchar_t *, int);
-  __extension__ wchar_t *__attribute__((__cdecl__)) ulltow (unsigned long long, wchar_t *, int);
-# 711 "/usr/share/mingw-w64/include/stdlib.h" 3
-}
-
-
-#pragma pack(pop)
-
-# 1 "/usr/share/mingw-w64/include/sec_api/stdlib_s.h" 1 3
-# 9 "/usr/share/mingw-w64/include/sec_api/stdlib_s.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdlib.h" 1 3
-# 30 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdlib.h" 3
-# 1 "/usr/share/mingw-w64/include/stdlib.h" 1 3
-# 31 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdlib.h" 2 3
-# 10 "/usr/share/mingw-w64/include/sec_api/stdlib_s.h" 2 3
-
-
-extern "C" {
-
-
-
-
-
-
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _dupenv_s(char **_PBuffer,size_t *_PBufferSizeInBytes,const char *_VarName);
-
-
-
-
-  __attribute__ ((__dllimport__)) void * __attribute__((__cdecl__)) bsearch_s(const void *_Key,const void *_Base,rsize_t _NumOfElements,rsize_t _SizeOfElements,int (__attribute__((__cdecl__)) * _PtFuncCompare)(void *, const void *, const void *), void *_Context);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) getenv_s(size_t *_ReturnSize,char *_DstBuf,rsize_t _DstSize,const char *_VarName);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) getenv_s(size_t * _ReturnSize, char (&_Dest)[__size], const char * _VarName) { return getenv_s(_ReturnSize, _Dest, __size, _VarName); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _itoa_s(int _Value,char *_DstBuf,size_t _Size,int _Radix);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _itoa_s(int _Value, char (&_Dest)[__size], int _Radix) { return _itoa_s(_Value, _Dest, __size, _Radix); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _i64toa_s(long long _Val,char *_DstBuf,size_t _Size,int _Radix);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ui64toa_s(unsigned long long _Val,char *_DstBuf,size_t _Size,int _Radix);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ltoa_s(long _Val,char *_DstBuf,size_t _Size,int _Radix);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _ltoa_s(long _Value, char (&_Dest)[__size], int _Radix) { return _ltoa_s(_Value, _Dest, __size, _Radix); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) mbstowcs_s(size_t *_PtNumOfCharConverted,wchar_t *_DstBuf,size_t _SizeInWords,const char *_SrcBuf,size_t _MaxCount);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) mbstowcs_s(size_t * _PtNumOfCharConverted, wchar_t (&_Dest)[__size], const char * _Source, size_t _MaxCount) { return mbstowcs_s(_PtNumOfCharConverted, _Dest, __size, _Source, _MaxCount); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _mbstowcs_s_l(size_t *_PtNumOfCharConverted,wchar_t *_DstBuf,size_t _SizeInWords,const char *_SrcBuf,size_t _MaxCount,_locale_t _Locale);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _mbstowcs_s_l(size_t * _PtNumOfCharConverted, wchar_t (&_Dest)[__size], const char * _Source, size_t _MaxCount, _locale_t _Locale) { return _mbstowcs_s_l(_PtNumOfCharConverted, _Dest, __size, _Source, _MaxCount, _Locale); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ultoa_s(unsigned long _Val,char *_DstBuf,size_t _Size,int _Radix);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _ultoa_s(unsigned long _Value, char (&_Dest)[__size], int _Radix) { return _ultoa_s(_Value, _Dest, __size, _Radix); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wctomb_s(int *_SizeConverted,char *_MbCh,rsize_t _SizeInBytes,wchar_t _WCh);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wctomb_s_l(int *_SizeConverted,char *_MbCh,size_t _SizeInBytes,wchar_t _WCh,_locale_t _Locale);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wcstombs_s(size_t *_PtNumOfCharConverted,char *_Dst,size_t _DstSizeInBytes,const wchar_t *_Src,size_t _MaxCountInBytes);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) wcstombs_s(size_t* _PtNumOfCharConverted, char (&_Dst)[__size], const wchar_t* _Src, size_t _MaxCountInBytes) { return wcstombs_s(_PtNumOfCharConverted, _Dst, __size, _Src, _MaxCountInBytes); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcstombs_s_l(size_t *_PtNumOfCharConverted,char *_Dst,size_t _DstSizeInBytes,const wchar_t *_Src,size_t _MaxCountInBytes,_locale_t _Locale);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _wcstombs_s_l(size_t* _PtNumOfCharConverted, char (&_Dst)[__size], const wchar_t* _Src, size_t _MaxCountInBytes, _locale_t _Locale) { return _wcstombs_s_l(_PtNumOfCharConverted, _Dst, __size, _Src, _MaxCountInBytes, _Locale); } }
-
-
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ecvt_s(char *_DstBuf,size_t _Size,double _Val,int _NumOfDights,int *_PtDec,int *_PtSign);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _fcvt_s(char *_DstBuf,size_t _Size,double _Val,int _NumOfDec,int *_PtDec,int *_PtSign);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _gcvt_s(char *_DstBuf,size_t _Size,double _Val,int _NumOfDigits);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _makepath_s(char *_PathResult,size_t _Size,const char *_Drive,const char *_Dir,const char *_Filename,const char *_Ext);
-  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _makepath_s(char (&_PathResult)[__size], const char* _Drive, const char* _Dir, const char* _Filename, const char* _Ext) { return _makepath_s(_PathResult,__size,_Drive,_Dir,_Filename,_Ext); } }
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _putenv_s(const char *_Name,const char *_Value);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _searchenv_s(const char *_Filename,const char *_EnvVar,char *_ResultPath,size_t _SizeInBytes);
-
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _splitpath_s(const char *_FullPath,char *_Drive,size_t _DriveSize,char *_Dir,size_t _DirSize,char *_Filename,size_t _FilenameSize,char *_Ext,size_t _ExtSize);
-  extern "C++" { template <size_t __drive_size, size_t __dir_size, size_t __name_size, size_t __ext_size> inline errno_t __attribute__((__cdecl__)) _splitpath_s(const char *_Dest, char (&__drive)[__drive_size], char (&__dir)[__dir_size], char (&__name)[__name_size], char (&__ext)[__ext_size]) { return _splitpath_s(_Dest, __drive, __drive_size, __dir, __dir_size, __name, __name_size, __ext, __ext_size); } }
-
-
-
-  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) qsort_s(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(void *,const void *,const void *),void *_Context);
-
-
-
-
-
-}
-# 717 "/usr/share/mingw-w64/include/stdlib.h" 2 3
-# 1 "/usr/share/mingw-w64/include/malloc.h" 1 3
-# 11 "/usr/share/mingw-w64/include/malloc.h" 3
-#pragma pack(push,_CRT_PACKING)
-
-
-extern "C" {
-# 52 "/usr/share/mingw-w64/include/malloc.h" 3
-  typedef struct _heapinfo {
-    int *_pentry;
-    size_t _size;
-    int _useflag;
-  } _HEAPINFO;
-
-
-
-  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__amblksiz(void);
-# 129 "/usr/share/mingw-w64/include/malloc.h" 3
-void * __mingw_aligned_malloc (size_t _Size, size_t _Alignment);
-void __mingw_aligned_free (void *_Memory);
-void * __mingw_aligned_offset_realloc (void *_Memory, size_t _Size, size_t _Alignment, size_t _Offset);
-void * __mingw_aligned_offset_malloc (size_t, size_t, size_t);
-void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
-size_t __mingw_aligned_msize (void *memblock, size_t alignment, size_t offset);
-
-
-
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/mm_malloc.h" 1 3 4
-# 27 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/mm_malloc.h" 3 4
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdlib.h" 1 3 4
-# 28 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/mm_malloc.h" 2 3 4
-
-# 1 "/usr/share/mingw-w64/include/errno.h" 1 3 4
-# 12 "/usr/share/mingw-w64/include/errno.h" 3 4
-extern "C" {
-# 239 "/usr/share/mingw-w64/include/errno.h" 3 4
-}
-# 30 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/mm_malloc.h" 2 3 4
-
-
-static __inline__ void *
-_mm_malloc (size_t __size, size_t __align)
-{
-  void * __malloc_ptr;
-  void * __aligned_ptr;
-
-
-  if (__align & (__align - 1))
-    {
-
-      (*_errno()) = 22;
-
-      return ((void *) 0);
-    }
-
-  if (__size == 0)
-    return ((void *) 0);
-
-
-
-
-
-    if (__align < 2 * sizeof (void *))
-      __align = 2 * sizeof (void *);
-
-  __malloc_ptr = malloc (__size + __align);
-  if (!__malloc_ptr)
-    return ((void *) 0);
-
-
-  __aligned_ptr = (void *) (((size_t) __malloc_ptr + __align)
-       & ~((size_t) (__align) - 1));
-
-
-  ((void **) __aligned_ptr)[-1] = __malloc_ptr;
-
-  return __aligned_ptr;
-}
-
-static __inline__ void
-_mm_free (void *__aligned_ptr)
-{
-  if (__aligned_ptr)
-    free (((void **) __aligned_ptr)[-1]);
-}
-# 139 "/usr/share/mingw-w64/include/malloc.h" 2 3
-
-
-
-
-
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _resetstkoflw (void);
-
-  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _set_malloc_crt_max_wait(unsigned long _NewValue);
-
-
-
-
-
-
-
-  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _expand(void *_Memory,size_t _NewSize);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _msize(void *_Memory);
-# 167 "/usr/share/mingw-w64/include/malloc.h" 3
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _get_sbh_threshold(void);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _set_sbh_threshold(size_t _NewValue);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _set_amblksiz(size_t _Value);
-  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_amblksiz(size_t *_Value);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapadd(void *_Memory,size_t _Size);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapchk(void);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapmin(void);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapset(unsigned int _Fill);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapwalk(_HEAPINFO *_EntryInfo);
-  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _heapused(size_t *_Used,size_t *_Commit);
-  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _get_heap_handle(void);
-# 190 "/usr/share/mingw-w64/include/malloc.h" 3
-  static __inline void *_MarkAllocaS(void *_Ptr,unsigned int _Marker) {
-    if(_Ptr) {
-      *((unsigned int*)_Ptr) = _Marker;
-      _Ptr = (char*)_Ptr + 8;
-    }
-    return _Ptr;
-  }
-# 218 "/usr/share/mingw-w64/include/malloc.h" 3
-  static __inline void __attribute__((__cdecl__)) _freea(void *_Memory) {
-    unsigned int _Marker;
-    if(_Memory) {
-      _Memory = (char*)_Memory - 8;
-      _Marker = *(unsigned int *)_Memory;
-      if(_Marker==0xDDDD) {
- free(_Memory);
-      }
-
-
-
-
-
-    }
-  }
-# 261 "/usr/share/mingw-w64/include/malloc.h" 3
-}
-
-
-#pragma pack(pop)
-# 718 "/usr/share/mingw-w64/include/stdlib.h" 2 3
-# 84 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 2 3
-
-#pragma GCC diagnostic pop
-
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpedantic"
-#pragma GCC diagnostic ignored "-Wlong-long"
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
-extern "C++"
-{
-namespace std
-{
-
-
-  using ::abs;
-
-
-  inline long
-  abs(long __i) { return __builtin_labs(__i); }
-
-
-
-  inline long long
-  abs(long long __x) { return __builtin_llabs (__x); }
-# 76 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
-  inline constexpr double
-  abs(double __x)
-  { return __builtin_fabs(__x); }
-
-  inline constexpr float
-  abs(float __x)
-  { return __builtin_fabsf(__x); }
-
-  inline constexpr long double
-  abs(long double __x)
-  { return __builtin_fabsl(__x); }
-# 141 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
-  __extension__ inline constexpr
-  __float128
-  abs(__float128 __x)
-  {
-
-
-
-
-
-
-    return __builtin_signbit(__x) ? -__x : __x;
-
-  }
-
-
-
-}
-}
-
-#pragma GCC diagnostic pop
-# 88 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 2 3
-# 131 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 3
-extern "C++"
-{
-namespace std
-{
-
-
-  using ::div_t;
-  using ::ldiv_t;
-
-  using ::abort;
-
-
-
-  using ::atexit;
-
-
-
-
-
-  using ::atof;
-  using ::atoi;
-  using ::atol;
-  using ::bsearch;
-  using ::calloc;
-  using ::div;
-  using ::exit;
-  using ::free;
-  using ::getenv;
-  using ::labs;
-  using ::ldiv;
-  using ::malloc;
-
-  using ::mblen;
-  using ::mbstowcs;
-  using ::mbtowc;
-
-  using ::qsort;
-
-
-
-
-
-  using ::rand;
-  using ::realloc;
-  using ::srand;
-  using ::strtod;
-  using ::strtol;
-  using ::strtoul;
-  using ::system;
-
-  using ::wcstombs;
-  using ::wctomb;
-
-
-
-  inline ldiv_t
-  div(long __i, long __j) noexcept { return ldiv(__i, __j); }
-
-
-
-
-}
-# 205 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 3
-namespace __gnu_cxx
-{
-
-
-
-  using ::lldiv_t;
-
-
-
-
-
-  using ::_Exit;
-
-
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wlong-long"
-  using ::llabs;
-
-  inline lldiv_t
-  div(long long __n, long long __d)
-  { lldiv_t __q; __q.quot = __n / __d; __q.rem = __n % __d; return __q; }
-
-  using ::lldiv;
-#pragma GCC diagnostic pop
-# 240 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 3
-  using ::atoll;
-  using ::strtoll;
-  using ::strtoull;
-
-  using ::strtof;
-  using ::strtold;
-
-
-}
-
-namespace std
-{
-
-  using ::__gnu_cxx::lldiv_t;
-
-  using ::__gnu_cxx::_Exit;
-
-  using ::__gnu_cxx::llabs;
-  using ::__gnu_cxx::div;
-  using ::__gnu_cxx::lldiv;
-
-  using ::__gnu_cxx::atoll;
-  using ::__gnu_cxx::strtof;
-  using ::__gnu_cxx::strtoll;
-  using ::__gnu_cxx::strtoull;
-  using ::__gnu_cxx::strtold;
-}
-# 284 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdlib" 3
-}
-# 3 "components/init.cpp" 2
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iostream" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iostream" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/requires_hosted.h" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iostream" 2 3
-
-
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iosfwd" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iosfwd" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memoryfwd.h" 1 3
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memoryfwd.h" 3
-namespace std
-{
-
-# 66 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memoryfwd.h" 3
-  template<typename>
-    class allocator;
-
-  template<>
-    class allocator<void>;
-
-
-
-  template<typename, typename>
-    struct uses_allocator;
-
-  template<typename>
-    struct allocator_traits;
-
-
-
-
-
-}
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 2 3
-
-namespace std
-{
-
-
-
-
-
-
-
-
-  template<class _CharT>
-    struct char_traits;
-
-  template<> struct char_traits<char>;
-
-  template<> struct char_traits<wchar_t>;
-
-
-
-
-
-
-  template<> struct char_traits<char16_t>;
-  template<> struct char_traits<char32_t>;
-
-
-namespace __cxx11 {
-
-  template<typename _CharT, typename _Traits = char_traits<_CharT>,
-           typename _Alloc = allocator<_CharT> >
-    class basic_string;
-
-}
-
-
-  typedef basic_string<char> string;
-
-
-  typedef basic_string<wchar_t> wstring;
-# 91 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stringfwd.h" 3
-  typedef basic_string<char16_t> u16string;
-
-
-  typedef basic_string<char32_t> u32string;
-
-
-
-
-
-}
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iosfwd" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwchar" 1 3
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwchar" 3
-# 1 "/usr/share/mingw-w64/include/wchar.h" 1 3
-# 10 "/usr/share/mingw-w64/include/wchar.h" 3
-# 1 "/usr/share/mingw-w64/include/corecrt_stdio_config.h" 1 3
-# 13 "/usr/share/mingw-w64/include/corecrt_stdio_config.h" 3
-extern "C" {
-
-
-unsigned long long* __attribute__((__cdecl__)) __local_stdio_printf_options(void);
-unsigned long long* __attribute__((__cdecl__)) __local_stdio_scanf_options(void);
-# 39 "/usr/share/mingw-w64/include/corecrt_stdio_config.h" 3
-}
-# 11 "/usr/share/mingw-w64/include/wchar.h" 2 3
-
+# 12 "/usr/share/mingw-w64/include/wchar.h" 2 3
 # 1 "/usr/share/mingw-w64/include/corecrt_wctype.h" 1 3
 # 12 "/usr/share/mingw-w64/include/corecrt_wctype.h" 3
 extern "C" {
 # 31 "/usr/share/mingw-w64/include/corecrt_wctype.h" 3
   __attribute__ ((__dllimport__)) const unsigned short* __pctype_func(void);
 # 45 "/usr/share/mingw-w64/include/corecrt_wctype.h" 3
-  extern const unsigned short ** _imp___wctype;
+  extern const unsigned short ** __imp__wctype;
 
 
 
@@ -1469,10 +600,10 @@ __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) __acrt_iob_func
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wunlink(const wchar_t *_Filename);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wrename(const wchar_t *_OldFilename,const wchar_t *_NewFilename);
   __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wmktemp(wchar_t *_TemplateName) ;
-  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wfindfirsti64(const wchar_t *_Filename,struct _wfinddata32i64_t *_FindData);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wfindfirst32i64(const wchar_t *_Filename,struct _wfinddata32i64_t *_FindData);
   intptr_t __attribute__((__cdecl__)) _wfindfirst64i32(const wchar_t *_Filename,struct _wfinddata64i32_t *_FindData);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wfindfirst64(const wchar_t *_Filename,struct _wfinddata64_t *_FindData);
-  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wfindnexti64(intptr_t _FindHandle,struct _wfinddata32i64_t *_FindData);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wfindnext32i64(intptr_t _FindHandle,struct _wfinddata32i64_t *_FindData);
   int __attribute__((__cdecl__)) _wfindnext64i32(intptr_t _FindHandle,struct _wfinddata64i32_t *_FindData);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wfindnext64(intptr_t _FindHandle,struct _wfinddata64_t *_FindData);
   __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wsopen_s(int *_FileHandle,const wchar_t *_Filename,int _OpenFlag,int _ShareFlag,int _PermissionFlag);
@@ -1504,7 +635,17 @@ __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) __acrt_iob_func
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnve(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList,const wchar_t *const *_Env);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnvp(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList);
   __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _wspawnvpe(int _Mode,const wchar_t *_Filename,const wchar_t *const *_ArgList,const wchar_t *const *_Env);
-# 243 "/usr/share/mingw-w64/include/wchar.h" 3
+
+
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wsystem(const wchar_t *_Command);
+
+
+
+
+
+
   typedef unsigned short _ino_t;
 
   typedef unsigned short ino_t;
@@ -1659,19 +800,19 @@ typedef off32_t off_t;
   ;
                                                     __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __ms_vswscanf(const wchar_t * __restrict__ _Src,const wchar_t * __restrict__ _Format,va_list)
-  __asm__("_vswscanf");
+  __asm__("vswscanf");
                                                     __attribute__ ((__nonnull__ (1)))
   int __attribute__((__cdecl__)) __ms_wscanf(const wchar_t * __restrict__ _Format,...)
   ;
                                                     __attribute__ ((__nonnull__ (1)))
   int __attribute__((__cdecl__)) __ms_vwscanf(const wchar_t * __restrict__ _Format, va_list)
-  __asm__("_vwscanf");
+  __asm__("vwscanf");
                                                     __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __ms_fwscanf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...)
   ;
                                                     __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __ms_vfwscanf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,va_list)
-  __asm__("_vfwscanf");
+  __asm__("vfwscanf");
 
                                                      __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __ms_fwprintf(FILE * __restrict__ _File,const wchar_t * __restrict__ _Format,...);
@@ -1701,65 +842,65 @@ typedef off32_t off_t;
 # 398 "/usr/share/mingw-w64/include/wchar.h" 3
                                                      __attribute__ ((__nonnull__ (2)))
 int swscanf(const wchar_t *__source, const wchar_t *__format, ...)
-__asm__("___mingw_swscanf");
+__asm__("__mingw_swscanf");
 
                                                      __attribute__ ((__nonnull__ (1)))
 int wscanf(const wchar_t *__format, ...)
-__asm__("___mingw_wscanf");
+__asm__("__mingw_wscanf");
 
                                                      __attribute__ ((__nonnull__ (2)))
 int fwscanf(FILE *__stream, const wchar_t *__format, ...)
-__asm__("___mingw_fwscanf");
+__asm__("__mingw_fwscanf");
 
 
                                                      __attribute__ ((__nonnull__ (2)))
 int vswscanf (const wchar_t *__source, const wchar_t *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vswscanf");
+__asm__("__mingw_vswscanf");
 
                                                      __attribute__ ((__nonnull__ (1)))
 int vwscanf(const wchar_t *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vwscanf");
+__asm__("__mingw_vwscanf");
 
                                                      __attribute__ ((__nonnull__ (2)))
 int vfwscanf (FILE *__stream, const wchar_t *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vfwscanf");
+__asm__("__mingw_vfwscanf");
 
 
 
 
                                                       __attribute__ ((__nonnull__ (2)))
 int fwprintf (FILE *__stream, const wchar_t *__format, ...)
-__asm__("___mingw_fwprintf");
+__asm__("__mingw_fwprintf");
 
                                                       __attribute__ ((__nonnull__ (1)))
 int wprintf (const wchar_t *__format, ...)
-__asm__("___mingw_wprintf");
+__asm__("__mingw_wprintf");
 
                                                       __attribute__ ((__nonnull__ (2)))
 int vfwprintf (FILE *__stream, const wchar_t *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vfwprintf");
+__asm__("__mingw_vfwprintf");
 
                                                       __attribute__ ((__nonnull__ (1)))
 int vwprintf (const wchar_t *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vwprintf");
+__asm__("__mingw_vwprintf");
 
                                                       __attribute__ ((__nonnull__ (3)))
 int swprintf (wchar_t *__stream, size_t __n, const wchar_t *__format, ...)
-__asm__("___mingw_swprintf");
+__asm__("__mingw_swprintf");
 
                                                       __attribute__ ((__nonnull__ (3)))
 int vswprintf (wchar_t *__stream, size_t __n, const wchar_t *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vswprintf");
+__asm__("__mingw_vswprintf");
 
 
 
                                                       __attribute__ ((__nonnull__ (3)))
 int snwprintf (wchar_t *__stream, size_t __n, const wchar_t *__format, ...)
-__asm__("___mingw_snwprintf");
+__asm__("__mingw_snwprintf");
 
                                                       __attribute__ ((__nonnull__ (3)))
 int vsnwprintf (wchar_t *__stream, size_t __n, const wchar_t *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vsnwprintf");
+__asm__("__mingw_vsnwprintf");
 # 523 "/usr/share/mingw-w64/include/wchar.h" 3
   __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wfsopen(const wchar_t *_Filename,const wchar_t *_Mode,int _ShFlag);
 
@@ -1827,10 +968,10 @@ __asm__("___mingw_vsnwprintf");
 extern "C++" {
 
                                                       __attribute__ ((__nonnull__ (2)))
-int vswprintf (wchar_t *__stream, const wchar_t *__format, __builtin_va_list __local_argv) __asm__("__vswprintf");
+int vswprintf (wchar_t *__stream, const wchar_t *__format, __builtin_va_list __local_argv) __asm__("_vswprintf");
 
                                                       __attribute__ ((__nonnull__ (2)))
-int swprintf (wchar_t *__stream, const wchar_t *__format, ...) __asm__("__swprintf");
+int swprintf (wchar_t *__stream, const wchar_t *__format, ...) __asm__("_swprintf");
 
 }
 # 866 "/usr/share/mingw-w64/include/wchar.h" 2 3
@@ -1855,7 +996,7 @@ int swprintf (wchar_t *__stream, const wchar_t *__format, ...) __asm__("__swprin
 
 
 
-
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wperror(const wchar_t *_ErrMsg);
 
   __attribute__ ((__dllimport__)) FILE *__attribute__((__cdecl__)) _wpopen(const wchar_t *_Command,const wchar_t *_Mode);
 
@@ -1863,6 +1004,70 @@ int swprintf (wchar_t *__stream, const wchar_t *__format, ...) __asm__("__swprin
 
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wremove(const wchar_t *_Filename);
   __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wtmpnam(wchar_t *_Buffer);
+# 935 "/usr/share/mingw-w64/include/wchar.h" 3
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _itow(int _Value,wchar_t *_Dest,int _Radix) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ltow(long _Value,wchar_t *_Dest,int _Radix) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ultow(unsigned long _Value,wchar_t *_Dest,int _Radix) ;
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wcstod_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,_locale_t _Locale);
+
+  double __attribute__((__cdecl__)) __mingw_wcstod(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr);
+  float __attribute__((__cdecl__)) __mingw_wcstof(const wchar_t * __restrict__ nptr, wchar_t ** __restrict__ endptr);
+  long double __attribute__((__cdecl__)) __mingw_wcstold(const wchar_t * __restrict__, wchar_t ** __restrict__);
+
+
+  inline __attribute__((__cdecl__))
+  double __attribute__((__cdecl__)) wcstod(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr){
+    return __mingw_wcstod(_Str,_EndPtr);
+  }
+  inline __attribute__((__cdecl__))
+  float __attribute__((__cdecl__)) wcstof(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr){
+    return __mingw_wcstof(_Str,_EndPtr);
+  }
+
+
+
+
+
+
+  long double __attribute__((__cdecl__)) wcstold (const wchar_t * __restrict__, wchar_t ** __restrict__);
+
+  long __attribute__((__cdecl__)) wcstol(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wcstol_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+  unsigned long __attribute__((__cdecl__)) wcstoul(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _wcstoul_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wgetenv(const wchar_t *_VarName) ;
+
+
+
+
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wtof(const wchar_t *_Str);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wtof_l(const wchar_t *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wtoi(const wchar_t *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wtoi_l(const wchar_t *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtol(const wchar_t *_Str);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtol_l(const wchar_t *_Str,_locale_t _Locale);
+
+  __extension__ __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _i64tow(long long _Val,wchar_t *_DstBuf,int _Radix) ;
+  __extension__ __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ui64tow(unsigned long long _Val,wchar_t *_DstBuf,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wtoi64(const wchar_t *_Str);
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wtoi64_l(const wchar_t *_Str,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wcstoi64(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _wcstoi64_l(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _wcstoui64(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _wcstoui64_l(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix,_locale_t _Locale);
+# 994 "/usr/share/mingw-w64/include/wchar.h" 3
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wfullpath(wchar_t *_FullPath,const wchar_t *_Path,size_t _SizeInWords);
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wmakepath(wchar_t *_ResultPath,const wchar_t *_Drive,const wchar_t *_Dir,const wchar_t *_Filename,const wchar_t *_Ext);
+
+
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wputenv(const wchar_t *_EnvString);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wsearchenv(const wchar_t *_Filename,const wchar_t *_EnvVar,wchar_t *_ResultPath) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wsplitpath(const wchar_t *_FullPath,wchar_t *_Drive,wchar_t *_Dir,wchar_t *_Filename,wchar_t *_Ext) ;
 # 1015 "/usr/share/mingw-w64/include/wchar.h" 3
   __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wcsdup(const wchar_t *_Str);
 
@@ -2162,13 +1367,13 @@ extern "C" {
 
 }
 # 1268 "/usr/share/mingw-w64/include/wchar.h" 2 3
-# 50 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwchar" 2 3
-# 64 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwchar" 3
+# 50 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwchar" 2 3
+# 64 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwchar" 3
 namespace std
 {
   using ::mbstate_t;
 }
-# 137 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwchar" 3
+# 137 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwchar" 3
 extern "C++"
 {
 namespace std
@@ -2286,7 +1491,7 @@ namespace __gnu_cxx
 
 
   using ::wcstold;
-# 262 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwchar" 3
+# 262 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwchar" 3
   using ::wcstoll;
   using ::wcstoull;
 
@@ -2298,7 +1503,7 @@ namespace std
   using ::__gnu_cxx::wcstoll;
   using ::__gnu_cxx::wcstoull;
 }
-# 282 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwchar" 3
+# 282 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwchar" 3
 namespace std
 {
 
@@ -2320,17 +1525,17 @@ namespace std
   using std::wcstoull;
 
 }
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 2 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 2 3
 
 namespace std
 {
 
-# 55 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
+# 55 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
  
-# 55 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
+# 55 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wlong-long"
-# 66 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
+# 66 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
   typedef long long int streamoff;
 
 
@@ -2339,7 +1544,7 @@ namespace std
 
 
   typedef ptrdiff_t streamsize;
-# 86 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
+# 86 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
   template<typename _StateT>
     class fpos
     {
@@ -2354,7 +1559,7 @@ namespace std
 
       fpos()
       : _M_off(0), _M_state() { }
-# 108 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
+# 108 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
       fpos(streamoff __off)
       : _M_off(__off), _M_state() { }
 
@@ -2459,7 +1664,7 @@ namespace std
   typedef fpos<mbstate_t> streampos;
 
   typedef fpos<mbstate_t> wstreampos;
-# 220 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
+# 220 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/postypes.h" 3
   typedef fpos<mbstate_t> u16streampos;
 
   typedef fpos<mbstate_t> u32streampos;
@@ -2467,12 +1672,12 @@ namespace std
 
 
 }
-# 45 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iosfwd" 2 3
+# 45 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iosfwd" 2 3
 
 namespace std
 {
 
-# 78 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iosfwd" 3
+# 78 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iosfwd" 3
   class ios_base;
 
   template<typename _CharT, typename _Traits = char_traits<_CharT> >
@@ -2608,19 +1813,19 @@ namespace __cxx11 {
 
 
   typedef basic_fstream<wchar_t> wfstream;
-# 257 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iosfwd" 3
+# 257 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iosfwd" 3
 
 }
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception.h" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception.h" 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception.h" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception.h" 3
 extern "C++" {
 
 namespace std
 {
-# 61 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception.h" 3
+# 61 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception.h" 3
   class exception
   {
   public:
@@ -2644,17 +1849,17 @@ namespace std
 }
 
 }
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 2 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 2 3
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 2 3
 
 extern "C++" {
 
 namespace std
 {
-# 56 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 3
+# 56 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 3
   class bad_exception : public exception
   {
   public:
@@ -2712,7 +1917,7 @@ namespace std
 
   __attribute__ ((__deprecated__))
   void unexpected() __attribute__ ((__noreturn__,__cold__));
-# 126 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 3
+# 126 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 3
   __attribute__ ((__deprecated__ ("use '" "std::uncaught_exceptions()" "' instead")))
   bool uncaught_exception() noexcept __attribute__ ((__pure__));
 
@@ -2730,7 +1935,7 @@ namespace std
 namespace __gnu_cxx
 {
 
-# 160 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 3
+# 160 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 3
   void __verbose_terminate_handler();
 
 
@@ -2739,19 +1944,40 @@ namespace __gnu_cxx
 }
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 1 3
-# 35 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_defines.h" 1 3
-# 36 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 1 3
+# 35 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_defines.h" 1 3
+# 36 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 3
 #pragma GCC visibility push(default)
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/stddef.h" 1 3 4
 # 1 "/usr/share/mingw-w64/include/stddef.h" 1 3 4
-# 13 "/usr/share/mingw-w64/include/stddef.h" 3 4
+
+
+
+
+
+
+# 1 "/usr/share/mingw-w64/include/crtdefs.h" 1 3 4
+# 8 "/usr/share/mingw-w64/include/stddef.h" 2 3 4
+
+
+
+
+
 extern "C" {
-# 24 "/usr/share/mingw-w64/include/stddef.h" 3 4
+
+
+
+
+  __attribute__ ((__dllimport__)) extern int *__attribute__((__cdecl__)) _errno(void);
+
+  errno_t __attribute__((__cdecl__)) _set_errno(int _Value);
+  errno_t __attribute__((__cdecl__)) _get_errno(int *_Value);
+
+
   __attribute__ ((__dllimport__)) extern unsigned long __attribute__((__cdecl__)) __threadid(void);
 
   __attribute__ ((__dllimport__)) extern uintptr_t __attribute__((__cdecl__)) __threadhandle(void);
@@ -2763,9 +1989,9 @@ typedef struct {
   long long __max_align_ll __attribute__((__aligned__(__alignof__(long long))));
   long double __max_align_ld __attribute__((__aligned__(__alignof__(long double))));
 } max_align_t;
-# 2 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/stddef.h" 2 3 4
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 2 3
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 3
+# 2 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/stddef.h" 2 3 4
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 2 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cxxabi_init_exception.h" 3
 namespace std
 {
   class type_info;
@@ -2787,7 +2013,7 @@ namespace __cxxabiv1
 
       __cxa_refcounted_exception*
       __cxa_init_primary_exception(void *__object, std::type_info *__tinfo,
-                void (__attribute__((__thiscall__)) *__dest) (void *))
+                void ( *__dest) (void *))
  noexcept;
 
     }
@@ -2796,11 +2022,11 @@ namespace __cxxabiv1
 
 
 #pragma GCC visibility pop
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/typeinfo" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/typeinfo" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/hash_bytes.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/hash_bytes.h" 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/typeinfo" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/typeinfo" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/hash_bytes.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/hash_bytes.h" 3
 namespace std
 {
 
@@ -2822,12 +2048,12 @@ namespace std
 
 
 }
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/typeinfo" 2 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/typeinfo" 2 3
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/typeinfo" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/typeinfo" 2 3
 
 #pragma GCC visibility push(default)
 
@@ -2837,7 +2063,7 @@ namespace __cxxabiv1
 {
   class __class_type_info;
 }
-# 85 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/typeinfo" 3
+# 85 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/typeinfo" 3
 namespace std
 {
 
@@ -2922,7 +2148,7 @@ namespace std
     bool __equal(const type_info&) const noexcept;
 
   };
-# 224 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/typeinfo" 3
+# 224 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/typeinfo" 3
   class bad_cast : public exception
   {
   public:
@@ -2957,11 +2183,11 @@ namespace std
 }
 
 #pragma GCC visibility pop
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/new" 1 3
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/new" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 50 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/new" 2 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/new" 1 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/new" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 50 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/new" 2 3
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
@@ -3037,7 +2263,7 @@ namespace std
   new_handler get_new_handler() noexcept;
 
 }
-# 137 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/new" 3
+# 137 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/new" 3
 [[__nodiscard__]] void* operator new(std::size_t)
  
   __attribute__((__externally_visible__, __malloc__));
@@ -3096,7 +2322,7 @@ void operator delete(void*, std::size_t, std::align_val_t)
   noexcept __attribute__((__externally_visible__));
 void operator delete[](void*, std::size_t, std::align_val_t)
   noexcept __attribute__((__externally_visible__));
-# 205 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/new" 3
+# 205 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/new" 3
 [[__nodiscard__]] inline
 void* operator new(std::size_t, void* __p)
   noexcept
@@ -3143,20 +2369,20 @@ namespace std
 
   inline constexpr size_t hardware_destructive_interference_size = 64;
   inline constexpr size_t hardware_constructive_interference_size = 64;
-# 264 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/new" 3
+# 264 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/new" 3
 }
 
 #pragma GCC visibility pop
 #pragma GCC diagnostic pop
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 1 3
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 1 3
-# 67 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 68 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 1 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 1 3
+# 67 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 68 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 2 3
 
 extern "C++"
 {
@@ -3166,7 +2392,7 @@ namespace std
 
   template<typename _Tp>
     class reference_wrapper;
-# 92 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 92 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp, _Tp __v>
     struct integral_constant
     {
@@ -3179,7 +2405,7 @@ namespace std
       constexpr value_type operator()() const noexcept { return value; }
 
     };
-# 112 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 112 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<bool __v>
     using __bool_constant = integral_constant<bool, __v>;
 
@@ -3484,7 +2710,20 @@ namespace std
   template<>
     struct __is_integral_helper<unsigned long long>
     : public true_type { };
-# 466 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+
+
+
+
+  __extension__
+  template<>
+    struct __is_integral_helper<__int128>
+    : public true_type { };
+
+  __extension__
+  template<>
+    struct __is_integral_helper<unsigned __int128>
+    : public true_type { };
+# 466 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_integral
     : public __is_integral_helper<__remove_cv_t<_Tp>>::type
@@ -3506,7 +2745,7 @@ namespace std
   template<>
     struct __is_floating_point_helper<long double>
     : public true_type { };
-# 519 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 519 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<>
     struct __is_floating_point_helper<__float128>
     : public true_type { };
@@ -3525,12 +2764,12 @@ namespace std
     struct is_array
     : public __bool_constant<__is_array(_Tp)>
     { };
-# 553 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 553 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_pointer
     : public __bool_constant<__is_pointer(_Tp)>
     { };
-# 580 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 580 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename>
     struct is_lvalue_reference
     : public false_type { };
@@ -3554,12 +2793,12 @@ namespace std
     struct is_member_object_pointer
     : public __bool_constant<__is_member_object_pointer(_Tp)>
     { };
-# 621 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 621 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_member_function_pointer
     : public __bool_constant<__is_member_function_pointer(_Tp)>
     { };
-# 642 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 642 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_enum
     : public __bool_constant<__is_enum(_Tp)>
@@ -3583,7 +2822,7 @@ namespace std
     struct is_function
     : public __bool_constant<__is_function(_Tp)>
     { };
-# 681 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 681 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_null_pointer
     : public false_type { };
@@ -3620,7 +2859,7 @@ namespace std
     struct is_reference
     : public __bool_constant<__is_reference(_Tp)>
     { };
-# 735 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 735 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_arithmetic
     : public __or_<is_integral<_Tp>, is_floating_point<_Tp>>::type
@@ -3639,7 +2878,7 @@ namespace std
     struct is_object
     : public __bool_constant<__is_object(_Tp)>
     { };
-# 761 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 761 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename>
     struct is_member_pointer;
 
@@ -3661,7 +2900,7 @@ namespace std
     struct is_member_pointer
     : public __bool_constant<__is_member_pointer(_Tp)>
     { };
-# 799 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 799 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename, typename>
     struct is_same;
 
@@ -3675,7 +2914,9 @@ namespace std
     using __is_signed_integer = __is_one_of<__remove_cv_t<_Tp>,
    signed char, signed short, signed int, signed long,
    signed long long
-# 824 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+
+   , signed __int128
+# 824 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
    >;
 
 
@@ -3684,7 +2925,9 @@ namespace std
     using __is_unsigned_integer = __is_one_of<__remove_cv_t<_Tp>,
    unsigned char, unsigned short, unsigned int, unsigned long,
    unsigned long long
-# 844 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+
+   , unsigned __int128
+# 844 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
    >;
 
 
@@ -3704,12 +2947,12 @@ namespace std
     struct is_const
     : public __bool_constant<__is_const(_Tp)>
     { };
-# 875 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 875 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_volatile
     : public __bool_constant<__is_volatile(_Tp)>
     { };
-# 896 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 896 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct
    
@@ -3854,7 +3097,7 @@ namespace std
     struct __is_array_unknown_bounds<_Tp[]>
     : public true_type
     { };
-# 1048 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1048 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   struct __do_is_destructible_impl
   {
     template<typename _Tp, typename = decltype(declval<_Tp&>().~_Tp())>
@@ -3984,7 +3227,7 @@ namespace std
 
   template<typename _Tp>
     using __add_lval_ref_t = __add_lvalue_reference(_Tp);
-# 1192 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1192 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_copy_constructible
     : public __is_constructible_impl<_Tp, __add_lval_ref_t<const _Tp>>
@@ -3997,7 +3240,7 @@ namespace std
 
   template<typename _Tp>
     using __add_rval_ref_t = __add_rvalue_reference(_Tp);
-# 1219 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1219 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct is_move_constructible
     : public __is_constructible_impl<_Tp, __add_rval_ref_t<_Tp>>
@@ -4139,7 +3382,7 @@ namespace std
       static_assert(std::__is_complete_or_unbounded(__type_identity<_Tp>{}),
  "template argument must be a complete class or an unbounded array");
     };
-# 1371 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1371 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   struct __do_is_implicitly_default_constructible_impl
   {
     template <typename _Tp>
@@ -4262,7 +3505,7 @@ namespace std
   template<typename _Tp>
     struct rank
     : public integral_constant<std::size_t, __array_rank(_Tp)> { };
-# 1508 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1508 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename, unsigned _Uint = 0>
     struct extent
     : public integral_constant<size_t, 0> { };
@@ -4292,21 +3535,21 @@ namespace std
     struct is_same
     : public __bool_constant<__is_same(_Tp, _Up)>
     { };
-# 1550 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1550 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Base, typename _Derived>
     struct is_base_of
     : public __bool_constant<__is_base_of(_Base, _Derived)>
     { };
-# 1565 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1565 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _From, typename _To>
     struct is_convertible
     : public __bool_constant<__is_convertible(_From, _To)>
     { };
-# 1608 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1608 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _ToElementType, typename _FromElementType>
     using __is_array_convertible
       = is_convertible<_FromElementType(*)[], _ToElementType(*)[]>;
-# 1668 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1668 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++14-extensions"
   template<typename _Tp, typename... _Args>
@@ -4347,7 +3590,7 @@ namespace std
   template<typename _Tp>
     struct remove_cv
     { using type = __remove_cv(_Tp); };
-# 1727 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1727 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct add_const
     { using type = _Tp const; };
@@ -4395,7 +3638,7 @@ namespace std
   template<typename _Tp>
     struct remove_reference
     { using type = __remove_reference(_Tp); };
-# 1789 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1789 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct add_lvalue_reference
     { using type = __add_lval_ref_t<_Tp>; };
@@ -4482,7 +3725,13 @@ namespace std
   template<>
     struct __make_unsigned<long long>
     { using __type = unsigned long long; };
-# 1902 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+
+
+  __extension__
+  template<>
+    struct __make_unsigned<__int128>
+    { using __type = unsigned __int128; };
+# 1902 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp,
     bool _IsInt = is_integral<_Tp>::value,
     bool _IsEnum = __is_enum(_Tp)>
@@ -4547,7 +3796,7 @@ namespace std
       using __type
  = typename __make_unsigned_selector<wchar_t, false, true>::__type;
     };
-# 1976 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 1976 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<>
     struct __make_unsigned<char16_t>
     {
@@ -4607,7 +3856,13 @@ namespace std
   template<>
     struct __make_signed<unsigned long long>
     { using __type = signed long long; };
-# 2062 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+
+
+  __extension__
+  template<>
+    struct __make_signed<unsigned __int128>
+    { using __type = __int128; };
+# 2062 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp,
     bool _IsInt = is_integral<_Tp>::value,
     bool _IsEnum = __is_enum(_Tp)>
@@ -4644,7 +3899,7 @@ namespace std
       using __type
  = typename __make_signed_selector<wchar_t, false, true>::__type;
     };
-# 2108 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2108 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<>
     struct __make_signed<char16_t>
     {
@@ -4691,11 +3946,11 @@ namespace std
   template<typename _Tp>
     struct remove_extent
     { using type = __remove_extent(_Tp); };
-# 2170 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2170 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct remove_all_extents
     { using type = __remove_all_extents(_Tp); };
-# 2189 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2189 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     using remove_extent_t = typename remove_extent<_Tp>::type;
 
@@ -4711,11 +3966,11 @@ namespace std
   template<typename _Tp>
     struct remove_pointer
     { using type = __remove_pointer(_Tp); };
-# 2221 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2221 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct add_pointer
     { using type = __add_pointer(_Tp); };
-# 2249 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2249 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     using remove_pointer_t = typename remove_pointer<_Tp>::type;
 
@@ -4733,11 +3988,11 @@ namespace std
   constexpr size_t
   __aligned_storage_default_alignment([[__maybe_unused__]] size_t __len)
   {
-# 2280 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2280 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
     return alignof(__aligned_storage_max_align_t);
 
   }
-# 2316 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2316 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<size_t _Len,
     size_t _Align = __aligned_storage_default_alignment(_Len)>
     struct
@@ -4770,7 +4025,7 @@ namespace std
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-# 2361 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2361 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template <size_t _Len, typename... _Types>
     struct
    
@@ -4799,7 +4054,7 @@ namespace std
   template<typename _Tp>
     struct decay
     { using type = __decay(_Tp); };
-# 2426 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2426 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct __strip_reference_wrapper
     {
@@ -4846,7 +4101,7 @@ namespace std
 
   template<typename... _Tp>
     struct common_type;
-# 2482 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2482 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Tp>
     struct __success_type
     { using type = _Tp; };
@@ -4865,7 +4120,7 @@ namespace std
     template<typename _Tp, typename _Up>
       static __success_type<__decay_t<__cond_t<_Tp, _Up>>>
       _S_test(int);
-# 2509 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2509 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
     template<typename, typename>
       static __failure_type
       _S_test_2(...);
@@ -5217,7 +4472,7 @@ namespace std
 
 
   template<typename...> using void_t = void;
-# 2886 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2886 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Default, typename _AlwaysVoid,
     template<typename...> class _Op, typename... _Args>
     struct __detector
@@ -5245,7 +4500,7 @@ namespace std
     typename... _Args>
     using __detected_or_t
       = typename __detected_or<_Default, _Op, _Args...>::type;
-# 2928 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 2928 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template <typename _Tp>
     struct __is_swappable;
 
@@ -5459,7 +4714,7 @@ namespace std
   template<typename _Tp, typename _Up>
     inline constexpr bool is_nothrow_swappable_with_v =
       is_nothrow_swappable_with<_Tp, _Up>::value;
-# 3150 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3150 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
   template<typename _Result, typename _Ret,
     bool = is_void<_Ret>::value, typename = void>
     struct __is_invocable_impl
@@ -5679,7 +4934,7 @@ namespace std
       static_assert(std::__is_complete_or_unbounded(__type_identity<_Ret>{}),
  "_Ret must be a complete class or an unbounded array");
     };
-# 3386 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3386 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp>
   inline constexpr bool is_void_v = is_void<_Tp>::value;
 template <typename _Tp>
@@ -5692,10 +4947,10 @@ template <typename _Tp>
 
 template <typename _Tp>
   inline constexpr bool is_array_v = __is_array(_Tp);
-# 3408 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3408 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp>
   inline constexpr bool is_pointer_v = __is_pointer(_Tp);
-# 3423 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3423 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp>
   inline constexpr bool is_lvalue_reference_v = false;
 template <typename _Tp>
@@ -5736,7 +4991,7 @@ template <typename _Tp>
 
 template <typename _Tp>
   inline constexpr bool is_reference_v = __is_reference(_Tp);
-# 3472 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3472 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp>
   inline constexpr bool is_arithmetic_v = is_arithmetic<_Tp>::value;
 template <typename _Tp>
@@ -5766,10 +5021,10 @@ template <typename _Tp>
 
 template <typename _Tp>
   inline constexpr bool is_const_v = __is_const(_Tp);
-# 3509 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3509 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp>
   inline constexpr bool is_function_v = __is_function(_Tp);
-# 3521 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3521 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp>
   inline constexpr bool is_volatile_v = __is_volatile(_Tp);
 
@@ -5853,7 +5108,7 @@ template <typename _Tp>
   inline constexpr bool is_trivially_move_assignable_v
     = __is_trivially_assignable(__add_lval_ref_t<_Tp>,
     __add_rval_ref_t<_Tp>);
-# 3621 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3621 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp>
   inline constexpr bool is_trivially_destructible_v =
     is_trivially_destructible<_Tp>::value;
@@ -5898,7 +5153,7 @@ template <typename _Tp>
 
 template <typename _Tp>
   inline constexpr size_t rank_v = __array_rank(_Tp);
-# 3674 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 3674 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 template <typename _Tp, unsigned _Idx = 0>
   inline constexpr size_t extent_v = 0;
 template <typename _Tp, size_t _Size>
@@ -5982,11 +5237,11 @@ template<typename _Ret, typename _Fn, typename... _Args>
 
   template<typename _Tp>
     inline constexpr bool is_aggregate_v = __is_aggregate(remove_cv_t<_Tp>);
-# 4184 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/type_traits" 3
+# 4184 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/type_traits" 3
 
 }
 }
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 2 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 2 3
 
 
 namespace std
@@ -6003,13 +5258,13 @@ namespace std
     inline constexpr _Tp*
     __addressof(_Tp& __r) noexcept
     { return __builtin_addressof(__r); }
-# 69 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 3
+# 69 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 3
   template<typename _Tp>
     [[__nodiscard__,__gnu__::__always_inline__]]
     constexpr _Tp&&
     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
     { return static_cast<_Tp&&>(__t); }
-# 82 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 3
+# 82 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 3
   template<typename _Tp>
     [[__nodiscard__,__gnu__::__always_inline__]]
     constexpr _Tp&&
@@ -6019,7 +5274,7 @@ namespace std
    "std::forward must not be used to convert an rvalue to an lvalue");
       return static_cast<_Tp&&>(__t);
     }
-# 135 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 3
+# 135 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 3
   template<typename _Tp>
     [[__nodiscard__,__gnu__::__always_inline__]]
     constexpr typename std::remove_reference<_Tp>::type&&
@@ -6031,14 +5286,14 @@ namespace std
     struct __move_if_noexcept_cond
     : public __and_<__not_<is_nothrow_move_constructible<_Tp>>,
                     is_copy_constructible<_Tp>>::type { };
-# 156 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 3
+# 156 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 3
   template<typename _Tp>
     [[__nodiscard__,__gnu__::__always_inline__]]
     constexpr
     __conditional_t<__move_if_noexcept_cond<_Tp>::value, const _Tp&, _Tp&&>
     move_if_noexcept(_Tp& __x) noexcept
     { return std::move(__x); }
-# 173 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 3
+# 173 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 3
   template<typename _Tp>
     [[__nodiscard__,__gnu__::__always_inline__]]
     inline constexpr _Tp*
@@ -6060,7 +5315,7 @@ namespace std
       __obj = std::forward<_Up>(__new_val);
       return __old_val;
     }
-# 217 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/move.h" 3
+# 217 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/move.h" 3
   template<typename _Tp>
    
     inline
@@ -6105,8 +5360,8 @@ namespace std
 
 
 }
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
-# 50 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 2 3
+# 50 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
 extern "C++" {
 
 namespace std
@@ -6124,7 +5379,7 @@ namespace std
   }
 
   using __exception_ptr::exception_ptr;
-# 75 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 75 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
   exception_ptr current_exception() noexcept;
 
   template<typename _Ex>
@@ -6136,7 +5391,7 @@ namespace std
   namespace __exception_ptr
   {
     using std::rethrow_exception;
-# 97 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 97 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
     class exception_ptr
     {
       void* _M_exception_object;
@@ -6166,7 +5421,7 @@ namespace std
       exception_ptr(exception_ptr&& __o) noexcept
       : _M_exception_object(__o._M_exception_object)
       { __o._M_exception_object = nullptr; }
-# 135 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 135 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
       exception_ptr&
       operator=(const exception_ptr&) noexcept;
 
@@ -6183,7 +5438,7 @@ namespace std
 
       void
       swap(exception_ptr&) noexcept;
-# 161 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 161 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
       explicit operator bool() const noexcept
       { return _M_exception_object; }
 
@@ -6257,7 +5512,7 @@ namespace std
 
 
     template<typename _Ex>
-      __attribute__((__thiscall__))
+     
       inline void
       __dest_thunk(void* __x)
       { static_cast<_Ex*>(__x)->~_Ex(); }
@@ -6289,20 +5544,20 @@ namespace std
    __cxxabiv1::__cxa_free_exception(__e);
    return current_exception();
  }
-# 276 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 276 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
     }
-# 290 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
+# 290 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/exception_ptr.h" 3
 }
 
 }
-# 169 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
+# 169 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
 extern "C++" {
 
 namespace std
 {
-# 59 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
+# 59 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
   class nested_exception
   {
     exception_ptr _M_ptr;
@@ -6346,7 +5601,7 @@ namespace std
       : _Except(static_cast<_Except&&>(__ex))
       { }
     };
-# 145 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
+# 145 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
   template<typename _Tp>
     [[noreturn]]
     inline void
@@ -6370,7 +5625,7 @@ namespace std
 
 
     }
-# 203 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
+# 203 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
   template<typename _Ex>
 
 
@@ -6379,7 +5634,7 @@ namespace std
     rethrow_if_nested(const _Ex& __ex)
     {
       const _Ex* __ptr = __builtin_addressof(__ex);
-# 223 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
+# 223 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/nested_exception.h" 3
       if constexpr (!is_polymorphic_v<_Ex>)
  return;
       else if constexpr (is_base_of_v<nested_exception, _Ex>
@@ -6398,21 +5653,21 @@ namespace std
 }
 
 }
-# 170 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/exception" 2 3
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 1 3
-# 66 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 170 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/exception" 2 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 1 3
+# 66 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
 namespace __gnu_cxx
 {
 
 
  
-# 70 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 70 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wstringop-overflow"
 #pragma GCC diagnostic ignored "-Wstringop-overread"
 #pragma GCC diagnostic ignored "-Warray-bounds"
-# 85 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 85 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
   template<typename _CharT>
     struct _Char_types
     {
@@ -6423,7 +5678,7 @@ namespace __gnu_cxx
       typedef std::mbstate_t state_type;
 
     };
-# 112 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 112 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
   template<typename _CharT>
     struct char_traits
     {
@@ -6541,7 +5796,7 @@ namespace __gnu_cxx
     {
       if (__n == 0)
  return __s1;
-# 248 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 248 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
       __builtin_memmove(__s1, __s2, __n * sizeof(char_type));
       return __s1;
     }
@@ -6554,7 +5809,7 @@ namespace __gnu_cxx
     {
       if (__n == 0)
  return __s1;
-# 268 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 268 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
       __builtin_memcpy(__s1, __s2, __n * sizeof(char_type));
       return __s1;
     }
@@ -6565,7 +5820,7 @@ namespace __gnu_cxx
     char_traits<_CharT>::
     assign(char_type* __s, std::size_t __n, char_type __a)
     {
-# 287 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 287 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
       if constexpr (sizeof(_CharT) == 1 && __is_trivial(_CharT))
  {
    if (__n)
@@ -6589,7 +5844,7 @@ namespace __gnu_cxx
 namespace std
 {
 
-# 324 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 324 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
   template<typename _CharT>
     struct char_traits : public __gnu_cxx::char_traits<_CharT>
     { };
@@ -6863,7 +6118,7 @@ namespace std
       { return eq_int_type(__c, eof()) ? 0 : __c; }
 
   };
-# 731 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 731 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
 
 }
 
@@ -7122,21 +6377,21 @@ namespace std
       { return eq_int_type(__c, eof()) ? 0 : __c; }
 
     };
-# 1009 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
+# 1009 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/char_traits.h" 3
 #pragma GCC diagnostic pop
 
 
 }
-# 45 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++locale.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++locale.h" 3
+# 45 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++locale.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++locale.h" 3
        
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++locale.h" 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++locale.h" 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/clocale" 1 3
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/clocale" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/clocale" 1 3
+# 47 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/clocale" 3
 # 1 "/usr/share/mingw-w64/include/locale.h" 1 3
 # 12 "/usr/share/mingw-w64/include/locale.h" 3
 # 1 "/usr/share/mingw-w64/include/stdio.h" 1 3
@@ -7219,7 +6474,7 @@ extern
 extern
   __attribute__((__format__(__ms_scanf__, 2,0))) __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __ms_vsscanf(const char * __restrict__ _Str,const char * __restrict__ _Format,va_list argp)
-  __asm__("_vsscanf");
+  __asm__("vsscanf");
 extern
   __attribute__((__format__(__ms_scanf__, 1,2))) __attribute__ ((__nonnull__ (1)))
   int __attribute__((__cdecl__)) __ms_scanf(const char * __restrict__ _Format,...)
@@ -7227,7 +6482,7 @@ extern
 extern
   __attribute__((__format__(__ms_scanf__, 1,0))) __attribute__ ((__nonnull__ (1)))
   int __attribute__((__cdecl__)) __ms_vscanf(const char * __restrict__ _Format,va_list argp)
-  __asm__("_vscanf");
+  __asm__("vscanf");
 extern
   __attribute__((__format__(__ms_scanf__, 2,3))) __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __ms_fscanf(FILE * __restrict__ _File,const char * __restrict__ _Format,...)
@@ -7235,7 +6490,7 @@ extern
 extern
   __attribute__((__format__(__ms_scanf__, 2,0))) __attribute__ ((__nonnull__ (2)))
   int __attribute__((__cdecl__)) __ms_vfscanf(FILE * __restrict__ _File,const char * __restrict__ _Format,va_list argp)
-  __asm__("_vfscanf");
+  __asm__("vfscanf");
 
 extern
   __attribute__((__format__(__ms_printf__, 1,2))) __attribute__ ((__nonnull__ (1)))
@@ -7276,15 +6531,15 @@ extern "C++" {
 
 __attribute__((__format__(__gnu_scanf__, 2,3))) __attribute__ ((__nonnull__ (2)))
 int sscanf(const char *__source, const char *__format, ...)
-__asm__("___mingw_sscanf");
+__asm__("__mingw_sscanf");
 
 __attribute__((__format__(__gnu_scanf__, 1,2))) __attribute__ ((__nonnull__ (1)))
 int scanf(const char *__format, ...)
-__asm__("___mingw_scanf");
+__asm__("__mingw_scanf");
 
 __attribute__((__format__(__gnu_scanf__, 2,3))) __attribute__ ((__nonnull__ (2)))
 int fscanf(FILE *__stream, const char *__format, ...)
-__asm__("___mingw_fscanf");
+__asm__("__mingw_fscanf");
 
 
 
@@ -7294,15 +6549,15 @@ __asm__("___mingw_fscanf");
 
 __attribute__((__format__(__gnu_scanf__, 2,0))) __attribute__ ((__nonnull__ (2)))
 int vsscanf (const char *__source, const char *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vsscanf");
+__asm__("__mingw_vsscanf");
 
 __attribute__((__format__(__gnu_scanf__, 1,0))) __attribute__ ((__nonnull__ (1)))
 int vscanf(const char *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vscanf");
+__asm__("__mingw_vscanf");
 
 __attribute__((__format__(__gnu_scanf__, 2,0))) __attribute__ ((__nonnull__ (2)))
 int vfscanf (FILE *__stream, const char *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vfscanf");
+__asm__("__mingw_vfscanf");
 
 
 #pragma GCC diagnostic pop
@@ -7313,23 +6568,23 @@ __asm__("___mingw_vfscanf");
 
 __attribute__((__format__(__gnu_printf__,2,3))) __attribute__ ((__nonnull__ (2)))
 int fprintf (FILE *__stream, const char *__format, ...)
-__asm__("___mingw_fprintf");
+__asm__("__mingw_fprintf");
 
 __attribute__((__format__(__gnu_printf__,1,2))) __attribute__ ((__nonnull__ (1)))
 int printf (const char *__format, ...)
-__asm__("___mingw_printf");
+__asm__("__mingw_printf");
 
 __attribute__((__format__(__gnu_printf__,2,3))) __attribute__ ((__nonnull__ (2)))
 int sprintf (char *__stream, const char *__format, ...)
-__asm__("___mingw_sprintf");
+__asm__("__mingw_sprintf");
 # 374 "/usr/share/mingw-w64/include/stdio.h" 3
 __attribute__((__format__(__gnu_printf__,2,0))) __attribute__ ((__nonnull__ (2)))
 int vfprintf (FILE *__stream, const char *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vfprintf");
+__asm__("__mingw_vfprintf");
 
 __attribute__((__format__(__gnu_printf__,1,0))) __attribute__ ((__nonnull__ (1)))
 int vprintf (const char *__format, __builtin_va_list __local_argv)
-__asm__("___mingw_vprintf");
+__asm__("__mingw_vprintf");
 
 inline __attribute__((__cdecl__))
 __attribute__((__format__(__gnu_printf__,2,0))) __attribute__ ((__nonnull__ (2)))
@@ -7342,7 +6597,7 @@ int vsprintf (char *__stream, const char *__format, __builtin_va_list __local_ar
 
 __attribute__((__format__(__gnu_printf__,3,4))) __attribute__ ((__nonnull__ (3)))
 int snprintf (char *__stream, size_t __n, const char *__format, ...)
-__asm__("___mingw_snprintf");
+__asm__("__mingw_snprintf");
 # 414 "/usr/share/mingw-w64/include/stdio.h" 3
 inline __attribute__((__cdecl__))
 __attribute__((__format__(__gnu_printf__,3,0))) __attribute__ ((__nonnull__ (3)))
@@ -7424,7 +6679,7 @@ int vsnprintf (char *__stream, size_t __n, const char *__format, __builtin_va_li
   int __attribute__((__cdecl__)) _getw(FILE *_File);
 
 
-
+  void __attribute__((__cdecl__)) perror(const char *_ErrMsg);
 
 
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _pclose(FILE *_File);
@@ -7682,7 +6937,7 @@ extern "C" {
 
 
 #pragma pack(pop)
-# 48 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/clocale" 2 3
+# 48 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/clocale" 2 3
 
 
 
@@ -7694,7 +6949,7 @@ namespace std
   using ::setlocale;
   using ::localeconv;
 }
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++locale.h" 2 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++locale.h" 2 3
 
 
 
@@ -7744,10 +6999,10 @@ namespace std
 
 
 }
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 2 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cctype" 1 3
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cctype" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cctype" 1 3
+# 47 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cctype" 3
 # 1 "/usr/share/mingw-w64/include/ctype.h" 1 3
 # 12 "/usr/share/mingw-w64/include/ctype.h" 3
 extern "C" {
@@ -7803,10 +7058,12 @@ extern "C" {
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) __toascii(int _C);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) __iscsymf(int _C);
   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) __iscsym(int _C);
+# 81 "/usr/share/mingw-w64/include/ctype.h" 3
+__attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) ___mb_cur_max_func(void);
 # 134 "/usr/share/mingw-w64/include/ctype.h" 3
 }
-# 48 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cctype" 2 3
-# 64 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cctype" 3
+# 48 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cctype" 2 3
+# 64 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cctype" 3
 namespace std
 {
   using ::isalnum;
@@ -7834,12 +7091,12 @@ namespace std
 {
   using ::isblank;
 }
-# 45 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 2 3
+# 45 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 2 3
 
 namespace std
 {
 
-# 57 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 3
+# 57 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/localefwd.h" 3
   class locale;
 
   template<typename _Facet>
@@ -7998,23 +7255,809 @@ namespace __cxx11 {
 
 
 }
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 1 3
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr.h" 1 3
-# 30 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr.h" 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 1 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 1 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr.h" 1 3
+# 30 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr.h" 3
 #pragma GCC visibility push(default)
-# 157 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr-default.h" 1 3
-# 32 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr-default.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdlib.h" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdlib.h" 3
+# 157 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h" 1 3
+# 32 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 1 3
+# 36 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 1 3
+# 80 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+
+# 1 "/usr/share/mingw-w64/include/stdlib.h" 1 3
+# 11 "/usr/share/mingw-w64/include/stdlib.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/limits.h" 1 3 4
+# 34 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/limits.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/syslimits.h" 1 3 4
+
+
+
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/limits.h" 1 3 4
+# 210 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/limits.h" 3 4
+# 1 "/usr/share/mingw-w64/include/limits.h" 1 3 4
+# 211 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/limits.h" 2 3 4
+# 10 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/syslimits.h" 2 3 4
+#pragma GCC diagnostic pop
+# 35 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/limits.h" 2 3 4
+# 12 "/usr/share/mingw-w64/include/stdlib.h" 2 3
+# 26 "/usr/share/mingw-w64/include/stdlib.h" 3
+#pragma pack(push,_CRT_PACKING)
+
+
+extern "C" {
+# 50 "/usr/share/mingw-w64/include/stdlib.h" 3
+  typedef int (__attribute__((__cdecl__)) *_onexit_t)(void);
+# 60 "/usr/share/mingw-w64/include/stdlib.h" 3
+  typedef struct _div_t {
+    int quot;
+    int rem;
+  } div_t;
+
+  typedef struct _ldiv_t {
+    long quot;
+    long rem;
+  } ldiv_t;
+
+
+
+
+
+#pragma pack(4)
+  typedef struct {
+    unsigned char ld[10];
+  } _LDOUBLE;
+#pragma pack()
+
+
+
+  typedef struct {
+    double x;
+  } _CRT_DOUBLE;
+
+  typedef struct {
+    float f;
+  } _CRT_FLOAT;
+
+       
+
+
+  typedef struct {
+    long double x;
+  } _LONGDOUBLE;
+
+       
+
+#pragma pack(4)
+  typedef struct {
+    unsigned char ld12[12];
+  } _LDBL12;
+#pragma pack()
+# 135 "/usr/share/mingw-w64/include/stdlib.h" 3
+  typedef void (__attribute__((__cdecl__)) *_purecall_handler)(void);
+
+  __attribute__ ((__dllimport__)) _purecall_handler __attribute__((__cdecl__)) _set_purecall_handler(_purecall_handler _Handler);
+  __attribute__ ((__dllimport__)) _purecall_handler __attribute__((__cdecl__)) _get_purecall_handler(void);
+
+  typedef void (__attribute__((__cdecl__)) *_invalid_parameter_handler)(const wchar_t *,const wchar_t *,const wchar_t *,unsigned int,uintptr_t);
+  __attribute__ ((__dllimport__)) _invalid_parameter_handler __attribute__((__cdecl__)) _set_invalid_parameter_handler(_invalid_parameter_handler _Handler);
+  __attribute__ ((__dllimport__)) _invalid_parameter_handler __attribute__((__cdecl__)) _get_invalid_parameter_handler(void);
+# 151 "/usr/share/mingw-w64/include/stdlib.h" 3
+  __attribute__ ((__dllimport__)) unsigned long *__attribute__((__cdecl__)) __doserrno(void);
+
+  errno_t __attribute__((__cdecl__)) _set_doserrno(unsigned long _Value);
+  errno_t __attribute__((__cdecl__)) _get_doserrno(unsigned long *_Value);
+  __attribute__ ((__dllimport__)) char **__attribute__((__cdecl__)) __sys_errlist(void);
+  __attribute__ ((__dllimport__)) int *__attribute__((__cdecl__)) __sys_nerr(void);
+
+
+
+  __attribute__ ((__dllimport__)) char ***__attribute__((__cdecl__)) __p___argv(void);
+  __attribute__ ((__dllimport__)) int *__attribute__((__cdecl__)) __p__fmode(void);
+  __attribute__ ((__dllimport__)) int *__attribute__((__cdecl__)) __p___argc(void);
+  __attribute__ ((__dllimport__)) wchar_t ***__attribute__((__cdecl__)) __p___wargv(void);
+  __attribute__ ((__dllimport__)) char **__attribute__((__cdecl__)) __p__pgmptr(void);
+  __attribute__ ((__dllimport__)) wchar_t **__attribute__((__cdecl__)) __p__wpgmptr(void);
+
+  errno_t __attribute__((__cdecl__)) _get_pgmptr(char **_Value);
+  errno_t __attribute__((__cdecl__)) _get_wpgmptr(wchar_t **_Value);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _set_fmode(int _Mode);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_fmode(int *_PMode);
+# 221 "/usr/share/mingw-w64/include/stdlib.h" 3
+  __attribute__ ((__dllimport__)) char ***__attribute__((__cdecl__)) __p__environ(void);
+  __attribute__ ((__dllimport__)) wchar_t ***__attribute__((__cdecl__)) __p__wenviron(void);
+# 234 "/usr/share/mingw-w64/include/stdlib.h" 3
+  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__osplatform(void);
+  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__osver(void);
+  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__winver(void);
+  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__winmajor(void);
+  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__winminor(void);
+# 256 "/usr/share/mingw-w64/include/stdlib.h" 3
+  errno_t __attribute__((__cdecl__)) _get_osplatform(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_osver(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_winver(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_winmajor(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_winminor(unsigned int *_Value);
+
+
+
+
+  extern "C++" {
+    template <typename _CountofType,size_t _SizeOfArray> char (*__countof_helper( _CountofType (&_Array)[_SizeOfArray]))[_SizeOfArray];
+
+  }
+
+
+
+
+
+  void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) exit(int _Code) __attribute__ ((__noreturn__));
+  void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _exit(int _Code) __attribute__ ((__noreturn__));
+
+
+
+
+
+
+  void __attribute__((__cdecl__)) _Exit(int) __attribute__ ((__noreturn__));
+
+
+
+
+
+
+       
+
+  void __attribute__((__cdecl__)) __attribute__ ((__noreturn__)) abort(void);
+       
+
+
+
+  __attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) _set_abort_behavior(unsigned int _Flags,unsigned int _Mask);
+
+
+
+  int __attribute__((__cdecl__)) abs(int _X);
+  long __attribute__((__cdecl__)) labs(long _X);
+
+
+  __extension__ long long __attribute__((__cdecl__)) _abs64(long long);
+
+  extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) long long __attribute__((__cdecl__)) _abs64(long long x) {
+    return __builtin_llabs(x);
+  }
+
+
+  int __attribute__((__cdecl__)) atexit(void (__attribute__((__cdecl__)) *)(void));
+
+
+
+
+
+  double __attribute__((__cdecl__)) atof(const char *_String);
+  double __attribute__((__cdecl__)) _atof_l(const char *_String,_locale_t _Locale);
+
+  int __attribute__((__cdecl__)) atoi(const char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoi_l(const char *_Str,_locale_t _Locale);
+  long __attribute__((__cdecl__)) atol(const char *_Str);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _atol_l(const char *_Str,_locale_t _Locale);
+
+
+  void *__attribute__((__cdecl__)) bsearch(const void *_Key,const void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(const void *,const void *));
+  void __attribute__((__cdecl__)) qsort(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(const void *,const void *));
+
+  unsigned short __attribute__((__cdecl__)) _byteswap_ushort(unsigned short _Short);
+  unsigned long __attribute__((__cdecl__)) _byteswap_ulong (unsigned long _Long);
+  __extension__ unsigned long long __attribute__((__cdecl__)) _byteswap_uint64(unsigned long long _Int64);
+  div_t __attribute__((__cdecl__)) div(int _Numerator,int _Denominator);
+  char *__attribute__((__cdecl__)) getenv(const char *_VarName) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _itoa(int _Value,char *_Dest,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _i64toa(long long _Val,char *_DstBuf,int _Radix) ;
+  __extension__ __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ui64toa(unsigned long long _Val,char *_DstBuf,int _Radix) ;
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _atoi64(const char *_String);
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _atoi64_l(const char *_String,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _strtoi64(const char *_String,char **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) long long __attribute__((__cdecl__)) _strtoi64_l(const char *_String,char **_EndPtr,int _Radix,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _strtoui64(const char *_String,char **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long long __attribute__((__cdecl__)) _strtoui64_l(const char *_String,char **_EndPtr,int _Radix,_locale_t _Locale);
+  ldiv_t __attribute__((__cdecl__)) ldiv(long _Numerator,long _Denominator);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ltoa(long _Value,char *_Dest,int _Radix) ;
+  int __attribute__((__cdecl__)) mblen(const char *_Ch,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _mblen_l(const char *_Ch,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrlen(const char *_Str);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrlen_l(const char *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrnlen(const char *_Str,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrnlen_l(const char *_Str,size_t _MaxCount,_locale_t _Locale);
+  int __attribute__((__cdecl__)) mbtowc(wchar_t * __restrict__ _DstCh,const char * __restrict__ _SrcCh,size_t _SrcSizeInBytes);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _mbtowc_l(wchar_t * __restrict__ _DstCh,const char * __restrict__ _SrcCh,size_t _SrcSizeInBytes,_locale_t _Locale);
+  size_t __attribute__((__cdecl__)) mbstowcs(wchar_t * __restrict__ _Dest,const char * __restrict__ _Source,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstowcs_l(wchar_t * __restrict__ _Dest,const char * __restrict__ _Source,size_t _MaxCount,_locale_t _Locale);
+  int __attribute__((__cdecl__)) mkstemp(char *template_name);
+  int __attribute__((__cdecl__)) rand(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _set_error_mode(int _Mode);
+  void __attribute__((__cdecl__)) srand(unsigned int _Seed);
+# 369 "/usr/share/mingw-w64/include/stdlib.h" 3
+inline __attribute__((__cdecl__))
+double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtod(const char * __restrict__ _Str,char ** __restrict__ _EndPtr)
+{
+  double __attribute__((__cdecl__)) __mingw_strtod (const char * __restrict__, char ** __restrict__);
+  return __mingw_strtod( _Str, _EndPtr);
+}
+
+inline __attribute__((__cdecl__))
+float __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtof(const char * __restrict__ _Str,char ** __restrict__ _EndPtr)
+{
+  float __attribute__((__cdecl__)) __mingw_strtof (const char * __restrict__, char ** __restrict__);
+  return __mingw_strtof( _Str, _EndPtr);
+}
+
+
+
+
+
+
+  long double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtold(const char * __restrict__ , char ** __restrict__ );
+
+
+  extern double __attribute__((__cdecl__)) __attribute__ ((__nothrow__))
+  __strtod (const char * __restrict__ , char ** __restrict__);
+
+
+
+
+
+
+
+  float __attribute__((__cdecl__)) __mingw_strtof (const char * __restrict__, char ** __restrict__);
+  double __attribute__((__cdecl__)) __mingw_strtod (const char * __restrict__, char ** __restrict__);
+  long double __attribute__((__cdecl__)) __mingw_strtold(const char * __restrict__, char ** __restrict__);
+
+  __attribute__ ((__dllimport__)) float __attribute__((__cdecl__)) _strtof_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _strtod_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,_locale_t _Locale);
+  long __attribute__((__cdecl__)) strtol(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _strtol_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+  unsigned long __attribute__((__cdecl__)) strtoul(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _strtoul_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+
+
+  int __attribute__((__cdecl__)) system(const char *_Command);
+
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ultoa(unsigned long _Value,char *_Dest,int _Radix) ;
+  int __attribute__((__cdecl__)) wctomb(char *_MbCh,wchar_t _WCh) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wctomb_l(char *_MbCh,wchar_t _WCh,_locale_t _Locale) ;
+  size_t __attribute__((__cdecl__)) wcstombs(char * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _MaxCount) ;
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcstombs_l(char * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _MaxCount,_locale_t _Locale) ;
+# 452 "/usr/share/mingw-w64/include/stdlib.h" 3
+  void *__attribute__((__cdecl__)) calloc(size_t _NumOfElements,size_t _SizeOfElements);
+  void __attribute__((__cdecl__)) free(void *_Memory);
+  void *__attribute__((__cdecl__)) malloc(size_t _Size);
+  void *__attribute__((__cdecl__)) realloc(void *_Memory,size_t _NewSize);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _aligned_free(void *_Memory);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_malloc(size_t _Size,size_t _Alignment);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_malloc(size_t _Size,size_t _Alignment,size_t _Offset);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_realloc(void *_Memory,size_t _Size,size_t _Alignment);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_realloc(void *_Memory,size_t _Size,size_t _Alignment,size_t _Offset);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _recalloc(void *_Memory,size_t _Count,size_t _Size);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_recalloc(void *_Memory,size_t _Count,size_t _Size,size_t _Alignment);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_recalloc(void *_Memory,size_t _Count,size_t _Size,size_t _Alignment,size_t _Offset);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _aligned_msize(void *_Memory,size_t _Alignment,size_t _Offset);
+# 540 "/usr/share/mingw-w64/include/stdlib.h" 3
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _putenv(const char *_EnvString);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wputenv(const wchar_t *_EnvString);
+# 550 "/usr/share/mingw-w64/include/stdlib.h" 3
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _fullpath(char *_FullPath,const char *_Path,size_t _SizeInBytes);
+
+
+
+
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ecvt(double _Val,int _NumOfDigits,int *_PtDec,int *_PtSign) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _fcvt(double _Val,int _NumOfDec,int *_PtDec,int *_PtSign) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _gcvt(double _Val,int _NumOfDigits,char *_DstBuf) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atodbl(_CRT_DOUBLE *_Result,char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoldbl(_LDOUBLE *_Result,char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoflt(_CRT_FLOAT *_Result,char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atodbl_l(_CRT_DOUBLE *_Result,char *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoldbl_l(_LDOUBLE *_Result,char *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoflt_l(_CRT_FLOAT *_Result,char *_Str,_locale_t _Locale);
+# 579 "/usr/share/mingw-w64/include/stdlib.h" 3
+unsigned long __attribute__((__cdecl__)) _lrotl(unsigned long,int);
+unsigned long __attribute__((__cdecl__)) _lrotr(unsigned long,int);
+
+
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _makepath(char *_Path,const char *_Drive,const char *_Dir,const char *_Filename,const char *_Ext);
+  _onexit_t __attribute__((__cdecl__)) _onexit(_onexit_t _Func);
+
+
+
+
+
+       
+       
+
+
+  __extension__ unsigned long long __attribute__((__cdecl__)) _rotl64(unsigned long long _Val,int _Shift);
+  __extension__ unsigned long long __attribute__((__cdecl__)) _rotr64(unsigned long long Value,int Shift);
+       
+       
+       
+       
+
+
+  unsigned int __attribute__((__cdecl__)) _rotr(unsigned int _Val,int _Shift);
+  unsigned int __attribute__((__cdecl__)) _rotl(unsigned int _Val,int _Shift);
+       
+       
+  __extension__ unsigned long long __attribute__((__cdecl__)) _rotr64(unsigned long long _Val,int _Shift);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _searchenv(const char *_Filename,const char *_EnvVar,char *_ResultPath) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _splitpath(const char *_FullPath,char *_Drive,char *_Dir,char *_Filename,char *_Ext) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _swab(char *_Buf1,char *_Buf2,int _SizeInBytes);
+# 633 "/usr/share/mingw-w64/include/stdlib.h" 3
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _beep(unsigned _Frequency,unsigned _Duration) __attribute__ ((__deprecated__));
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _seterrormode(int _Mode) __attribute__ ((__deprecated__));
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _sleep(unsigned long _Duration) __attribute__ ((__deprecated__));
+# 657 "/usr/share/mingw-w64/include/stdlib.h" 3
+  char *__attribute__((__cdecl__)) ecvt(double _Val,int _NumOfDigits,int *_PtDec,int *_PtSign) ;
+  char *__attribute__((__cdecl__)) fcvt(double _Val,int _NumOfDec,int *_PtDec,int *_PtSign) ;
+  char *__attribute__((__cdecl__)) gcvt(double _Val,int _NumOfDigits,char *_DstBuf) ;
+  char *__attribute__((__cdecl__)) itoa(int _Val,char *_DstBuf,int _Radix) ;
+  char *__attribute__((__cdecl__)) ltoa(long _Val,char *_DstBuf,int _Radix) ;
+  int __attribute__((__cdecl__)) putenv(const char *_EnvString) ;
+
+
+
+  void __attribute__((__cdecl__)) swab(char *_Buf1,char *_Buf2,int _SizeInBytes) ;
+
+
+  char *__attribute__((__cdecl__)) ultoa(unsigned long _Val,char *_Dstbuf,int _Radix) ;
+  _onexit_t __attribute__((__cdecl__)) onexit(_onexit_t _Func);
+
+
+
+
+
+  typedef struct { __extension__ long long quot, rem; } lldiv_t;
+
+  __extension__ lldiv_t __attribute__((__cdecl__)) lldiv(long long, long long);
+
+  __extension__ long long __attribute__((__cdecl__)) llabs(long long);
+
+
+
+
+  __extension__ long long __attribute__((__cdecl__)) strtoll(const char * __restrict__, char ** __restrict, int);
+  __extension__ unsigned long long __attribute__((__cdecl__)) strtoull(const char * __restrict__, char ** __restrict__, int);
+
+
+  __extension__ long long __attribute__((__cdecl__)) atoll (const char *);
+
+
+  __extension__ long long __attribute__((__cdecl__)) wtoll (const wchar_t *);
+  __extension__ char *__attribute__((__cdecl__)) lltoa (long long, char *, int);
+  __extension__ char *__attribute__((__cdecl__)) ulltoa (unsigned long long , char *, int);
+  __extension__ wchar_t *__attribute__((__cdecl__)) lltow (long long, wchar_t *, int);
+  __extension__ wchar_t *__attribute__((__cdecl__)) ulltow (unsigned long long, wchar_t *, int);
+# 711 "/usr/share/mingw-w64/include/stdlib.h" 3
+}
+
+
+#pragma pack(pop)
+
+# 1 "/usr/share/mingw-w64/include/sec_api/stdlib_s.h" 1 3
+# 9 "/usr/share/mingw-w64/include/sec_api/stdlib_s.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 1 3
+# 30 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 3
+# 1 "/usr/share/mingw-w64/include/stdlib.h" 1 3
+# 31 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 2 3
+# 10 "/usr/share/mingw-w64/include/sec_api/stdlib_s.h" 2 3
+
+
+extern "C" {
+
+
+
+
+
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _dupenv_s(char **_PBuffer,size_t *_PBufferSizeInBytes,const char *_VarName);
+
+
+
+
+  __attribute__ ((__dllimport__)) void * __attribute__((__cdecl__)) bsearch_s(const void *_Key,const void *_Base,rsize_t _NumOfElements,rsize_t _SizeOfElements,int (__attribute__((__cdecl__)) * _PtFuncCompare)(void *, const void *, const void *), void *_Context);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) getenv_s(size_t *_ReturnSize,char *_DstBuf,rsize_t _DstSize,const char *_VarName);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) getenv_s(size_t * _ReturnSize, char (&_Dest)[__size], const char * _VarName) { return getenv_s(_ReturnSize, _Dest, __size, _VarName); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _itoa_s(int _Value,char *_DstBuf,size_t _Size,int _Radix);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _itoa_s(int _Value, char (&_Dest)[__size], int _Radix) { return _itoa_s(_Value, _Dest, __size, _Radix); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _i64toa_s(long long _Val,char *_DstBuf,size_t _Size,int _Radix);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ui64toa_s(unsigned long long _Val,char *_DstBuf,size_t _Size,int _Radix);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ltoa_s(long _Val,char *_DstBuf,size_t _Size,int _Radix);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _ltoa_s(long _Value, char (&_Dest)[__size], int _Radix) { return _ltoa_s(_Value, _Dest, __size, _Radix); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) mbstowcs_s(size_t *_PtNumOfCharConverted,wchar_t *_DstBuf,size_t _SizeInWords,const char *_SrcBuf,size_t _MaxCount);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) mbstowcs_s(size_t * _PtNumOfCharConverted, wchar_t (&_Dest)[__size], const char * _Source, size_t _MaxCount) { return mbstowcs_s(_PtNumOfCharConverted, _Dest, __size, _Source, _MaxCount); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _mbstowcs_s_l(size_t *_PtNumOfCharConverted,wchar_t *_DstBuf,size_t _SizeInWords,const char *_SrcBuf,size_t _MaxCount,_locale_t _Locale);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _mbstowcs_s_l(size_t * _PtNumOfCharConverted, wchar_t (&_Dest)[__size], const char * _Source, size_t _MaxCount, _locale_t _Locale) { return _mbstowcs_s_l(_PtNumOfCharConverted, _Dest, __size, _Source, _MaxCount, _Locale); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ultoa_s(unsigned long _Val,char *_DstBuf,size_t _Size,int _Radix);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _ultoa_s(unsigned long _Value, char (&_Dest)[__size], int _Radix) { return _ultoa_s(_Value, _Dest, __size, _Radix); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wctomb_s(int *_SizeConverted,char *_MbCh,rsize_t _SizeInBytes,wchar_t _WCh);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wctomb_s_l(int *_SizeConverted,char *_MbCh,size_t _SizeInBytes,wchar_t _WCh,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) wcstombs_s(size_t *_PtNumOfCharConverted,char *_Dst,size_t _DstSizeInBytes,const wchar_t *_Src,size_t _MaxCountInBytes);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) wcstombs_s(size_t* _PtNumOfCharConverted, char (&_Dst)[__size], const wchar_t* _Src, size_t _MaxCountInBytes) { return wcstombs_s(_PtNumOfCharConverted, _Dst, __size, _Src, _MaxCountInBytes); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _wcstombs_s_l(size_t *_PtNumOfCharConverted,char *_Dst,size_t _DstSizeInBytes,const wchar_t *_Src,size_t _MaxCountInBytes,_locale_t _Locale);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _wcstombs_s_l(size_t* _PtNumOfCharConverted, char (&_Dst)[__size], const wchar_t* _Src, size_t _MaxCountInBytes, _locale_t _Locale) { return _wcstombs_s_l(_PtNumOfCharConverted, _Dst, __size, _Src, _MaxCountInBytes, _Locale); } }
+
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ecvt_s(char *_DstBuf,size_t _Size,double _Val,int _NumOfDights,int *_PtDec,int *_PtSign);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _fcvt_s(char *_DstBuf,size_t _Size,double _Val,int _NumOfDec,int *_PtDec,int *_PtSign);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _gcvt_s(char *_DstBuf,size_t _Size,double _Val,int _NumOfDigits);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _makepath_s(char *_PathResult,size_t _Size,const char *_Drive,const char *_Dir,const char *_Filename,const char *_Ext);
+  extern "C++" { template <size_t __size> inline errno_t __attribute__((__cdecl__)) _makepath_s(char (&_PathResult)[__size], const char* _Drive, const char* _Dir, const char* _Filename, const char* _Ext) { return _makepath_s(_PathResult,__size,_Drive,_Dir,_Filename,_Ext); } }
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _putenv_s(const char *_Name,const char *_Value);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _searchenv_s(const char *_Filename,const char *_EnvVar,char *_ResultPath,size_t _SizeInBytes);
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _splitpath_s(const char *_FullPath,char *_Drive,size_t _DriveSize,char *_Dir,size_t _DirSize,char *_Filename,size_t _FilenameSize,char *_Ext,size_t _ExtSize);
+  extern "C++" { template <size_t __drive_size, size_t __dir_size, size_t __name_size, size_t __ext_size> inline errno_t __attribute__((__cdecl__)) _splitpath_s(const char *_Dest, char (&__drive)[__drive_size], char (&__dir)[__dir_size], char (&__name)[__name_size], char (&__ext)[__ext_size]) { return _splitpath_s(_Dest, __drive, __drive_size, __dir, __dir_size, __name, __name_size, __ext, __ext_size); } }
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) qsort_s(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(void *,const void *,const void *),void *_Context);
+
+
+
+
+
+}
+# 717 "/usr/share/mingw-w64/include/stdlib.h" 2 3
+# 1 "/usr/share/mingw-w64/include/malloc.h" 1 3
+# 11 "/usr/share/mingw-w64/include/malloc.h" 3
+#pragma pack(push,_CRT_PACKING)
+
+
+extern "C" {
+# 52 "/usr/share/mingw-w64/include/malloc.h" 3
+  typedef struct _heapinfo {
+    int *_pentry;
+    size_t _size;
+    int _useflag;
+  } _HEAPINFO;
+
+
+
+  __attribute__ ((__dllimport__)) unsigned int *__attribute__((__cdecl__)) __p__amblksiz(void);
+# 129 "/usr/share/mingw-w64/include/malloc.h" 3
+void * __mingw_aligned_malloc (size_t _Size, size_t _Alignment);
+void __mingw_aligned_free (void *_Memory);
+void * __mingw_aligned_offset_realloc (void *_Memory, size_t _Size, size_t _Alignment, size_t _Offset);
+void * __mingw_aligned_offset_malloc (size_t, size_t, size_t);
+void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
+size_t __mingw_aligned_msize (void *memblock, size_t alignment, size_t offset);
+
+
+
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/mm_malloc.h" 1 3 4
+# 27 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/mm_malloc.h" 3 4
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 1 3 4
+# 28 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/mm_malloc.h" 2 3 4
+
+# 1 "/usr/share/mingw-w64/include/errno.h" 1 3 4
+# 12 "/usr/share/mingw-w64/include/errno.h" 3 4
+extern "C" {
+# 239 "/usr/share/mingw-w64/include/errno.h" 3 4
+}
+# 30 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/mm_malloc.h" 2 3 4
+
+
+static __inline__ void *
+_mm_malloc (size_t __size, size_t __align)
+{
+  void * __malloc_ptr;
+  void * __aligned_ptr;
+
+
+  if (__align & (__align - 1))
+    {
+
+      (*_errno()) = 22;
+
+      return ((void *) 0);
+    }
+
+  if (__size == 0)
+    return ((void *) 0);
+
+
+
+
+
+    if (__align < 2 * sizeof (void *))
+      __align = 2 * sizeof (void *);
+
+  __malloc_ptr = malloc (__size + __align);
+  if (!__malloc_ptr)
+    return ((void *) 0);
+
+
+  __aligned_ptr = (void *) (((size_t) __malloc_ptr + __align)
+       & ~((size_t) (__align) - 1));
+
+
+  ((void **) __aligned_ptr)[-1] = __malloc_ptr;
+
+  return __aligned_ptr;
+}
+
+static __inline__ void
+_mm_free (void *__aligned_ptr)
+{
+  if (__aligned_ptr)
+    free (((void **) __aligned_ptr)[-1]);
+}
+# 139 "/usr/share/mingw-w64/include/malloc.h" 2 3
+
+
+
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _resetstkoflw (void);
+
+  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _set_malloc_crt_max_wait(unsigned long _NewValue);
+
+
+
+
+
+
+
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _expand(void *_Memory,size_t _NewSize);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _msize(void *_Memory);
+# 167 "/usr/share/mingw-w64/include/malloc.h" 3
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _get_sbh_threshold(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _set_sbh_threshold(size_t _NewValue);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _set_amblksiz(size_t _Value);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_amblksiz(size_t *_Value);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapadd(void *_Memory,size_t _Size);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapchk(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapmin(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapset(unsigned int _Fill);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapwalk(_HEAPINFO *_EntryInfo);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _heapused(size_t *_Used,size_t *_Commit);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _get_heap_handle(void);
+# 190 "/usr/share/mingw-w64/include/malloc.h" 3
+  static __inline void *_MarkAllocaS(void *_Ptr,unsigned int _Marker) {
+    if(_Ptr) {
+      *((unsigned int*)_Ptr) = _Marker;
+      _Ptr = (char*)_Ptr + 16;
+    }
+    return _Ptr;
+  }
+# 218 "/usr/share/mingw-w64/include/malloc.h" 3
+  static __inline void __attribute__((__cdecl__)) _freea(void *_Memory) {
+    unsigned int _Marker;
+    if(_Memory) {
+      _Memory = (char*)_Memory - 16;
+      _Marker = *(unsigned int *)_Memory;
+      if(_Marker==0xDDDD) {
+ free(_Memory);
+      }
+
+
+
+
+
+    }
+  }
+# 261 "/usr/share/mingw-w64/include/malloc.h" 3
+}
+
+
+#pragma pack(pop)
+# 718 "/usr/share/mingw-w64/include/stdlib.h" 2 3
+# 84 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 2 3
+
+#pragma GCC diagnostic pop
+
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wpedantic"
+#pragma GCC diagnostic ignored "-Wlong-long"
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
+extern "C++"
+{
+namespace std
+{
+
+
+  using ::abs;
+
+
+  inline long
+  abs(long __i) { return __builtin_labs(__i); }
+
+
+
+  inline long long
+  abs(long long __x) { return __builtin_llabs (__x); }
+# 76 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
+  inline constexpr double
+  abs(double __x)
+  { return __builtin_fabs(__x); }
+
+  inline constexpr float
+  abs(float __x)
+  { return __builtin_fabsf(__x); }
+
+  inline constexpr long double
+  abs(long double __x)
+  { return __builtin_fabsl(__x); }
+
+
+
+  __extension__ inline constexpr __int128
+  abs(__int128 __x) { return __x >= 0 ? __x : -__x; }
+# 141 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/std_abs.h" 3
+  __extension__ inline constexpr
+  __float128
+  abs(__float128 __x)
+  {
+
+
+
+
+
+
+    return __builtin_signbit(__x) ? -__x : __x;
+
+  }
+
+
+
+}
+}
+
+#pragma GCC diagnostic pop
+# 88 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 2 3
+# 131 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 3
+extern "C++"
+{
+namespace std
+{
+
+
+  using ::div_t;
+  using ::ldiv_t;
+
+  using ::abort;
+
+
+
+  using ::atexit;
+
+
+
+
+
+  using ::atof;
+  using ::atoi;
+  using ::atol;
+  using ::bsearch;
+  using ::calloc;
+  using ::div;
+  using ::exit;
+  using ::free;
+  using ::getenv;
+  using ::labs;
+  using ::ldiv;
+  using ::malloc;
+
+  using ::mblen;
+  using ::mbstowcs;
+  using ::mbtowc;
+
+  using ::qsort;
+
+
+
+
+
+  using ::rand;
+  using ::realloc;
+  using ::srand;
+  using ::strtod;
+  using ::strtol;
+  using ::strtoul;
+  using ::system;
+
+  using ::wcstombs;
+  using ::wctomb;
+
+
+
+  inline ldiv_t
+  div(long __i, long __j) noexcept { return ldiv(__i, __j); }
+
+
+
+
+}
+# 205 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 3
+namespace __gnu_cxx
+{
+
+
+
+  using ::lldiv_t;
+
+
+
+
+
+  using ::_Exit;
+
+
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wlong-long"
+  using ::llabs;
+
+  inline lldiv_t
+  div(long long __n, long long __d)
+  { lldiv_t __q; __q.quot = __n / __d; __q.rem = __n % __d; return __q; }
+
+  using ::lldiv;
+#pragma GCC diagnostic pop
+# 240 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 3
+  using ::atoll;
+  using ::strtoll;
+  using ::strtoull;
+
+  using ::strtof;
+  using ::strtold;
+
+
+}
+
+namespace std
+{
+
+  using ::__gnu_cxx::lldiv_t;
+
+  using ::__gnu_cxx::_Exit;
+
+  using ::__gnu_cxx::llabs;
+  using ::__gnu_cxx::div;
+  using ::__gnu_cxx::lldiv;
+
+  using ::__gnu_cxx::atoll;
+  using ::__gnu_cxx::strtof;
+  using ::__gnu_cxx::strtoll;
+  using ::__gnu_cxx::strtoull;
+  using ::__gnu_cxx::strtold;
+}
+# 284 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdlib" 3
+}
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 2 3
+
 using std::abort;
 using std::atexit;
 using std::exit;
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdlib.h" 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdlib.h" 3
   using std::_Exit;
 
 
@@ -8051,8 +8094,8 @@ using std::system;
 
 using std::wcstombs;
 using std::wctomb;
-# 33 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr-default.h" 2 3
-# 360 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr-default.h" 3
+# 33 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h" 2 3
+# 360 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h" 3
 # 1 "/usr/share/mingw-w64/include/sys/timeb.h" 1 3
 # 15 "/usr/share/mingw-w64/include/sys/timeb.h" 3
 #pragma pack(push,_CRT_PACKING)
@@ -8113,9 +8156,9 @@ struct itimerspec {
 
 
 
+  void __attribute__((__cdecl__)) ftime (struct timeb *) __asm__("_ftime64");
 
 
-  void __attribute__((__cdecl__)) ftime (struct timeb *) __asm__("__ftime32");
 
 
 
@@ -8139,7 +8182,7 @@ extern "C" {
 # 26 "/usr/share/mingw-w64/include/sec_api/sys/timeb_s.h" 3
 }
 # 127 "/usr/share/mingw-w64/include/sys/timeb.h" 2 3
-# 361 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr-default.h" 2 3
+# 361 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h" 2 3
 
 
 extern "C" {
@@ -8170,7 +8213,7 @@ typedef __gthr_win32_CRITICAL_SECTION __gthread_recursive_mutex_t;
 typedef __gthr_win32_CONDITION_VARIABLE __gthread_cond_t;
 
 typedef struct timespec __gthread_time_t;
-# 401 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr-default.h" 3
+# 401 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h" 3
 typedef struct {
   long __unused1;
   void *__unused2;
@@ -8378,7 +8421,7 @@ __gthread_cond_timedwait (__gthread_cond_t *__cond, __gthread_mutex_t *__mutex,
 {
   return __gthr_win32_cond_timedwait (__cond, __mutex, __abs_time);
 }
-# 842 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr-default.h" 3
+# 842 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr-default.h" 3
 inline __attribute__((__always_inline__)) void
 __gthread_recursive_mutex_init_function (__gthread_recursive_mutex_t *__mutex)
 {
@@ -8422,15 +8465,15 @@ __gthread_cond_wait_recursive (__gthread_cond_t *__cond,
 
 
 }
-# 158 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/gthr.h" 2 3
+# 158 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/gthr.h" 2 3
 
 
 #pragma GCC visibility pop
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/atomic_word.h" 1 3
-# 32 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/atomic_word.h" 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/atomic_word.h" 1 3
+# 32 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/atomic_word.h" 3
 typedef int _Atomic_word;
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 2 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 2 3
 
 
 
@@ -8466,7 +8509,7 @@ namespace __gnu_cxx
   __attribute__((__always_inline__))
   __atomic_add(volatile _Atomic_word* __mem, int __val)
   { __atomic_fetch_add(__mem, __val, 4); }
-# 82 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 3
+# 82 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/atomicity.h" 3
   inline _Atomic_word
   __attribute__((__always_inline__))
   __exchange_and_add_single(_Atomic_word* __mem, int __val)
@@ -8503,20 +8546,20 @@ namespace __gnu_cxx
 
 
 }
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 2 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 1 3
-# 45 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/allocator.h" 1 3
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++allocator.h" 1 3
-# 33 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++allocator.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 1 3
-# 35 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functexcept.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functexcept.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 1 3
+# 45 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/allocator.h" 1 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++allocator.h" 1 3
+# 33 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++allocator.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 1 3
+# 35 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functexcept.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functexcept.h" 3
 namespace std
 {
 
@@ -8590,10 +8633,10 @@ namespace std
 
   void
   __throw_bad_function_call() __attribute__((__noreturn__,__cold__));
-# 140 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functexcept.h" 3
+# 140 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functexcept.h" 3
 
 }
-# 36 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 2 3
+# 36 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 2 3
 
 
 
@@ -8602,7 +8645,7 @@ namespace std
 namespace std
 {
 
-# 62 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
+# 62 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
   template<typename _Tp>
     class __new_allocator
     {
@@ -8654,7 +8697,7 @@ namespace std
       const_pointer
       address(const_reference __x) const noexcept
       { return std::__addressof(__x); }
-# 125 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
+# 125 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
       [[__nodiscard__]] _Tp*
       allocate(size_type __n, const void* = static_cast<const void*>(0))
       {
@@ -8729,7 +8772,7 @@ namespace std
  destroy(_Up* __p)
  noexcept(std::is_nothrow_destructible<_Up>::value)
  { __p->~_Up(); }
-# 213 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
+# 213 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/new_allocator.h" 3
       template<typename _Up>
  friend __attribute__((__always_inline__)) bool
  operator==(const __new_allocator&, const __new_allocator<_Up>&)
@@ -8750,7 +8793,7 @@ namespace std
       _M_max_size() const noexcept
       {
 
- return std::size_t(0x7fffffff) / sizeof(_Tp);
+ return std::size_t(0x7fffffffffffffffLL) / sizeof(_Tp);
 
 
 
@@ -8759,16 +8802,16 @@ namespace std
 
 
 }
-# 34 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++allocator.h" 2 3
+# 34 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++allocator.h" 2 3
 
 
 namespace std
 {
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/c++allocator.h" 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/c++allocator.h" 3
   template<typename _Tp>
     using __allocator_base = __new_allocator<_Tp>;
 }
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/allocator.h" 2 3
+# 47 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/allocator.h" 2 3
 
 
 
@@ -8780,7 +8823,7 @@ namespace std
 namespace std
 {
 
-# 75 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
+# 75 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
   template<>
     class allocator<void>
     {
@@ -8808,9 +8851,9 @@ namespace std
       using is_always_equal
 
  = true_type;
-# 120 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
+# 120 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
     };
-# 132 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
+# 132 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
   template<typename _Tp>
     class allocator : public __allocator_base<_Tp>
     {
@@ -8869,7 +8912,7 @@ namespace std
 
 
       ~allocator() noexcept { }
-# 219 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
+# 219 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/allocator.h" 3
       friend __attribute__((__always_inline__))
       bool
       operator==(const allocator&, const allocator&) noexcept
@@ -8954,18 +8997,18 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 2 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 2 3
 
 
 
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wlong-long"
-# 76 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 76 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
 extern "C++" {
 
 namespace std
@@ -9054,7 +9097,7 @@ namespace std
       enum { __value = 1 };
       typedef __true_type __type;
     };
-# 176 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 176 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
   template<>
     struct __is_integer<char16_t>
     {
@@ -9125,7 +9168,9 @@ namespace std
       enum { __value = 1 };
       typedef __true_type __type;
     };
-# 281 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 264 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+__extension__ template<> struct __is_integer<__int128> { enum { __value = 1 }; typedef __true_type __type; }; __extension__ template<> struct __is_integer<unsigned __int128> { enum { __value = 1 }; typedef __true_type __type; };
+# 281 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
   template<typename _Tp>
     struct __is_floating
     {
@@ -9154,7 +9199,7 @@ namespace std
       enum { __value = 1 };
       typedef __true_type __type;
     };
-# 358 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 358 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
   template<typename _Tp>
     struct __is_arithmetic
     : public __traitor<__is_integer<_Tp>, __is_floating<_Tp> >
@@ -9223,7 +9268,7 @@ namespace std
       enum { __value = 1 };
       typedef __true_type __type;
     };
-# 438 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 438 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
   template<typename _Tp>
     struct __is_nonvolatile_trivially_copyable
     {
@@ -9298,7 +9343,7 @@ namespace std
   template<>
     struct __memcpyable_integer<bool>
     { enum { __width = 0 }; };
-# 599 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 599 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
   template<typename _Iter1, typename _Iter2>
     struct __memcmpable
     {
@@ -9358,7 +9403,7 @@ namespace std
     {
       static const bool __value = false;
     };
-# 668 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
+# 668 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cpp_type_traits.h" 3
   template<>
     struct __is_memcmp_ordered_with<std::byte, std::byte, true>
     { static constexpr bool __value = true; };
@@ -9404,12 +9449,12 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
+# 47 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream_insert.h" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream_insert.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cxxabi_forced.h" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/cxxabi_forced.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream_insert.h" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream_insert.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cxxabi_forced.h" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/cxxabi_forced.h" 3
 #pragma GCC visibility push(default)
 
 
@@ -9433,7 +9478,7 @@ namespace __cxxabiv1
 
 
 #pragma GCC visibility pop
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream_insert.h" 2 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream_insert.h" 2 3
 
 
 #pragma GCC diagnostic push
@@ -9535,24 +9580,24 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 1 3
-# 66 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/concept_check.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/concept_check.h" 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 1 3
+# 66 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/concept_check.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/concept_check.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wvariadic-macros"
-# 86 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/concept_check.h" 3
+# 86 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/concept_check.h" 3
 #pragma GCC diagnostic pop
-# 67 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/debug/assertions.h" 1 3
-# 68 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 1 3
-# 76 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
+# 67 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/debug/assertions.h" 1 3
+# 68 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 1 3
+# 76 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
 namespace std
 {
 
-# 95 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
+# 95 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
   struct input_iterator_tag { };
 
 
@@ -9568,7 +9613,7 @@ namespace std
 
 
   struct random_access_iterator_tag : public bidirectional_iterator_tag { };
-# 127 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
+# 127 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
   template<typename _Category, typename _Tp, typename _Distance = ptrdiff_t,
            typename _Pointer = _Tp*, typename _Reference = _Tp&>
     struct [[__deprecated__]] iterator
@@ -9584,7 +9629,7 @@ namespace std
 
       typedef _Reference reference;
     };
-# 151 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
+# 151 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
   template<typename _Iterator>
     struct iterator_traits;
 
@@ -9615,7 +9660,7 @@ namespace std
   template<typename _Iterator>
     struct iterator_traits
     : public __iterator_traits<_Iterator> { };
-# 211 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
+# 211 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_types.h" 3
   template<typename _Tp>
     struct iterator_traits<_Tp*>
     {
@@ -9684,7 +9729,7 @@ namespace std
 
 
 }
-# 69 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 2 3
+# 69 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 2 3
 
 namespace std
 {
@@ -9747,7 +9792,7 @@ namespace std
   template<typename _OutputIterator>
     void
     __distance(_OutputIterator, _OutputIterator, output_iterator_tag) = delete;
-# 146 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 3
+# 146 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 3
   template<typename _InputIterator>
     [[__nodiscard__]] __attribute__((__always_inline__))
     inline constexpr
@@ -9765,7 +9810,7 @@ namespace std
     {
 
      
-      do { if (__builtin_expect(!bool(__n >= 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h", 163, __PRETTY_FUNCTION__, "__n >= 0"); } while (false);
+      do { if (__builtin_expect(!bool(__n >= 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h", 163, __PRETTY_FUNCTION__, "__n >= 0"); } while (false);
       while (__n--)
  ++__i;
     }
@@ -9807,7 +9852,7 @@ namespace std
   template<typename _OutputIterator, typename _Distance>
     void
     __advance(_OutputIterator&, _Distance, output_iterator_tag) = delete;
-# 219 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 3
+# 219 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator_base_funcs.h" 3
   template<typename _InputIterator, typename _Distance>
     __attribute__((__always_inline__))
     inline constexpr void
@@ -9849,11 +9894,11 @@ namespace std
 
 
 }
-# 50 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 1 3
-# 65 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 3
+# 50 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 1 3
+# 65 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wlong-long"
 
@@ -10012,7 +10057,7 @@ namespace __gnu_cxx
   template<>
     struct __promote<float>
     { typedef float __type; };
-# 230 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 3
+# 230 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 3
   template<typename... _Tp>
     using __promoted_t = decltype((typename __promote<_Tp>::__type(0) + ...));
 
@@ -10026,16 +10071,16 @@ namespace __gnu_cxx
 
   template<typename _Tp, typename _Up, typename _Vp, typename _Wp>
     using __promote_4 = __promote<__promoted_t<_Tp, _Up, _Vp, _Wp>>;
-# 274 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 3
+# 274 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/type_traits.h" 3
 
 }
 }
 
 #pragma GCC diagnostic pop
-# 66 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 2 3
+# 66 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ptr_traits.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ptr_traits.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ptr_traits.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ptr_traits.h" 3
 namespace std
 {
 
@@ -10216,20 +10261,20 @@ namespace std
     constexpr typename std::pointer_traits<_Ptr>::element_type*
     __to_address(const _Ptr& __ptr)
     { return std::__to_address(__ptr.operator->()); }
-# 268 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ptr_traits.h" 3
+# 268 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ptr_traits.h" 3
 
 }
-# 68 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 2 3
-# 85 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 68 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 2 3
+# 85 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
 namespace std
 {
 
-# 108 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 108 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
  
-# 108 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 108 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-# 130 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 130 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Iterator>
     class reverse_iterator
     : public iterator<typename iterator_traits<_Iterator>::iterator_category,
@@ -10240,7 +10285,7 @@ namespace std
     {
       template<typename _Iter>
  friend class reverse_iterator;
-# 149 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 149 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
     protected:
       _Iterator current;
 
@@ -10252,7 +10297,7 @@ namespace std
 
       typedef typename __traits_type::difference_type difference_type;
       typedef typename __traits_type::reference reference;
-# 180 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 180 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
       constexpr
       reverse_iterator()
       noexcept(noexcept(_Iterator()))
@@ -10319,7 +10364,7 @@ namespace std
       base() const
       noexcept(noexcept(_Iterator(current)))
       { return current; }
-# 257 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 257 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
       [[__nodiscard__]]
       constexpr reference
       operator*() const
@@ -10453,7 +10498,7 @@ namespace std
       constexpr reference
       operator[](difference_type __n) const
       { return *(*this + __n); }
-# 417 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 417 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
     private:
       template<typename _Tp>
  static constexpr _Tp*
@@ -10465,7 +10510,7 @@ namespace std
  _S_to_pointer(_Tp __t)
         { return __t.operator->(); }
     };
-# 440 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 440 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Iterator>
     [[__nodiscard__]]
     inline constexpr bool
@@ -10551,7 +10596,7 @@ namespace std
     operator>=(const reverse_iterator<_IteratorL>& __x,
         const reverse_iterator<_IteratorR>& __y)
     { return __x.base() <= __y.base(); }
-# 617 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 617 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _IteratorL, typename _IteratorR>
     [[__nodiscard__]]
     inline constexpr auto
@@ -10584,12 +10629,12 @@ namespace std
     inline constexpr reverse_iterator<_Iterator>
     make_reverse_iterator(_Iterator __i)
     { return reverse_iterator<_Iterator>(__i); }
-# 659 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 659 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Iterator>
     struct __is_move_iterator<reverse_iterator<_Iterator> >
       : __is_move_iterator<_Iterator>
     { };
-# 676 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 676 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Container>
     class back_insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -10608,7 +10653,7 @@ namespace std
       explicit
       back_insert_iterator(_Container& __x)
       : container(std::__addressof(__x)) { }
-# 714 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 714 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
      
       back_insert_iterator&
       operator=(const typename _Container::value_type& __value)
@@ -10644,13 +10689,13 @@ namespace std
       operator++(int)
       { return *this; }
     };
-# 761 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 761 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Container>
     [[__nodiscard__]]
     inline back_insert_iterator<_Container>
     back_inserter(_Container& __x)
     { return back_insert_iterator<_Container>(__x); }
-# 777 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 777 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Container>
     class front_insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -10669,7 +10714,7 @@ namespace std
       explicit
       front_insert_iterator(_Container& __x)
       : container(std::__addressof(__x)) { }
-# 815 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 815 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
      
       front_insert_iterator&
       operator=(const typename _Container::value_type& __value)
@@ -10705,13 +10750,13 @@ namespace std
       operator++(int)
       { return *this; }
     };
-# 862 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 862 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Container>
     [[__nodiscard__]]
     inline front_insert_iterator<_Container>
     front_inserter(_Container& __x)
     { return front_insert_iterator<_Container>(__x); }
-# 882 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 882 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Container>
     class insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -10728,11 +10773,11 @@ namespace std
     public:
 
       typedef _Container container_type;
-# 907 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 907 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
      
       insert_iterator(_Container& __x, _Iter __i)
       : container(std::__addressof(__x)), iter(__i) {}
-# 943 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 943 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
      
       insert_iterator&
       operator=(const typename _Container::value_type& __value)
@@ -10772,7 +10817,7 @@ namespace std
     };
 
 #pragma GCC diagnostic pop
-# 1002 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1002 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Container>
     [[__nodiscard__]]
     inline insert_iterator<_Container>
@@ -10788,7 +10833,7 @@ namespace std
 namespace __gnu_cxx
 {
 
-# 1025 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1025 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Iterator, typename _Container>
     class __normal_iterator
     {
@@ -10836,7 +10881,7 @@ namespace __gnu_cxx
  constexpr
  __normal_iterator(const __normal_iterator<_Iter, _Container>& __i)
  noexcept
-# 1082 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1082 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
         : _M_current(__i.base()) { }
 
 
@@ -10923,7 +10968,7 @@ namespace __gnu_cxx
       base() const noexcept
       { return _M_current; }
     };
-# 1217 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1217 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _IteratorL, typename _IteratorR, typename _Container>
     [[__nodiscard__]] __attribute__((__always_inline__)) constexpr
     inline bool
@@ -11063,7 +11108,7 @@ namespace __gnu_cxx
 namespace std
 {
 
-# 1434 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1434 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Iterator>
     class move_iterator
 
@@ -11079,10 +11124,10 @@ namespace std
 
       template<typename _Iter2>
  friend class move_iterator;
-# 1473 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1473 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
     public:
       using iterator_type = _Iterator;
-# 1485 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1485 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
       typedef typename __traits_type::iterator_category iterator_category;
       typedef typename __traits_type::value_type value_type;
       typedef typename __traits_type::difference_type difference_type;
@@ -11129,7 +11174,7 @@ namespace std
       constexpr iterator_type
       base() const
       { return _M_current; }
-# 1543 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1543 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
       [[__nodiscard__]]
       constexpr reference
       operator*() const
@@ -11211,7 +11256,7 @@ namespace std
 
 
       { return std::move(_M_current[__n]); }
-# 1657 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1657 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
     };
 
   template<typename _IteratorL, typename _IteratorR>
@@ -11223,7 +11268,7 @@ namespace std
 
 
     { return __x.base() == __y.base(); }
-# 1678 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1678 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _IteratorL, typename _IteratorR>
     [[__nodiscard__]]
     inline constexpr bool
@@ -11282,7 +11327,7 @@ namespace std
         const move_iterator<_Iterator>& __y)
 
     { return __x.base() == __y.base(); }
-# 1745 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 1745 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Iterator>
     [[__nodiscard__]]
     inline constexpr bool
@@ -11369,7 +11414,7 @@ namespace std
       enum { __value = 1 };
       typedef __true_type __type;
     };
-# 2980 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 2980 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
 
 }
 
@@ -11402,7 +11447,7 @@ namespace std
     __niter_base(_Iterator __it)
     noexcept(std::is_nothrow_copy_constructible<_Iterator>::value)
     { return __it; }
-# 3027 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
+# 3027 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_iterator.h" 3
   template<typename _Ite, typename _Seq>
    
     decltype(std::__niter_base(std::declval<_Ite>()))
@@ -11491,13 +11536,13 @@ namespace std
 
 
 }
-# 51 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 1 3
-# 63 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 51 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 1 3
+# 63 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
 namespace std
 {
 
-# 116 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 116 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
   template<typename _Arg, typename _Result>
     struct unary_function
     {
@@ -11524,7 +11569,7 @@ namespace std
 
       typedef _Result result_type;
     } __attribute__ ((__deprecated__));
-# 157 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 157 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
   struct __is_transparent;
 
   template<typename _Tp = void>
@@ -11701,7 +11746,7 @@ namespace std
 
       typedef __is_transparent is_transparent;
     };
-# 346 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 346 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
   template<typename _Tp = void>
     struct equal_to;
 
@@ -11795,7 +11840,7 @@ namespace std
  if (std::__is_constant_evaluated())
    return __x > __y;
 
- return (unsigned int)__x > (unsigned int)__y;
+ return (long long unsigned int)__x > (long long unsigned int)__y;
       }
     };
 
@@ -11810,7 +11855,7 @@ namespace std
  if (std::__is_constant_evaluated())
    return __x < __y;
 
- return (unsigned int)__x < (unsigned int)__y;
+ return (long long unsigned int)__x < (long long unsigned int)__y;
       }
     };
 
@@ -11825,7 +11870,7 @@ namespace std
  if (std::__is_constant_evaluated())
    return __x >= __y;
 
- return (unsigned int)__x >= (unsigned int)__y;
+ return (long long unsigned int)__x >= (long long unsigned int)__y;
       }
     };
 
@@ -11840,7 +11885,7 @@ namespace std
  if (std::__is_constant_evaluated())
    return __x <= __y;
 
- return (unsigned int)__x <= (unsigned int)__y;
+ return (long long unsigned int)__x <= (long long unsigned int)__y;
       }
     };
 #pragma GCC diagnostic pop
@@ -12121,7 +12166,7 @@ namespace std
        is_convertible<_Tp, const volatile void*>,
        is_convertible<_Up, const volatile void*>>;
     };
-# 778 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 778 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
   template<typename _Tp = void>
     struct logical_and;
 
@@ -12330,7 +12375,7 @@ namespace std
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-# 1020 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 1020 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
   template<typename _Predicate>
     class [[__deprecated__]] unary_negate
     : public unary_function<typename _Predicate::argument_type, bool>
@@ -12385,7 +12430,7 @@ namespace std
     inline binary_negate<_Predicate>
     not2(const _Predicate& __pred)
     { return binary_negate<_Predicate>(__pred); }
-# 1101 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 1101 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
   template<typename _Arg, typename _Result>
     class pointer_to_unary_function : public unary_function<_Arg, _Result>
     {
@@ -12492,7 +12537,7 @@ namespace std
       operator()(const _Pair& __x) const
       { return __x.second; }
     };
-# 1228 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 1228 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
   template<typename _Ret, typename _Tp>
     class mem_fun_t : public unary_function<_Tp*, _Ret>
     {
@@ -12694,20 +12739,20 @@ namespace std
   template<typename _Func, typename _SfinaeType>
     using __has_is_transparent_t
       = typename __has_is_transparent<_Func, _SfinaeType>::type;
-# 1437 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
+# 1437 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 3
 
 }
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/backward/binders.h" 1 3
-# 60 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/backward/binders.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/backward/binders.h" 1 3
+# 60 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/backward/binders.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
 namespace std
 {
 
-# 107 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/backward/binders.h" 3
+# 107 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/backward/binders.h" 3
   template<typename _Operation>
     class binder1st
     : public unary_function<typename _Operation::second_argument_type,
@@ -12784,14 +12829,14 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 1442 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 2 3
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
+# 1442 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_function.h" 2 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
 namespace __gnu_cxx
 {
 
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
   template<typename _Tp>
     struct __is_integer_nonstrict
     : public std::__is_integer<_Tp>
@@ -12834,10 +12879,10 @@ namespace __gnu_cxx
 
   template<typename _Value>
     const int __numeric_traits_integer<_Value>::__digits;
-# 139 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
+# 139 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
   template<typename _Tp>
     using __int_traits = __numeric_traits_integer<_Tp>;
-# 159 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
+# 159 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
   template<typename _Value>
     struct __numeric_traits_floating
     {
@@ -12886,16 +12931,16 @@ namespace __gnu_cxx
     struct __numeric_traits<long double>
     : public __numeric_traits_floating<long double>
     { };
-# 240 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
+# 240 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/numeric_traits.h" 3
 
 }
-# 53 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 1 3
-# 64 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 1 3
-# 62 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/utility.h" 1 3
-# 45 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
+# 53 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 1 3
+# 64 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 1 3
+# 62 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/utility.h" 1 3
+# 45 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
 namespace std
 {
 
@@ -12979,7 +13024,7 @@ namespace std
  }
       return __n;
     }
-# 136 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
+# 136 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
   template<size_t __i, typename _Tp>
     using tuple_element_t = typename tuple_element<__i, _Tp>::type;
 
@@ -12992,7 +13037,7 @@ namespace std
   template<size_t _Num>
     struct _Build_index_tuple
     {
-# 156 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
+# 156 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
       using __type = _Index_tuple<__integer_pack(_Num)...>;
 
     };
@@ -13074,7 +13119,7 @@ namespace std
   template<size_t _Np, typename... _Types>
     struct _Nth_type
     { using type = __type_pack_element<_Np, _Types...>; };
-# 284 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
+# 284 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
   struct _Swallow_assign
   {
     template<class _Tp>
@@ -13082,12 +13127,12 @@ namespace std
       operator=(const _Tp&) const noexcept
       { return *this; }
   };
-# 309 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
+# 309 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
   inline constexpr _Swallow_assign ignore{};
-# 319 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
+# 319 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/utility.h" 3
 
 }
-# 63 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 2 3
+# 63 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 2 3
 
 
 
@@ -13096,7 +13141,7 @@ namespace std
 namespace std
 {
 
-# 79 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 79 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   struct piecewise_construct_t { explicit piecewise_construct_t() = default; };
 
 
@@ -13172,7 +13217,7 @@ namespace std
   template<size_t _Int, typename _Tp, size_t _Nm>
     constexpr const _Tp&&
     get(const array<_Tp, _Nm>&&) noexcept;
-# 176 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 176 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template <bool, typename _T1, typename _T2>
     struct _PCC
     {
@@ -13232,7 +13277,7 @@ namespace std
  return false;
       }
     };
-# 278 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 278 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _U1, typename _U2> class __pair_base
   {
 
@@ -13243,7 +13288,7 @@ namespace std
     __pair_base& operator=(const __pair_base&) = delete;
 
   };
-# 301 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 301 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     struct pair
     : public __pair_base<_T1, _T2>
@@ -13272,7 +13317,7 @@ namespace std
  swap(first, __p.first);
  swap(second, __p.second);
       }
-# 349 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 349 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
     private:
       template<typename... _Args1, size_t... _Indexes1,
         typename... _Args2, size_t... _Indexes2>
@@ -13280,7 +13325,7 @@ namespace std
  pair(tuple<_Args1...>&, tuple<_Args2...>&,
       _Index_tuple<_Indexes1...>, _Index_tuple<_Indexes2...>);
     public:
-# 739 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 739 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
       template <typename _U1 = _T1,
                 typename _U2 = _T2,
                 typename enable_if<__and_<
@@ -13354,7 +13399,7 @@ namespace std
  explicit constexpr pair(const pair<_U1, _U2>& __p)
  : first(__p.first), second(__p.second)
  { ; }
-# 823 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 823 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
     private:
 
 
@@ -13515,20 +13560,20 @@ namespace std
    second = std::forward<_U2>(__p.second);
    return *this;
  }
-# 1015 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1015 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
     };
 
 
 
 
   template<typename _T1, typename _T2> pair(_T1, _T2) -> pair<_T1, _T2>;
-# 1057 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1057 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     [[__nodiscard__]]
     inline constexpr bool
     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
     { return __x.first == __y.first && __x.second == __y.second; }
-# 1070 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1070 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     [[__nodiscard__]]
     inline constexpr bool
@@ -13563,7 +13608,7 @@ namespace std
     inline constexpr bool
     operator>=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
     { return !(__x < __y); }
-# 1112 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1112 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     inline
 
@@ -13576,12 +13621,12 @@ namespace std
     swap(pair<_T1, _T2>& __x, pair<_T1, _T2>& __y)
     noexcept(noexcept(__x.swap(__y)))
     { __x.swap(__y); }
-# 1135 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1135 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     typename enable_if<!__and_<__is_swappable<_T1>,
           __is_swappable<_T2>>::value>::type
     swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;
-# 1161 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1161 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     constexpr pair<typename __decay_and_strip<_T1>::__type,
                    typename __decay_and_strip<_T2>::__type>
@@ -13592,7 +13637,7 @@ namespace std
       typedef pair<__ds_type1, __ds_type2> __pair_type;
       return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
     }
-# 1184 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1184 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     struct __is_tuple_like_impl<pair<_T1, _T2>> : true_type
     { };
@@ -13751,16 +13796,16 @@ namespace std
     constexpr const _Tp&&
     get(const pair<_Up, _Tp>&& __p) noexcept
     { return std::forward<const _Tp>(__p.second); }
-# 1365 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
+# 1365 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_pair.h" 3
 
 }
-# 65 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
+# 65 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/debug/debug.h" 1 3
-# 48 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/debug/debug.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/debug/debug.h" 1 3
+# 48 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/debug/debug.h" 3
 namespace std
 {
   namespace __debug { }
@@ -13776,10 +13821,10 @@ namespace __gnu_debug
   template<typename _Ite, typename _Seq, typename _Cat>
     struct _Safe_iterator;
 }
-# 70 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
+# 70 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/predefined_ops.h" 1 3
-# 35 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/predefined_ops.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/predefined_ops.h" 1 3
+# 35 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/predefined_ops.h" 3
 namespace __gnu_cxx
 {
 namespace __ops
@@ -14151,26 +14196,26 @@ namespace __ops
 
 }
 }
-# 72 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
+# 72 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/concepts" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/concepts" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/concepts" 2 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 2 3
-# 63 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 64 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/concepts" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/concepts" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/concepts" 2 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 2 3
+# 63 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 64 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 2 3
 
 namespace std
 {
 
-# 157 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 3
+# 157 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 3
   template<typename _Tp>
     constexpr _Tp
     __rotl(_Tp __x, int __s) noexcept
@@ -14224,7 +14269,7 @@ namespace std
 
 
       return __builtin_clzg(__x, _Nd);
-# 249 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 3
+# 249 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 3
     }
 
   template<typename _Tp>
@@ -14243,7 +14288,7 @@ namespace std
 
 
       return __builtin_ctzg(__x, _Nd);
-# 294 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 3
+# 294 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 3
     }
 
   template<typename _Tp>
@@ -14259,7 +14304,7 @@ namespace std
     {
 
       return __builtin_popcountg(__x);
-# 334 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 3
+# 334 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 3
     }
 
   template<typename _Tp>
@@ -14282,7 +14327,7 @@ namespace std
 
       if (!std::__is_constant_evaluated())
  {
-   do { if (__builtin_expect(!bool(__shift_exponent != __int_traits<_Tp>::__digits), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit", 356, __PRETTY_FUNCTION__, "__shift_exponent != __int_traits<_Tp>::__digits"); } while (false);
+   do { if (__builtin_expect(!bool(__shift_exponent != __int_traits<_Tp>::__digits), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit", 356, __PRETTY_FUNCTION__, "__shift_exponent != __int_traits<_Tp>::__digits"); } while (false);
  }
 
       using __promoted_type = decltype(__x << 1);
@@ -14316,10 +14361,10 @@ namespace std
       constexpr auto _Nd = __gnu_cxx::__int_traits<_Tp>::__digits;
       return _Nd - std::__countl_zero(__x);
     }
-# 496 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bit" 3
+# 496 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bit" 3
 
 }
-# 77 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
+# 77 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 2 3
 
 
 
@@ -14341,10 +14386,10 @@ namespace std
     {
 
       static_assert(sizeof(_Tp) == sizeof(_Up), "can be compared with memcmp");
-# 109 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 109 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
  return __builtin_memcmp(__first1, __first2, sizeof(_Tp) * __num);
     }
-# 153 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 153 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2>
    
     inline void
@@ -14354,11 +14399,11 @@ namespace std
      
 
      
-# 186 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 186 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
       swap(*__a, *__b);
 
     }
-# 202 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 202 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2>
    
     _ForwardIterator2
@@ -14376,7 +14421,7 @@ namespace std
  std::iter_swap(__first1, __first2);
       return __first2;
     }
-# 231 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 231 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _Tp>
     [[__nodiscard__]] constexpr
     inline const _Tp&
@@ -14389,7 +14434,7 @@ namespace std
  return __b;
       return __a;
     }
-# 255 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 255 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _Tp>
     [[__nodiscard__]] constexpr
     inline const _Tp&
@@ -14402,7 +14447,7 @@ namespace std
  return __b;
       return __a;
     }
-# 279 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 279 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _Tp, typename _Compare>
     [[__nodiscard__]] constexpr
     inline const _Tp&
@@ -14413,7 +14458,7 @@ namespace std
  return __b;
       return __a;
     }
-# 301 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 301 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _Tp, typename _Compare>
     [[__nodiscard__]] constexpr
     inline const _Tp&
@@ -14472,7 +14517,7 @@ namespace std
  istreambuf_iterator<_CharT, char_traits<_CharT> >,
  istreambuf_iterator<_CharT, char_traits<_CharT> >,
  std::_Deque_iterator<_CharT, _CharT&, _CharT*>);
-# 395 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 395 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++17-extensions"
   template<bool _IsMove, typename _OutIter, typename _InIter>
@@ -14516,7 +14561,7 @@ namespace std
      }
    return __result;
  }
-# 461 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 461 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
       for (; __first != __last; ++__result, (void)++__first)
  std::__assign_one<_IsMove>(__result, __first);
       return __result;
@@ -14616,7 +14661,7 @@ namespace std
      *__result++ = *__first;
    return __result;
  }
-# 581 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 581 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
       if (__n > 0)
  {
    while (true)
@@ -14647,7 +14692,7 @@ namespace std
     __copy_n_a(istreambuf_iterator<_CharT, char_traits<_CharT> >, _Size,
         std::_Deque_iterator<_CharT, _CharT&, _CharT*>,
         bool);
-# 630 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 630 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _II, typename _OI>
    
     inline _OI
@@ -14662,7 +14707,7 @@ namespace std
       return std::__copy_move_a<__is_move_iterator<_II>::__value>
       (std::__miter_base(__first), std::__miter_base(__last), __result);
     }
-# 663 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 663 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _II, typename _OI>
    
     inline _OI
@@ -14712,7 +14757,7 @@ namespace std
      std::__assign_one<_IsMove>(__result, __first);
    return __result;
  }
-# 735 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 735 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
       while (__first != __last)
  {
    --__last;
@@ -14792,7 +14837,7 @@ namespace std
   const ::__gnu_debug::_Safe_iterator<_IIte, _ISeq, _ICat>&,
   const ::__gnu_debug::_Safe_iterator<_IIte, _ISeq, _ICat>&,
   const ::__gnu_debug::_Safe_iterator<_OIte, _OSeq, _OCat>&);
-# 833 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 833 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _BI1, typename _BI2>
     __attribute__((__always_inline__))
    
@@ -14809,7 +14854,7 @@ namespace std
       return std::__copy_move_backward_a<__is_move_iterator<_BI1>::__value>
       (std::__miter_base(__first), std::__miter_base(__last), __result);
     }
-# 869 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 869 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _BI1, typename _BI2>
     __attribute__((__always_inline__))
    
@@ -14883,7 +14928,7 @@ namespace std
 
 
       const _Up __val = __x;
-# 950 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 950 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
       if (const size_t __len = __last - __first)
  __builtin_memset(__first, static_cast<unsigned char>(__val), __len);
     }
@@ -14921,7 +14966,7 @@ namespace std
     __fill_a(const ::__gnu_debug::_Safe_iterator<_Ite, _Seq, _Cat>&,
       const ::__gnu_debug::_Safe_iterator<_Ite, _Seq, _Cat>&,
       const _Tp&);
-# 1000 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1000 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _ForwardIterator, typename _Tp>
     __attribute__((__always_inline__))
    
@@ -14951,7 +14996,13 @@ namespace std
   __size_to_integer(long long __n) { return __n; }
   inline constexpr unsigned long long
   __size_to_integer(unsigned long long __n) { return __n; }
-# 1055 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+
+
+  __extension__ inline constexpr __int128
+  __size_to_integer(__int128 __n) { return __n; }
+  __extension__ inline constexpr unsigned __int128
+  __size_to_integer(unsigned __int128 __n) { return __n; }
+# 1055 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   inline constexpr long long
   __size_to_integer(float __n) { return (long long)__n; }
   inline constexpr long long
@@ -15048,7 +15099,7 @@ namespace std
       std::__fill_a(__first, __first + __n, __value);
       return __first + __n;
     }
-# 1169 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1169 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _OI, typename _Size, typename _Tp>
     __attribute__((__always_inline__))
    
@@ -15400,7 +15451,7 @@ namespace std
  }
       return __first;
     }
-# 1532 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1532 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _ForwardIterator, typename _Tp>
     [[__nodiscard__]]
     inline _ForwardIterator
@@ -15425,11 +15476,11 @@ namespace std
     {
 
       return std::__bit_width(make_unsigned_t<_Tp>(__n)) - 1;
-# 1568 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1568 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
     }
 
 
-# 1584 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1584 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     [[__nodiscard__]]
     inline bool
@@ -15445,7 +15496,7 @@ namespace std
 
       return std::__equal_aux(__first1, __last1, __first2);
     }
-# 1615 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1615 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
     [[__nodiscard__]]
     inline bool
@@ -15521,7 +15572,7 @@ namespace std
  }
     }
 #pragma GCC diagnostic pop
-# 1706 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1706 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     [[__nodiscard__]]
     inline bool
@@ -15538,7 +15589,7 @@ namespace std
 
       return std::__equal4(__first1, __last1, __first2, __last2);
     }
-# 1739 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1739 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
     [[__nodiscard__]]
     inline bool
@@ -15554,7 +15605,7 @@ namespace std
       return std::__equal4(__first1, __last1, __first2, __last2,
           __binary_pred);
     }
-# 1771 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1771 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     [[__nodiscard__]]
     inline bool
@@ -15576,7 +15627,7 @@ namespace std
       return std::__lexicographical_compare_aux(__first1, __last1,
       __first2, __last2);
     }
-# 1806 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1806 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _II1, typename _II2, typename _Compare>
     [[__nodiscard__]]
     inline bool
@@ -15593,7 +15644,7 @@ namespace std
  (__first1, __last1, __first2, __last2,
   __gnu_cxx::__ops::__iter_comp_iter(__comp));
     }
-# 1921 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1921 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2,
     typename _BinaryPredicate>
    
@@ -15608,7 +15659,7 @@ namespace std
  }
       return pair<_InputIterator1, _InputIterator2>(__first1, __first2);
     }
-# 1949 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1949 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2>
     [[__nodiscard__]]
     inline pair<_InputIterator1, _InputIterator2>
@@ -15626,7 +15677,7 @@ namespace std
       return std::__mismatch(__first1, __last1, __first2,
         __gnu_cxx::__ops::__iter_equal_to_iter());
     }
-# 1983 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 1983 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2,
     typename _BinaryPredicate>
     [[__nodiscard__]]
@@ -15660,7 +15711,7 @@ namespace std
  }
       return pair<_InputIterator1, _InputIterator2>(__first1, __first2);
     }
-# 2031 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 2031 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2>
     [[__nodiscard__]]
     inline pair<_InputIterator1, _InputIterator2>
@@ -15679,7 +15730,7 @@ namespace std
       return std::__mismatch(__first1, __last1, __first2, __last2,
         __gnu_cxx::__ops::__iter_equal_to_iter());
     }
-# 2067 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 2067 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2,
     typename _BinaryPredicate>
     [[__nodiscard__]]
@@ -15830,7 +15881,7 @@ namespace std
  }
       return true;
     }
-# 2230 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 2230 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2>
    
     inline bool
@@ -15851,7 +15902,7 @@ namespace std
 
 
 
-# 2272 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
+# 2272 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2,
     typename _BinaryPredicate>
    
@@ -15876,15 +15927,15 @@ namespace std
 
 
 }
-# 54 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/invoke.h" 1 3
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/invoke.h" 3
+# 54 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/invoke.h" 1 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/invoke.h" 3
 namespace std
 {
 
-# 55 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/invoke.h" 3
+# 55 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/invoke.h" 3
   template<typename _Tp, typename _Up = typename __inv_unwrap<_Tp>::type>
     constexpr _Up&&
     __invfwd(typename remove_reference<_Tp>::type& __t) noexcept
@@ -15950,10 +16001,10 @@ namespace std
        std::forward<_Callable>(__fn),
        std::forward<_Args>(__args)...);
     }
-# 157 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/invoke.h" 3
+# 157 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/invoke.h" 3
 
 }
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 2 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 2 3
 
 
 
@@ -15963,7 +16014,7 @@ namespace std
 namespace std
 {
 
-# 58 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
+# 58 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
   template<typename _Res, typename... _ArgTypes>
     struct _Maybe_unary_or_binary_function { };
 
@@ -15994,7 +16045,7 @@ namespace std
  = _Maybe_unary_or_binary_function<_Res, _Class*, _ArgTypes...>;
       using __arity = integral_constant<size_t, sizeof...(_ArgTypes)>;
     };
-# 109 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
+# 109 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
 template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) > : _Mem_fn_traits_base<_Res, _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) > : _Mem_fn_traits_base<_Res, _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) const > : _Mem_fn_traits_base<_Res, const _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) const > : _Mem_fn_traits_base<_Res, const _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) volatile > : _Mem_fn_traits_base<_Res, volatile _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) volatile > : _Mem_fn_traits_base<_Res, volatile _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) const volatile > : _Mem_fn_traits_base<_Res, const volatile _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) const volatile > : _Mem_fn_traits_base<_Res, const volatile _Class, _ArgTypes...> { using __vararg = true_type; };
 template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) &> : _Mem_fn_traits_base<_Res, _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) &> : _Mem_fn_traits_base<_Res, _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) const &> : _Mem_fn_traits_base<_Res, const _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) const &> : _Mem_fn_traits_base<_Res, const _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) volatile &> : _Mem_fn_traits_base<_Res, volatile _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) volatile &> : _Mem_fn_traits_base<_Res, volatile _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) const volatile &> : _Mem_fn_traits_base<_Res, const volatile _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) const volatile &> : _Mem_fn_traits_base<_Res, const volatile _Class, _ArgTypes...> { using __vararg = true_type; };
 template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) &&> : _Mem_fn_traits_base<_Res, _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) &&> : _Mem_fn_traits_base<_Res, _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) const &&> : _Mem_fn_traits_base<_Res, const _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) const &&> : _Mem_fn_traits_base<_Res, const _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) volatile &&> : _Mem_fn_traits_base<_Res, volatile _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) volatile &&> : _Mem_fn_traits_base<_Res, volatile _Class, _ArgTypes...> { using __vararg = true_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes...) const volatile &&> : _Mem_fn_traits_base<_Res, const volatile _Class, _ArgTypes...> { using __vararg = false_type; }; template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_traits<_Res (_Class::*)(_ArgTypes..., ...) const volatile &&> : _Mem_fn_traits_base<_Res, const volatile _Class, _ArgTypes...> { using __vararg = true_type; };
@@ -16187,7 +16238,7 @@ template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_t
       using result_type = typename _Mem_fn_traits<_MemFunPtr>::__result_type;
     };
 #pragma GCC diagnostic pop
-# 309 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
+# 309 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
   template<typename _Tp>
     class reference_wrapper
 
@@ -16247,7 +16298,7 @@ template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_t
 
    return std::__invoke(get(), std::forward<_Args>(__args)...);
  }
-# 415 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
+# 415 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/refwrap.h" 3
     };
 
 
@@ -16295,11 +16346,11 @@ template<typename _Res, typename _Class, typename... _ArgTypes> struct _Mem_fn_t
 
 
 }
-# 55 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/range_access.h" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/range_access.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/initializer_list" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/initializer_list" 3
+# 55 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/range_access.h" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/range_access.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/initializer_list" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/initializer_list" 3
 namespace std
 {
 
@@ -16361,7 +16412,7 @@ namespace std
     end(initializer_list<_Tp> __ils) noexcept
     { return __ils.end(); }
 }
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/range_access.h" 2 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/range_access.h" 2 3
 
 
 
@@ -16586,7 +16637,7 @@ namespace std
     crend(const _Container& __cont) noexcept(noexcept(std::rend(__cont)))
       -> decltype(std::rend(__cont))
     { return std::rend(__cont); }
-# 271 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/range_access.h" 3
+# 271 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/range_access.h" 3
   template <typename _Container>
     [[nodiscard, __gnu__::__always_inline__]]
     constexpr auto
@@ -16674,18 +16725,18 @@ namespace std
     constexpr const _Tp*
     data(initializer_list<_Tp> __il) noexcept
     { return __il.begin(); }
-# 377 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/range_access.h" 3
+# 377 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/range_access.h" 3
 
 }
-# 56 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 1 3
-# 36 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 1 3
-# 33 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 1 3
-# 73 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
+# 56 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 1 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 1 3
+# 36 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 1 3
+# 33 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 1 3
+# 73 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
 namespace std
 {
 
@@ -16703,16 +16754,16 @@ namespace std
       else
  __location->~_Tp();
     }
-# 120 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
+# 120 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
   template<typename _Tp, typename... _Args>
    
     inline void
     _Construct(_Tp* __p, _Args&&... __args)
     {
-# 133 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
+# 133 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
       ::new(static_cast<void*>(__p)) _Tp(std::forward<_Args>(__args)...);
     }
-# 146 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
+# 146 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
   template<typename _T1>
    
     inline void
@@ -16739,7 +16790,7 @@ namespace std
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++17-extensions"
-# 217 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
+# 217 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
   template<typename _ForwardIterator>
     inline void
     _Destroy(_ForwardIterator __first, _ForwardIterator __last)
@@ -16750,7 +16801,7 @@ namespace std
       if constexpr (!is_trivially_destructible<_Value_type>::value)
  for (; __first != __last; ++__first)
    std::_Destroy(std::__addressof(*__first));
-# 236 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
+# 236 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/stl_construct.h" 3
     }
 
 
@@ -16801,8 +16852,8 @@ namespace std
 
 
 }
-# 34 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 2 3
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 34 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 2 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
 namespace std
 {
 
@@ -16810,7 +16861,7 @@ namespace std
 
 
  
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++14-extensions"
 #pragma GCC diagnostic ignored "-Wc++17-extensions"
@@ -16865,7 +16916,7 @@ namespace std
       using __pocs = typename _Tp::propagate_on_container_swap;
     template<typename _Tp>
       using __equal = __type_identity<typename _Tp::is_always_equal>;
-# 115 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 115 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
     template<typename _Alloc, typename _Sz, typename _Vp>
       using __allocate_hint_t
  = decltype(std::declval<_Alloc&>()
@@ -16877,7 +16928,7 @@ namespace std
       __has_allocate_hint<_Alloc, _Sz, _Vp,
      __void_t<__allocate_hint_t<_Alloc, _Sz, _Vp>>>
  = true;
-# 152 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 152 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
     template<typename _Alloc, typename _Tp, typename... _Args>
       using __construct_t
  = decltype(std::declval<_Alloc&>().construct(std::declval<_Tp*>(),
@@ -16906,7 +16957,7 @@ namespace std
       static constexpr bool __can_construct
  = __has_construct<_Alloc, _Tp, _Args...>
      || __has_new_expr<_Tp, void, _Args...>;
-# 189 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 189 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
     template<typename _Alloc, typename _Tp>
       using __destroy_t
  = decltype(std::declval<_Alloc&>().destroy(std::declval<_Tp*>()));
@@ -16916,7 +16967,7 @@ namespace std
       static constexpr bool __has_destroy<_Alloc, _Tp,
        __void_t<__destroy_t<_Alloc, _Tp>>>
  = true;
-# 207 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 207 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
     template<typename _Alloc>
       using __max_size_t = decltype(std::declval<const _Alloc&>().max_size());
     template<typename _Alloc, typename = void>
@@ -16925,7 +16976,7 @@ namespace std
       static constexpr bool __has_max_size<_Alloc,
         __void_t<__max_size_t<_Alloc>>>
  = true;
-# 225 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 225 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
     template<typename _Alloc>
       using __soccc_t
  = decltype(std::declval<const _Alloc&>()
@@ -16941,7 +16992,7 @@ namespace std
   template<typename _Alloc, typename _Up>
     using __alloc_rebind
       = typename __allocator_traits_base::template __rebind<_Alloc, _Up>::type;
-# 248 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 248 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
   template<typename _Alloc>
     struct allocator_traits : __allocator_traits_base
     {
@@ -17069,11 +17120,11 @@ namespace std
  using rebind_alloc = __alloc_rebind<_Alloc, _Tp>;
       template<typename _Tp>
  using rebind_traits = allocator_traits<rebind_alloc<_Tp>>;
-# 383 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 383 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       [[__nodiscard__]] static pointer
       allocate(_Alloc& __a, size_type __n)
       { return __a.allocate(__n); }
-# 398 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 398 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       [[__nodiscard__]] static pointer
       allocate(_Alloc& __a, size_type __n, const_void_pointer __hint)
       {
@@ -17082,11 +17133,11 @@ namespace std
  else
    return __a.allocate(__n);
       }
-# 415 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 415 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       static void
       deallocate(_Alloc& __a, pointer __p, size_type __n)
       { __a.deallocate(__p, __n); }
-# 430 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 430 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       template<typename _Tp, typename... _Args>
 
 
@@ -17102,7 +17153,7 @@ namespace std
    else
      std::_Construct(__p, std::forward<_Args>(__args)...);
  }
-# 454 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 454 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       template<typename _Tp>
  static void
  destroy(_Alloc& __a, _Tp* __p)
@@ -17113,7 +17164,7 @@ namespace std
    else
      std::_Destroy(__p);
  }
-# 473 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 473 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       static size_type
       max_size(const _Alloc& __a) noexcept
       {
@@ -17125,7 +17176,7 @@ namespace std
    return __gnu_cxx::__numeric_traits<size_type>::__max
      / sizeof(value_type);
       }
-# 493 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 493 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       static _Alloc
       select_on_container_copy_construction(const _Alloc& __rhs)
       {
@@ -17156,10 +17207,10 @@ namespace std
    else
      return is_nothrow_destructible<_Tp>::value;
  }
-# 548 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 548 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
     };
 #pragma GCC diagnostic pop
-# 559 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 559 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
   template<typename _Tp>
     struct allocator_traits<allocator<_Tp>>
     {
@@ -17204,12 +17255,12 @@ namespace std
 
       template<typename _Up>
  using rebind_traits = allocator_traits<allocator<_Up>>;
-# 611 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 611 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       [[__nodiscard__,__gnu__::__always_inline__]]
       static pointer
       allocate(allocator_type& __a, size_type __n)
       { return __a.allocate(__n); }
-# 626 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 626 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       [[__nodiscard__,__gnu__::__always_inline__]]
       static pointer
       allocate(allocator_type& __a, size_type __n,
@@ -17221,12 +17272,12 @@ namespace std
 
 
       }
-# 646 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 646 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       [[__gnu__::__always_inline__]]
       static void
       deallocate(allocator_type& __a, pointer __p, size_type __n)
       { __a.deallocate(__p, __n); }
-# 662 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 662 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       template<typename _Up, typename... _Args>
  [[__gnu__::__always_inline__]]
  static void
@@ -17246,7 +17297,7 @@ namespace std
 
 
  }
-# 689 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 689 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       template<typename _Up>
  [[__gnu__::__always_inline__]]
  static void
@@ -17286,7 +17337,7 @@ namespace std
       select_on_container_copy_construction(const allocator_type& __rhs)
       { return __rhs; }
     };
-# 736 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 736 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
   template<>
     struct allocator_traits<allocator<void>>
     {
@@ -17339,14 +17390,14 @@ namespace std
 
       static void
       deallocate(allocator_type&, void*, size_type) = delete;
-# 800 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 800 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       template<typename _Up, typename... _Args>
  [[__gnu__::__always_inline__]]
  static void
  construct(allocator_type&, _Up* __p, _Args&&... __args)
  noexcept(__is_nothrow_new_constructible<_Up, _Args...>)
  { std::_Construct(__p, std::forward<_Args>(__args)...); }
-# 814 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 814 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
       template<typename _Up>
  [[__gnu__::__always_inline__]]
  static void
@@ -17486,7 +17537,7 @@ namespace std
   template<typename _Alloc>
     using _RequireNotAllocator
       = typename enable_if<!__is_allocator<_Alloc>::value, _Alloc>::type;
-# 970 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 970 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
   template<typename _Alloc, bool = __is_empty(_Alloc)>
     struct __alloc_swap
     { static void _S_do_it(_Alloc&, _Alloc&) noexcept { } };
@@ -17532,7 +17583,7 @@ namespace std
 
       }
     };
-# 1023 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
+# 1023 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/alloc_traits.h" 3
   template<typename _ForwardIterator, typename _Allocator>
    
     void
@@ -17563,7 +17614,7 @@ namespace std
 
 
 }
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 2 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 2 3
 
 namespace __gnu_cxx
 {
@@ -17656,37 +17707,37 @@ template<typename _Alloc, typename = typename _Alloc::value_type>
     template<typename _Tp>
       struct rebind
       { typedef typename _Base_type::template rebind_alloc<_Tp> other; };
-# 182 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 3
+# 182 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/alloc_traits.h" 3
   };
 
 
 }
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 1 3
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 1 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 47 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 2 3
 
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
 namespace std
 {
 
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
   template<typename _Result, typename _Arg>
     struct __hash_base
     {
@@ -17751,7 +17802,7 @@ namespace std
       operator()(_Tp* __p) const noexcept
       { return reinterpret_cast<size_t>(__p); }
     };
-# 128 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
+# 128 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
   template<> struct hash<bool> : public __hash_base<size_t, bool> { size_t operator()(bool __val) const noexcept { return static_cast<size_t>(__val); } };
 
 
@@ -17800,7 +17851,13 @@ namespace std
 
 
   template<> struct hash<unsigned long long> : public __hash_base<size_t, unsigned long long> { size_t operator()(unsigned long long __val) const noexcept { return static_cast<size_t>(__val); } };
-# 204 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
+
+
+  __extension__
+  template<> struct hash<__int128> : public __hash_base<size_t, __int128> { size_t operator()(__int128 __val) const noexcept { return static_cast<size_t>(__val); } };
+  __extension__
+  template<> struct hash<__int128 unsigned> : public __hash_base<size_t, __int128 unsigned> { size_t operator()(__int128 unsigned __val) const noexcept { return static_cast<size_t>(__val); } };
+# 204 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
   struct _Hash_impl
   {
     static size_t
@@ -17879,7 +17936,7 @@ namespace std
       operator()(nullptr_t) const noexcept
       { return 0; }
     };
-# 297 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
+# 297 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/functional_hash.h" 3
   template<typename _Hash>
     struct __is_fast_hash : public std::true_type
     { };
@@ -17890,8 +17947,8 @@ namespace std
 
 
 }
-# 53 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 2 3
-# 66 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
+# 53 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 2 3
+# 66 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
 namespace std
 {
 
@@ -17914,7 +17971,7 @@ namespace std
    const bool __testoff = __off < __size - __pos;
    return __testoff ? __off : __size - __pos;
   }
-# 107 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
+# 107 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
   template<typename _CharT, typename _Traits = std::char_traits<_CharT>>
     class basic_string_view
     {
@@ -17961,7 +18018,7 @@ namespace std
       basic_string_view(const _CharT* __str, size_type __len) noexcept
       : _M_len{__len}, _M_str{__str}
       { }
-# 184 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
+# 184 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
       constexpr basic_string_view&
       operator=(const basic_string_view&) noexcept = default;
 
@@ -18038,7 +18095,7 @@ namespace std
       constexpr const_reference
       operator[](size_type __pos) const noexcept
       {
- do { if (__builtin_expect(!bool(__pos < this->_M_len), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view", 260, __PRETTY_FUNCTION__, "__pos < this->_M_len"); } while (false);
+ do { if (__builtin_expect(!bool(__pos < this->_M_len), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view", 260, __PRETTY_FUNCTION__, "__pos < this->_M_len"); } while (false);
  return *(this->_M_str + __pos);
       }
 
@@ -18057,7 +18114,7 @@ namespace std
       constexpr const_reference
       front() const noexcept
       {
- do { if (__builtin_expect(!bool(this->_M_len > 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view", 279, __PRETTY_FUNCTION__, "this->_M_len > 0"); } while (false);
+ do { if (__builtin_expect(!bool(this->_M_len > 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view", 279, __PRETTY_FUNCTION__, "this->_M_len > 0"); } while (false);
  return *this->_M_str;
       }
 
@@ -18065,7 +18122,7 @@ namespace std
       constexpr const_reference
       back() const noexcept
       {
- do { if (__builtin_expect(!bool(this->_M_len > 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view", 287, __PRETTY_FUNCTION__, "this->_M_len > 0"); } while (false);
+ do { if (__builtin_expect(!bool(this->_M_len > 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view", 287, __PRETTY_FUNCTION__, "this->_M_len > 0"); } while (false);
  return *(this->_M_str + this->_M_len - 1);
       }
 
@@ -18079,7 +18136,7 @@ namespace std
       constexpr void
       remove_prefix(size_type __n) noexcept
       {
- do { if (__builtin_expect(!bool(this->_M_len >= __n), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view", 301, __PRETTY_FUNCTION__, "this->_M_len >= __n"); } while (false);
+ do { if (__builtin_expect(!bool(this->_M_len >= __n), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view", 301, __PRETTY_FUNCTION__, "this->_M_len >= __n"); } while (false);
  this->_M_str += __n;
  this->_M_len -= __n;
       }
@@ -18087,7 +18144,7 @@ namespace std
       constexpr void
       remove_suffix(size_type __n) noexcept
       {
- do { if (__builtin_expect(!bool(this->_M_len >= __n), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view", 309, __PRETTY_FUNCTION__, "this->_M_len >= __n"); } while (false);
+ do { if (__builtin_expect(!bool(this->_M_len >= __n), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view", 309, __PRETTY_FUNCTION__, "this->_M_len >= __n"); } while (false);
  this->_M_len -= __n;
       }
 
@@ -18165,7 +18222,7 @@ namespace std
  return this->substr(__pos1, __n1)
      .compare(basic_string_view(__str, __n2));
       }
-# 452 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
+# 452 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
       [[nodiscard]]
       constexpr size_type
       find(basic_string_view __str, size_type __pos = 0) const noexcept
@@ -18307,7 +18364,7 @@ namespace std
       size_t _M_len;
       const _CharT* _M_str;
     };
-# 630 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
+# 630 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
   template<typename _CharT, typename _Traits>
     [[nodiscard]]
     constexpr bool
@@ -18493,7 +18550,7 @@ namespace std
   template<>
     struct __is_fast_hash<hash<wstring_view>> : std::false_type
     { };
-# 832 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
+# 832 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
   template<>
     struct hash<u16string_view>
     : public __hash_base<size_t, u16string_view>
@@ -18555,12 +18612,12 @@ namespace std
 #pragma GCC diagnostic pop
   }
   }
-# 908 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 3
+# 908 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 3
 
 }
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/string_view.tcc" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/string_view.tcc" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/string_view.tcc" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/string_view.tcc" 3
 namespace std
 {
 
@@ -18758,18 +18815,18 @@ namespace std
 
 
 }
-# 912 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string_view" 2 3
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
-# 68 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 912 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string_view" 2 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
+# 68 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
 namespace std
 {
 
 namespace __cxx11 {
-# 93 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 93 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     class basic_string
     {
-# 104 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 104 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       typedef typename __gnu_cxx::__alloc_traits<_Alloc>::template
  rebind<_CharT>::other _Char_alloc_type;
 
@@ -18809,7 +18866,7 @@ namespace __cxx11 {
       _S_allocate(_Char_alloc_type& __a, size_type __n)
       {
  pointer __p = _Alloc_traits::allocate(__a, __n);
-# 152 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 152 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
  return __p;
       }
 
@@ -18964,7 +19021,7 @@ namespace __cxx11 {
       void
       _M_destroy(size_type __size) throw()
       { _Alloc_traits::deallocate(_M_get_allocator(), _M_data(), __size + 1); }
-# 332 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 332 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _InIterator>
 
         void
@@ -19025,7 +19082,7 @@ namespace __cxx11 {
       }
 
     private:
-# 407 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 407 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       size_type
       _M_check(size_type __pos, const char* __s) const
@@ -19109,14 +19166,14 @@ namespace __cxx11 {
    if constexpr (__or_<is_same<_IterBase, _CharT*>,
          is_same<_IterBase, const _CharT*>>::value)
      _S_copy(__p, std::__niter_base(__k1), __k2 - __k1);
-# 502 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 502 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
    else
 
    for (; __k1 != __k2; ++__k1, (void)++__p)
      traits_type::assign(*__p, static_cast<_CharT>(*__k1));
  }
 #pragma GCC diagnostic pop
-# 549 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 549 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       static int
       _S_compare(size_type __n1, size_type __n2) noexcept
@@ -19187,7 +19244,7 @@ namespace __cxx11 {
       {
  _M_construct<true>(__str._M_data(), __str.length());
       }
-# 628 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 628 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string(const basic_string& __str, size_type __pos,
      const _Alloc& __a = _Alloc())
@@ -19215,7 +19272,7 @@ namespace __cxx11 {
  _M_construct(__start, __start + __str._M_limit(__pos, __n),
        std::forward_iterator_tag());
       }
-# 663 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 663 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string(const basic_string& __str, size_type __pos,
      size_type __n, const _Alloc& __a)
@@ -19226,7 +19283,7 @@ namespace __cxx11 {
  _M_construct(__start, __start + __str._M_limit(__pos, __n),
        std::forward_iterator_tag());
       }
-# 683 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 683 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string(const _CharT* __s, size_type __n,
      const _Alloc& __a = _Alloc())
@@ -19238,7 +19295,7 @@ namespace __cxx11 {
                                                  );
  _M_construct(__s, __s + __n, std::forward_iterator_tag());
       }
-# 703 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 703 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename = _RequireAllocator<_Alloc>>
 
      
@@ -19252,14 +19309,14 @@ namespace __cxx11 {
  const _CharT* __end = __s + traits_type::length(__s);
  _M_construct(__s, __end, forward_iterator_tag());
       }
-# 726 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 726 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename = _RequireAllocator<_Alloc>>
 
      
       basic_string(size_type __n, _CharT __c, const _Alloc& __a = _Alloc())
       : _M_dataplus(_M_local_data(), __a)
       { _M_construct(__n, __c); }
-# 741 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 741 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string(basic_string&& __str) noexcept
       : _M_dataplus(_M_local_data(), std::move(__str._M_get_allocator()))
@@ -19283,7 +19340,7 @@ namespace __cxx11 {
  __str._M_data(__str._M_use_local_data());
  __str._M_set_length(0);
       }
-# 797 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 797 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string(initializer_list<_CharT> __l, const _Alloc& __a = _Alloc())
       : _M_dataplus(_M_local_data(), __a)
@@ -19319,7 +19376,7 @@ namespace __cxx11 {
  else
    _M_construct(__str.begin(), __str.end(), std::forward_iterator_tag());
       }
-# 846 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 846 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
 
@@ -19337,7 +19394,7 @@ namespace __cxx11 {
 
 
  }
-# 872 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 872 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp,
         typename = enable_if_t<is_convertible_v<const _Tp&, __sv_type>>>
 
@@ -19383,7 +19440,7 @@ namespace __cxx11 {
       basic_string&
       operator=(const _CharT* __s)
       { return this->assign(__s); }
-# 925 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 925 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       operator=(_CharT __c)
@@ -19391,7 +19448,7 @@ namespace __cxx11 {
  this->assign(1, __c);
  return *this;
       }
-# 943 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 943 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       operator=(basic_string&& __str)
@@ -19637,11 +19694,11 @@ namespace __cxx11 {
  const size_t __allocmax = _Alloc_traits::max_size(_M_get_allocator());
  return (std::min)(__diffmax, __allocmax) - 1;
       }
-# 1199 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1199 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       void
       resize(size_type __n, _CharT __c);
-# 1213 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1213 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       void
       resize(size_type __n)
@@ -19656,7 +19713,7 @@ namespace __cxx11 {
       shrink_to_fit() noexcept
       { reserve(); }
 #pragma GCC diagnostic pop
-# 1266 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1266 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Operation>
  void
  __resize_and_overwrite(size_type __n, _Operation __op);
@@ -19676,7 +19733,7 @@ namespace __cxx11 {
    __builtin_unreachable ();
  return __sz;
       }
-# 1303 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1303 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       void
       reserve(size_type __res_arg);
@@ -19707,27 +19764,27 @@ namespace __cxx11 {
       bool
       empty() const noexcept
       { return _M_string_length == 0; }
-# 1345 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1345 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       const_reference
       operator[] (size_type __pos) const noexcept
       {
- do { if (__builtin_expect(!bool(__pos <= size()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1349, __PRETTY_FUNCTION__, "__pos <= size()"); } while (false);
+ do { if (__builtin_expect(!bool(__pos <= size()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1349, __PRETTY_FUNCTION__, "__pos <= size()"); } while (false);
  return _M_data()[__pos];
       }
-# 1363 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1363 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       reference
       operator[](size_type __pos)
       {
 
 
- do { if (__builtin_expect(!bool(__pos <= size()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1369, __PRETTY_FUNCTION__, "__pos <= size()"); } while (false);
+ do { if (__builtin_expect(!bool(__pos <= size()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1369, __PRETTY_FUNCTION__, "__pos <= size()"); } while (false);
 
  ;
  return _M_data()[__pos];
       }
-# 1385 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1385 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       const_reference
       at(size_type __n) const
@@ -19739,7 +19796,7 @@ namespace __cxx11 {
        __n, this->size());
  return _M_data()[__n];
       }
-# 1407 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1407 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       reference
       at(size_type __n)
@@ -19761,7 +19818,7 @@ namespace __cxx11 {
       reference
       front() noexcept
       {
- do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1428, __PRETTY_FUNCTION__, "!empty()"); } while (false);
+ do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1428, __PRETTY_FUNCTION__, "!empty()"); } while (false);
  return operator[](0);
       }
 
@@ -19773,7 +19830,7 @@ namespace __cxx11 {
       const_reference
       front() const noexcept
       {
- do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1440, __PRETTY_FUNCTION__, "!empty()"); } while (false);
+ do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1440, __PRETTY_FUNCTION__, "!empty()"); } while (false);
  return operator[](0);
       }
 
@@ -19785,7 +19842,7 @@ namespace __cxx11 {
       reference
       back() noexcept
       {
- do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1452, __PRETTY_FUNCTION__, "!empty()"); } while (false);
+ do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1452, __PRETTY_FUNCTION__, "!empty()"); } while (false);
  return operator[](this->size() - 1);
       }
 
@@ -19797,10 +19854,10 @@ namespace __cxx11 {
       const_reference
       back() const noexcept
       {
- do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1464, __PRETTY_FUNCTION__, "!empty()"); } while (false);
+ do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 1464, __PRETTY_FUNCTION__, "!empty()"); } while (false);
  return operator[](this->size() - 1);
       }
-# 1475 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1475 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       operator+=(const basic_string& __str)
@@ -19839,7 +19896,7 @@ namespace __cxx11 {
       basic_string&
       operator+=(initializer_list<_CharT> __l)
       { return this->append(__l.begin(), __l.size()); }
-# 1521 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1521 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -19856,7 +19913,7 @@ namespace __cxx11 {
       basic_string&
       append(const basic_string& __str)
       { return this->append(__str._M_data(), __str.size()); }
-# 1551 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1551 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       append(const basic_string& __str, size_type __pos, size_type __n = npos)
@@ -19893,17 +19950,17 @@ namespace __cxx11 {
  _M_check_length(size_type(0), __n, "basic_string::append");
  return _M_append(__s, __n);
       }
-# 1596 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1596 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       append(size_type __n, _CharT __c)
       { return _M_replace_aux(this->size(), size_type(0), __n, __c); }
-# 1659 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1659 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       append(initializer_list<_CharT> __l)
       { return this->append(__l.begin(), __l.size()); }
-# 1674 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1674 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<class _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
 
@@ -19928,7 +19985,7 @@ namespace __cxx11 {
           __sv_type __sv = __svt;
           return this->append(__sv.data(), __sv.size());
         }
-# 1706 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1706 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
         _If_sv<_Tp, basic_string&>
@@ -19997,7 +20054,7 @@ namespace __cxx11 {
  this->_M_assign(__str);
  return *this;
       }
-# 1784 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1784 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       assign(basic_string&& __str)
@@ -20007,14 +20064,14 @@ namespace __cxx11 {
 
  return *this = std::move(__str);
       }
-# 1808 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1808 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       assign(const basic_string& __str, size_type __pos, size_type __n = npos)
       { return _M_replace(size_type(0), this->size(), __str._M_data()
      + __str._M_check(__pos, "basic_string::assign"),
      __str._M_limit(__pos, __n)); }
-# 1825 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1825 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       assign(const _CharT* __s, size_type __n)
@@ -20022,7 +20079,7 @@ namespace __cxx11 {
  ;
  return _M_replace(size_type(0), this->size(), __s, __n);
       }
-# 1842 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1842 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       assign(const _CharT* __s)
@@ -20031,12 +20088,12 @@ namespace __cxx11 {
  return _M_replace(size_type(0), this->size(), __s,
      traits_type::length(__s));
       }
-# 1860 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1860 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       assign(size_type __n, _CharT __c)
       { return _M_replace_aux(size_type(0), this->size(), __n, __c); }
-# 1874 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1874 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++17-extensions"
       template<class _InputIterator,
@@ -20054,12 +20111,12 @@ namespace __cxx11 {
        return _M_replace(size_type(0), size(),
     std::__niter_base(__first), __last - __first);
      }
-# 1901 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1901 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
    else
      return *this = basic_string(__first, __last, get_allocator());
  }
 #pragma GCC diagnostic pop
-# 1937 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1937 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       assign(initializer_list<_CharT> __l)
@@ -20077,7 +20134,7 @@ namespace __cxx11 {
    }
  return *this;
       }
-# 1962 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1962 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -20086,7 +20143,7 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->assign(__sv.data(), __sv.size());
  }
-# 1978 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 1978 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -20098,7 +20155,7 @@ namespace __cxx11 {
        + std::__sv_check(__sv.size(), __pos, "basic_string::assign"),
        std::__sv_limit(__sv.size(), __pos, __n));
  }
-# 2007 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2007 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       iterator
       insert(const_iterator __p, size_type __n, _CharT __c)
@@ -20108,7 +20165,7 @@ namespace __cxx11 {
  this->replace(__p, __p, __n, __c);
  return iterator(this->_M_data() + __pos);
       }
-# 2050 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2050 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<class _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
 
@@ -20120,18 +20177,18 @@ namespace __cxx11 {
    this->replace(__p, __p, __beg, __end);
    return iterator(this->_M_data() + __pos);
  }
-# 2118 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2118 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       iterator
       insert(const_iterator __p, initializer_list<_CharT> __l)
       { return this->insert(__p, __l.begin(), __l.end()); }
-# 2146 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2146 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       insert(size_type __pos1, const basic_string& __str)
       { return this->replace(__pos1, size_type(0),
         __str._M_data(), __str.size()); }
-# 2170 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2170 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       insert(size_type __pos1, const basic_string& __str,
@@ -20139,12 +20196,12 @@ namespace __cxx11 {
       { return this->replace(__pos1, size_type(0), __str._M_data()
         + __str._M_check(__pos2, "basic_string::insert"),
         __str._M_limit(__pos2, __n)); }
-# 2194 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2194 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       insert(size_type __pos, const _CharT* __s, size_type __n)
       { return this->replace(__pos, size_type(0), __s, __n); }
-# 2214 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2214 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       insert(size_type __pos, const _CharT* __s)
@@ -20153,13 +20210,13 @@ namespace __cxx11 {
  return this->replace(__pos, size_type(0), __s,
         traits_type::length(__s));
       }
-# 2239 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2239 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       insert(size_type __pos, size_type __n, _CharT __c)
       { return _M_replace_aux(_M_check(__pos, "basic_string::insert"),
          size_type(0), __n, __c); }
-# 2258 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2258 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       iterator
       insert(__const_iterator __p, _CharT __c)
@@ -20169,7 +20226,7 @@ namespace __cxx11 {
  _M_replace_aux(__pos, size_type(0), size_type(1), __c);
  return iterator(_M_data() + __pos);
       }
-# 2275 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2275 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -20178,7 +20235,7 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->insert(__pos, __sv.data(), __sv.size());
  }
-# 2292 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2292 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -20191,7 +20248,7 @@ namespace __cxx11 {
        + std::__sv_check(__sv.size(), __pos2, "basic_string::insert"),
        std::__sv_limit(__sv.size(), __pos2, __n));
  }
-# 2321 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2321 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       erase(size_type __pos = 0, size_type __n = npos)
@@ -20203,7 +20260,7 @@ namespace __cxx11 {
    this->_M_erase(__pos, _M_limit(__pos, __n));
  return *this;
       }
-# 2341 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2341 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       iterator
       erase(__const_iterator __position)
@@ -20214,7 +20271,7 @@ namespace __cxx11 {
  this->_M_erase(__pos, size_type(1));
  return iterator(_M_data() + __pos);
       }
-# 2361 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2361 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       iterator
       erase(__const_iterator __first, __const_iterator __last)
@@ -20239,15 +20296,15 @@ namespace __cxx11 {
       void
       pop_back() noexcept
       {
- do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 2385, __PRETTY_FUNCTION__, "!empty()"); } while (false);
+ do { if (__builtin_expect(!bool(!empty()), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h", 2385, __PRETTY_FUNCTION__, "!empty()"); } while (false);
  _M_erase(size() - 1, 1);
       }
-# 2407 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2407 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(size_type __pos, size_type __n, const basic_string& __str)
       { return this->replace(__pos, __n, __str._M_data(), __str.size()); }
-# 2430 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2430 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(size_type __pos1, size_type __n1, const basic_string& __str,
@@ -20255,7 +20312,7 @@ namespace __cxx11 {
       { return this->replace(__pos1, __n1, __str._M_data()
         + __str._M_check(__pos2, "basic_string::replace"),
         __str._M_limit(__pos2, __n2)); }
-# 2456 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2456 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(size_type __pos, size_type __n1, const _CharT* __s,
@@ -20265,7 +20322,7 @@ namespace __cxx11 {
  return _M_replace(_M_check(__pos, "basic_string::replace"),
      _M_limit(__pos, __n1), __s, __n2);
       }
-# 2482 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2482 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(size_type __pos, size_type __n1, const _CharT* __s)
@@ -20273,19 +20330,19 @@ namespace __cxx11 {
  ;
  return this->replace(__pos, __n1, __s, traits_type::length(__s));
       }
-# 2507 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2507 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(size_type __pos, size_type __n1, size_type __n2, _CharT __c)
       { return _M_replace_aux(_M_check(__pos, "basic_string::replace"),
          _M_limit(__pos, __n1), __n2, __c); }
-# 2526 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2526 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2,
        const basic_string& __str)
       { return this->replace(__i1, __i2, __str._M_data(), __str.size()); }
-# 2547 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2547 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2,
@@ -20295,7 +20352,7 @@ namespace __cxx11 {
                       ;
  return this->replace(__i1 - begin(), __i2 - __i1, __s, __n);
       }
-# 2570 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2570 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2, const _CharT* __s)
@@ -20303,7 +20360,7 @@ namespace __cxx11 {
  ;
  return this->replace(__i1, __i2, __s, traits_type::length(__s));
       }
-# 2592 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2592 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2, size_type __n,
@@ -20313,7 +20370,7 @@ namespace __cxx11 {
                       ;
  return _M_replace_aux(__i1 - begin(), __i2 - __i1, __n, __c);
       }
-# 2618 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2618 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<class _InputIterator,
         typename = std::_RequireInputIter<_InputIterator>>
 
@@ -20327,7 +20384,7 @@ namespace __cxx11 {
    return this->_M_replace_dispatch(__i1, __i2, __k1, __k2,
         std::__false_type());
  }
-# 2651 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2651 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string&
       replace(__const_iterator __i1, __const_iterator __i2,
@@ -20375,12 +20432,12 @@ namespace __cxx11 {
  return this->replace(__i1 - begin(), __i2 - __i1,
         __k1.base(), __k2 - __k1);
       }
-# 2738 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2738 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       basic_string& replace(const_iterator __i1, const_iterator __i2,
        initializer_list<_CharT> __l)
       { return this->replace(__i1, __i2, __l.begin(), __l.size()); }
-# 2752 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2752 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -20389,7 +20446,7 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->replace(__pos, __n, __sv.data(), __sv.size());
  }
-# 2770 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2770 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -20402,7 +20459,7 @@ namespace __cxx11 {
        + std::__sv_check(__sv.size(), __pos2, "basic_string::replace"),
        std::__sv_limit(__sv.size(), __pos2, __n2));
  }
-# 2792 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2792 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
 
  _If_sv<_Tp, basic_string&>
@@ -20447,25 +20504,25 @@ namespace __cxx11 {
       _M_append(const _CharT* __s, size_type __n);
 
     public:
-# 2849 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2849 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       size_type
       copy(_CharT* __s, size_type __n, size_type __pos = 0) const;
-# 2860 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2860 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
      
       void
       swap(basic_string& __s) noexcept;
-# 2871 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2871 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       const _CharT*
       c_str() const noexcept
       { return _M_data(); }
-# 2884 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2884 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       const _CharT*
       data() const noexcept
       { return _M_data(); }
-# 2896 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2896 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       _CharT*
       data() noexcept
@@ -20479,18 +20536,18 @@ namespace __cxx11 {
       allocator_type
       get_allocator() const noexcept
       { return _M_get_allocator(); }
-# 2922 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2922 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find(const _CharT* __s, size_type __pos, size_type __n) const
       noexcept;
-# 2937 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2937 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find(const basic_string& __str, size_type __pos = 0) const
       noexcept
       { return this->find(__str.data(), __pos, __str.size()); }
-# 2950 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2950 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, size_type>
@@ -20500,7 +20557,7 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->find(__sv.data(), __pos, __sv.size());
  }
-# 2971 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2971 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find(const _CharT* __s, size_type __pos = 0) const noexcept
@@ -20508,17 +20565,17 @@ namespace __cxx11 {
  ;
  return this->find(__s, __pos, traits_type::length(__s));
       }
-# 2989 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 2989 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find(_CharT __c, size_type __pos = 0) const noexcept;
-# 3003 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3003 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       rfind(const basic_string& __str, size_type __pos = npos) const
       noexcept
       { return this->rfind(__str.data(), __pos, __str.size()); }
-# 3016 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3016 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, size_type>
@@ -20528,12 +20585,12 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->rfind(__sv.data(), __pos, __sv.size());
  }
-# 3039 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3039 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       rfind(const _CharT* __s, size_type __pos, size_type __n) const
       noexcept;
-# 3054 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3054 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       rfind(const _CharT* __s, size_type __pos = npos) const
@@ -20541,17 +20598,17 @@ namespace __cxx11 {
  ;
  return this->rfind(__s, __pos, traits_type::length(__s));
       }
-# 3072 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3072 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       rfind(_CharT __c, size_type __pos = npos) const noexcept;
-# 3087 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3087 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_of(const basic_string& __str, size_type __pos = 0) const
       noexcept
       { return this->find_first_of(__str.data(), __pos, __str.size()); }
-# 3101 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3101 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, size_type>
@@ -20561,12 +20618,12 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->find_first_of(__sv.data(), __pos, __sv.size());
  }
-# 3124 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3124 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_of(const _CharT* __s, size_type __pos, size_type __n) const
       noexcept;
-# 3139 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3139 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_of(const _CharT* __s, size_type __pos = 0) const
@@ -20575,18 +20632,18 @@ namespace __cxx11 {
  ;
  return this->find_first_of(__s, __pos, traits_type::length(__s));
       }
-# 3160 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3160 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_of(_CharT __c, size_type __pos = 0) const noexcept
       { return this->find(__c, __pos); }
-# 3176 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3176 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_of(const basic_string& __str, size_type __pos = npos) const
       noexcept
       { return this->find_last_of(__str.data(), __pos, __str.size()); }
-# 3190 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3190 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, size_type>
@@ -20596,12 +20653,12 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->find_last_of(__sv.data(), __pos, __sv.size());
  }
-# 3213 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3213 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_of(const _CharT* __s, size_type __pos, size_type __n) const
       noexcept;
-# 3228 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3228 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_of(const _CharT* __s, size_type __pos = npos) const
@@ -20610,18 +20667,18 @@ namespace __cxx11 {
  ;
  return this->find_last_of(__s, __pos, traits_type::length(__s));
       }
-# 3249 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3249 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_of(_CharT __c, size_type __pos = npos) const noexcept
       { return this->rfind(__c, __pos); }
-# 3264 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3264 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_not_of(const basic_string& __str, size_type __pos = 0) const
       noexcept
       { return this->find_first_not_of(__str.data(), __pos, __str.size()); }
-# 3278 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3278 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, size_type>
@@ -20631,12 +20688,12 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->find_first_not_of(__sv.data(), __pos, __sv.size());
  }
-# 3301 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3301 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_not_of(const _CharT* __s, size_type __pos,
    size_type __n) const noexcept;
-# 3316 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3316 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_not_of(const _CharT* __s, size_type __pos = 0) const
@@ -20645,18 +20702,18 @@ namespace __cxx11 {
  ;
  return this->find_first_not_of(__s, __pos, traits_type::length(__s));
       }
-# 3335 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3335 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_first_not_of(_CharT __c, size_type __pos = 0) const
       noexcept;
-# 3351 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3351 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_not_of(const basic_string& __str, size_type __pos = npos) const
       noexcept
       { return this->find_last_not_of(__str.data(), __pos, __str.size()); }
-# 3365 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3365 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, size_type>
@@ -20666,12 +20723,12 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return this->find_last_not_of(__sv.data(), __pos, __sv.size());
  }
-# 3388 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3388 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_not_of(const _CharT* __s, size_type __pos,
          size_type __n) const noexcept;
-# 3403 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3403 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_not_of(const _CharT* __s, size_type __pos = npos) const
@@ -20680,18 +20737,18 @@ namespace __cxx11 {
  ;
  return this->find_last_not_of(__s, __pos, traits_type::length(__s));
       }
-# 3422 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3422 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       size_type
       find_last_not_of(_CharT __c, size_type __pos = npos) const
       noexcept;
-# 3439 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3439 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       basic_string
       substr(size_type __pos = 0, size_type __n = npos) const
       { return basic_string(*this,
        _M_check(__pos, "basic_string::substr"), __n); }
-# 3459 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3459 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       int
       compare(const basic_string& __str) const
@@ -20728,7 +20785,7 @@ namespace __cxx11 {
      __r = _S_compare(__size, __osize);
    return __r;
  }
-# 3504 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3504 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, int>
@@ -20738,7 +20795,7 @@ namespace __cxx11 {
    __sv_type __sv = __svt;
    return __sv_type(*this).substr(__pos, __n).compare(__sv);
  }
-# 3524 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3524 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename _Tp>
  [[__nodiscard__]]
  _If_sv<_Tp, int>
@@ -20750,7 +20807,7 @@ namespace __cxx11 {
    return __sv_type(*this)
      .substr(__pos1, __n1).compare(__sv.substr(__pos2, __n2));
  }
-# 3556 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3556 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       int
       compare(size_type __pos, size_type __n, const basic_string& __str) const
@@ -20764,7 +20821,7 @@ namespace __cxx11 {
    __r = _S_compare(__n, __osize);
  return __r;
       }
-# 3593 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3593 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       int
       compare(size_type __pos1, size_type __n1, const basic_string& __str,
@@ -20781,7 +20838,7 @@ namespace __cxx11 {
    __r = _S_compare(__n1, __n2);
  return __r;
       }
-# 3624 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3624 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       int
       compare(const _CharT* __s) const noexcept
@@ -20795,7 +20852,7 @@ namespace __cxx11 {
    __r = _S_compare(__size, __osize);
  return __r;
       }
-# 3659 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3659 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       int
       compare(size_type __pos, size_type __n1, const _CharT* __s) const
@@ -20810,7 +20867,7 @@ namespace __cxx11 {
    __r = _S_compare(__n1, __osize);
  return __r;
       }
-# 3698 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3698 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       [[__nodiscard__]]
       int
       compare(size_type __pos, size_type __n1, const _CharT* __s,
@@ -20825,7 +20882,7 @@ namespace __cxx11 {
    __r = _S_compare(__n1, __n2);
  return __r;
       }
-# 3763 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3763 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
       template<typename, typename, typename> friend class basic_stringbuf;
     };
 }
@@ -20863,7 +20920,7 @@ namespace __cxx11 {
    typename basic_string<_CharT, _Traits, _Allocator>::size_type,
    const _Allocator& = _Allocator())
       -> basic_string<_CharT, _Traits, _Allocator>;
-# 3809 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3809 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
 }
 
 
@@ -20884,7 +20941,7 @@ namespace __cxx11 {
       __str.append(__rhs, __rhs_len);
       return __str;
     }
-# 3837 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 3837 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline basic_string<_CharT, _Traits, _Alloc>
@@ -21033,7 +21090,7 @@ namespace __cxx11 {
     operator+(basic_string<_CharT, _Traits, _Alloc>&& __lhs,
        _CharT __rhs)
     { return std::move(__lhs.append(1, __rhs)); }
-# 4042 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4042 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline bool
@@ -21060,14 +21117,14 @@ namespace __cxx11 {
       return __lhs.size() == _Traits::length(__rhs)
         && !_Traits::compare(__lhs.data(), __rhs, __lhs.size());
     }
-# 4106 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4106 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline bool
     operator==(const _CharT* __lhs,
         const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs == __lhs; }
-# 4120 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4120 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline bool
@@ -21101,7 +21158,7 @@ namespace __cxx11 {
     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
         const _CharT* __rhs)
     { return !(__lhs == __rhs); }
-# 4161 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4161 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline bool
@@ -21135,7 +21192,7 @@ namespace __cxx11 {
     operator<(const _CharT* __lhs,
        const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) > 0; }
-# 4202 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4202 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline bool
@@ -21169,7 +21226,7 @@ namespace __cxx11 {
     operator>(const _CharT* __lhs,
        const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) < 0; }
-# 4243 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4243 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline bool
@@ -21203,7 +21260,7 @@ namespace __cxx11 {
     operator<=(const _CharT* __lhs,
         const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) >= 0; }
-# 4284 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4284 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     [[__nodiscard__]]
     inline bool
@@ -21237,7 +21294,7 @@ namespace __cxx11 {
     operator>=(const _CharT* __lhs,
       const basic_string<_CharT, _Traits, _Alloc>& __rhs)
     { return __rhs.compare(__lhs) <= 0; }
-# 4326 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4326 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
    
     inline void
@@ -21245,7 +21302,7 @@ namespace __cxx11 {
   basic_string<_CharT, _Traits, _Alloc>& __rhs)
     noexcept(noexcept(__lhs.swap(__rhs)))
     { __lhs.swap(__rhs); }
-# 4347 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4347 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     basic_istream<_CharT, _Traits>&
     operator>>(basic_istream<_CharT, _Traits>& __is,
@@ -21254,7 +21311,7 @@ namespace __cxx11 {
   template<>
     basic_istream<char>&
     operator>>(basic_istream<char>& __is, basic_string<char>& __str);
-# 4365 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4365 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline basic_ostream<_CharT, _Traits>&
     operator<<(basic_ostream<_CharT, _Traits>& __os,
@@ -21264,12 +21321,12 @@ namespace __cxx11 {
 
       return __ostream_insert(__os, __str.data(), __str.size());
     }
-# 4388 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4388 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     basic_istream<_CharT, _Traits>&
     getline(basic_istream<_CharT, _Traits>& __is,
      basic_string<_CharT, _Traits, _Alloc>& __str, _CharT __delim);
-# 4405 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4405 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
     inline basic_istream<_CharT, _Traits>&
     getline(basic_istream<_CharT, _Traits>& __is,
@@ -21309,10 +21366,10 @@ namespace __cxx11 {
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 1 3
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdio" 1 3
-# 98 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdio" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 1 3
+# 47 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdio" 1 3
+# 98 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdio" 3
 namespace std
 {
   using ::FILE;
@@ -21365,10 +21422,10 @@ namespace std
   using ::vprintf;
   using ::vsprintf;
 }
-# 159 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdio" 3
+# 159 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdio" 3
 namespace __gnu_cxx
 {
-# 177 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstdio" 3
+# 177 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstdio" 3
   using ::snprintf;
   using ::vfscanf;
   using ::vscanf;
@@ -21385,9 +21442,9 @@ namespace std
   using ::__gnu_cxx::vsnprintf;
   using ::__gnu_cxx::vsscanf;
 }
-# 48 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cerrno" 1 3
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 2 3
+# 48 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cerrno" 1 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ext/string_conversions.h" 2 3
 
 namespace __gnu_cxx
 {
@@ -21463,9 +21520,9 @@ namespace __gnu_cxx
 
 
 }
-# 4445 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/charconv.h" 1 3
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/charconv.h" 3
+# 4445 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/charconv.h" 1 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/charconv.h" 3
 namespace std
 {
 
@@ -21541,7 +21598,7 @@ namespace __detail
 }
 
 }
-# 4446 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
+# 4446 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 2 3
 
 namespace std
 {
@@ -21574,7 +21631,7 @@ namespace __cxx11 {
   stoull(const string& __str, size_t* __idx = 0, int __base = 10)
   { return __gnu_cxx::__stoa(&std::strtoull, "stoull", __str.c_str(),
         __idx, __base); }
-# 4488 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4488 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   inline double
   stod(const string& __str, size_t* __idx = 0)
   { return __gnu_cxx::__stoa(&std::strtod, "stod", __str.c_str(), __idx); }
@@ -21584,11 +21641,11 @@ namespace __cxx11 {
   inline float
   stof(const string& __str, size_t* __idx = 0)
   { return __gnu_cxx::__stoa(&std::strtof, "stof", __str.c_str(), __idx); }
-# 4516 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4516 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   inline long double
   stold(const string& __str, size_t* __idx = 0)
   { return __gnu_cxx::__stoa(&std::strtold, "stold", __str.c_str(), __idx); }
-# 4528 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4528 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   [[__nodiscard__]]
   inline string
   to_string(int __val)
@@ -21688,7 +21745,7 @@ namespace __cxx11 {
     });
     return __str;
   }
-# 4687 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4687 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wsuggest-attribute=format"
 
@@ -21935,7 +21992,7 @@ namespace std
          _Alloc>>>
     : std::false_type
     { };
-# 4944 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4944 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   template<typename _Alloc>
     struct hash<basic_string<char16_t, char_traits<char16_t>, _Alloc>>
     : public __str_hash_base<char16_t, _Alloc>
@@ -21953,7 +22010,7 @@ namespace std
   template<> struct __is_fast_hash<hash<wstring>> : std::false_type { };
   template<> struct __is_fast_hash<hash<u16string>> : std::false_type { };
   template<> struct __is_fast_hash<hash<u32string>> : std::false_type { };
-# 4973 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 4973 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
   inline namespace literals
   {
   inline namespace string_literals
@@ -21976,7 +22033,7 @@ namespace std
     inline basic_string<wchar_t>
     operator""s(const wchar_t* __str, size_t __len)
     { return basic_string<wchar_t>{__str, __len}; }
-# 5003 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
+# 5003 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.h" 3
     __attribute ((__abi_tag__ ("cxx11")))
     inline basic_string<char16_t>
     operator""s(const char16_t* __str, size_t __len)
@@ -22012,9 +22069,9 @@ namespace std
 
 
 }
-# 57 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 1 3
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
+# 57 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 1 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 
@@ -22525,7 +22582,7 @@ namespace std
    pointer __p = this->_M_data() + __pos;
 
    const size_type __how_much = __old_size - __pos - __len1;
-# 568 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
+# 568 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
    if (__builtin_expect(_M_disjunct(__s), true))
      {
        if (__how_much && __len1 != __len2)
@@ -22557,7 +22614,7 @@ namespace std
 
       return __n;
     }
-# 611 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
+# 611 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
   template<typename _Operation>
     void
@@ -22592,7 +22649,7 @@ namespace std
       if (__term._M_r > __n)
  __builtin_unreachable();
     }
-# 654 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
+# 654 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
   template<typename _CharT, typename _Traits, typename _Alloc>
    
     typename basic_string<_CharT, _Traits, _Alloc>::size_type
@@ -22937,7 +22994,7 @@ namespace std
  __in.setstate(__err);
       return __in;
     }
-# 1021 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
+# 1021 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
   extern template
     basic_istream<char>&
     operator>>(basic_istream<char>&, string&);
@@ -22950,7 +23007,7 @@ namespace std
   extern template
     basic_istream<char>&
     getline(basic_istream<char>&, string&);
-# 1047 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
+# 1047 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_string.tcc" 3
   extern template
     basic_istream<wchar_t>&
     operator>>(basic_istream<wchar_t>&, wstring&);
@@ -22970,24 +23027,24 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 58 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
-# 69 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 70 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
+# 58 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
+# 69 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 70 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstddef" 1 3
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstddef" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/stddef.h" 1 3 4
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstddef" 1 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstddef" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/stddef.h" 1 3 4
 # 1 "/usr/share/mingw-w64/include/stddef.h" 1 3 4
-# 2 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/stddef.h" 2 3 4
-# 53 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstddef" 2 3
+# 2 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/stddef.h" 2 3 4
+# 53 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstddef" 2 3
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 56 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstddef" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 56 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstddef" 2 3
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wpedantic"
@@ -23028,7 +23085,12 @@ namespace std
   template<> struct __byte_operand<unsigned long> { using __type = byte; };
   template<> struct __byte_operand<long long> { using __type = byte; };
   template<> struct __byte_operand<unsigned long long> { using __type = byte; };
-# 114 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cstddef" 3
+
+  template<> struct __byte_operand<__int128>
+  { using __type = byte; };
+  template<> struct __byte_operand<unsigned __int128>
+  { using __type = byte; };
+# 114 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cstddef" 3
   template<typename _IntegerType>
     struct __byte_operand<const _IntegerType>
     : __byte_operand<_IntegerType> { };
@@ -23113,10 +23175,10 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/uses_allocator.h" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/uses_allocator.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/uses_allocator.h" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/uses_allocator.h" 3
 namespace std
 {
 
@@ -23282,21 +23344,21 @@ namespace std
 
 
 }
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/uses_allocator_args.h" 1 3
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/uses_allocator_args.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 38 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/uses_allocator_args.h" 2 3
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/uses_allocator_args.h" 1 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/uses_allocator_args.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 38 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/uses_allocator_args.h" 2 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
 
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 1 3
-# 57 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 58 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 1 3
+# 57 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 58 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 2 3
 
 namespace std
 {
@@ -23383,7 +23445,7 @@ namespace std
 
       [[__no_unique_address__]] _Head _M_head_impl;
     };
-# 199 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 199 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
   template<size_t _Idx, typename _Head>
     struct _Head_base<_Idx, _Head, false>
     {
@@ -23438,7 +23500,7 @@ namespace std
 
       _Head _M_head_impl;
     };
-# 272 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 272 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
   template<size_t _Idx, typename... _Elements>
     struct _Tuple_impl;
 
@@ -23508,7 +23570,7 @@ namespace std
    _Base(std::forward<_UHead>
   (_Tuple_impl<_Idx, _UHead, _UTails...>::_M_head(__in)))
  { }
-# 368 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 368 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
       template<typename _Alloc>
 
  _Tuple_impl(allocator_arg_t __tag, const _Alloc& __a)
@@ -23571,7 +23633,7 @@ namespace std
   std::forward<_UHead>
   (_Tuple_impl<_Idx, _UHead, _UTails...>::_M_head(__in)))
  { }
-# 463 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 463 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
       template<typename... _UElements>
 
  void
@@ -23592,7 +23654,7 @@ namespace std
    _M_tail(*this)._M_assign(
        std::move(_Tuple_impl<_Idx, _UHead, _UTails...>::_M_tail(__in)));
  }
-# 523 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 523 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     protected:
      
       void
@@ -23602,7 +23664,7 @@ namespace std
  swap(_M_head(*this), _M_head(__in));
  _Inherited::_M_swap(_M_tail(__in));
       }
-# 542 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 542 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     };
 
 
@@ -23662,7 +23724,7 @@ namespace std
  _Tuple_impl(_Tuple_impl<_Idx, _UHead>&& __in)
  : _Base(std::forward<_UHead>(_Tuple_impl<_Idx, _UHead>::_M_head(__in)))
  { }
-# 624 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 624 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
       template<typename _Alloc>
 
  _Tuple_impl(allocator_arg_t __tag, const _Alloc& __a)
@@ -23714,7 +23776,7 @@ namespace std
  : _Base(__use_alloc<_Head, _Alloc, _UHead>(__a),
   std::forward<_UHead>(_Tuple_impl<_Idx, _UHead>::_M_head(__in)))
  { }
-# 703 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 703 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
       template<typename _UHead>
 
  void
@@ -23731,7 +23793,7 @@ namespace std
    _M_head(*this)
      = std::forward<_UHead>(_Tuple_impl<_Idx, _UHead>::_M_head(__in));
  }
-# 749 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 749 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     protected:
      
       void
@@ -23740,7 +23802,7 @@ namespace std
  using std::swap;
  swap(_M_head(*this), _M_head(__in));
       }
-# 766 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 766 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     };
 
 
@@ -23811,7 +23873,7 @@ namespace std
     class tuple : public _Tuple_impl<0, _Elements...>
     {
       using _Inherited = _Tuple_impl<0, _Elements...>;
-# 1352 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 1352 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
       template<bool _Cond>
  using _TCC = _TupleConstraints<_Cond, _Elements...>;
 
@@ -23859,7 +23921,7 @@ namespace std
       template<typename, typename, typename... _Tail>
  static constexpr bool __valid_args()
  { return (sizeof...(_Tail) + 2) == sizeof...(_Elements); }
-# 1409 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 1409 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
       template<typename _Tuple, typename = tuple,
         typename = __remove_cvref_t<_Tuple>>
  struct _UseOtherCtor
@@ -23884,7 +23946,7 @@ namespace std
       template<typename _Tuple>
  static constexpr bool __use_other_ctor()
  { return _UseOtherCtor<_Tuple>::value; }
-# 1455 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 1455 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     public:
       template<typename _Dummy = void,
         _ImplicitDefaultCtor<is_void<_Dummy>::value> = true>
@@ -24080,7 +24142,7 @@ namespace std
  : _Inherited(__tag, __a,
        static_cast<_Tuple_impl<0, _UElements...>&&>(__in))
  { ; }
-# 1887 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 1887 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     private:
       template<typename... _UElements>
  static constexpr
@@ -24147,7 +24209,7 @@ namespace std
       swap(tuple& __in)
       noexcept(__and_<__is_nothrow_swappable<_Elements>...>::value)
       { _Inherited::_M_swap(__in); }
-# 1967 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 1967 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     };
 
 
@@ -24252,7 +24314,7 @@ namespace std
       template<typename _U1>
  static constexpr bool __is_alloc_arg()
  { return is_same<__remove_cvref_t<_U1>, allocator_arg_t>::value; }
-# 2086 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 2086 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
     public:
       template<bool _Dummy = true,
         _ImplicitDefaultCtor<_Dummy, _T1, _T2> = true>
@@ -24690,7 +24752,7 @@ namespace std
    "the type T in std::get<T> must occur exactly once in the tuple");
       return std::forward<const _Tp>(std::__get_helper<__idx>(__t));
     }
-# 2578 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 2578 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
   template<typename _Tp, typename _Up, size_t __i, size_t __size>
     struct __tuple_compare
     {
@@ -24949,7 +25011,7 @@ namespace std
     swap(tuple<_Elements...>& __x, tuple<_Elements...>& __y)
     noexcept(noexcept(__x.swap(__y)))
     { __x.swap(__y); }
-# 2848 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 2848 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
   template<typename... _Elements>
    
     typename enable_if<!__and_<__is_swappable<_Elements>...>::value>::type
@@ -24959,7 +25021,7 @@ namespace std
 
   template<typename... _Types, typename _Alloc>
     struct uses_allocator<tuple<_Types...>, _Alloc> : true_type { };
-# 2867 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 2867 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
   template<class _T1, class _T2>
     template<typename... _Args1, typename... _Args2>
      
@@ -25060,10 +25122,10 @@ namespace std
       return __make_from_tuple_impl<_Tp>(std::forward<_Tuple>(__t),
       make_index_sequence<__n>{});
     }
-# 3029 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/tuple" 3
+# 3029 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/tuple" 3
 
 }
-# 50 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
+# 50 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 2 3
 
 
 namespace std
@@ -25125,7 +25187,7 @@ namespace pmr
   inline bool
   operator!=(const memory_resource& __a, const memory_resource& __b) noexcept
   { return !(__a == __b); }
-# 121 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 121 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
   template<typename _Tp>
     class polymorphic_allocator
     {
@@ -25177,7 +25239,7 @@ namespace pmr
       deallocate(_Tp* __p, size_t __n) noexcept
       __attribute__((__nonnull__))
       { _M_resource->deallocate(__p, __n * sizeof(_Tp), alignof(_Tp)); }
-# 226 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 226 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
       template<typename _Tp1, typename... _Args>
  __attribute__((__nonnull__))
  typename __not_pair<_Tp1>::type
@@ -25250,7 +25312,7 @@ namespace pmr
        std::forward_as_tuple(std::forward<_Up>(__pr.first)),
        std::forward_as_tuple(std::forward<_Vp>(__pr.second)));
  }
-# 309 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 309 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
       template<typename _Up>
  __attribute__((__nonnull__))
  void
@@ -25386,24 +25448,24 @@ namespace pmr
 
       template<typename _Up>
  using rebind_traits = allocator_traits<pmr::polymorphic_allocator<_Up>>;
-# 452 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 452 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
       [[nodiscard]] static pointer
       allocate(allocator_type& __a, size_type __n)
       { return __a.allocate(__n); }
-# 467 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 467 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
       [[nodiscard]] static pointer
       allocate(allocator_type& __a, size_type __n, const_void_pointer)
       { return __a.allocate(__n); }
-# 479 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 479 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
       static void
       deallocate(allocator_type& __a, pointer __p, size_type __n)
       { __a.deallocate(__p, __n); }
-# 494 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 494 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
       template<typename _Up, typename... _Args>
  static void
  construct(allocator_type& __a, _Up* __p, _Args&&... __args)
  { __a.construct(__p, std::forward<_Args>(__args)...); }
-# 506 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
+# 506 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/memory_resource.h" 3
       template<typename _Up>
  static void
  destroy(allocator_type&, _Up* __p)
@@ -25421,7 +25483,7 @@ namespace pmr
 
 
 }
-# 73 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/string" 2 3
+# 73 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/string" 2 3
 namespace std
 {
 
@@ -25439,7 +25501,7 @@ namespace std
   }
 
 }
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 2 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 2 3
 
 
 
@@ -25449,7 +25511,7 @@ namespace std
 namespace std
 {
 
-# 68 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 68 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
   class locale
   {
   public:
@@ -25479,7 +25541,7 @@ namespace std
 
     template<typename _Cache>
       friend struct __use_cache;
-# 108 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 108 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     static const category none = 0;
     static const category ctype = 1L << 0;
     static const category numeric = 1L << 1;
@@ -25489,33 +25551,33 @@ namespace std
     static const category messages = 1L << 5;
     static const category all = (ctype | numeric | collate |
         time | monetary | messages);
-# 127 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 127 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     locale() throw();
-# 136 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 136 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     locale(const locale& __other) throw();
-# 146 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 146 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     explicit
     locale(const char* __s);
-# 161 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 161 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     locale(const locale& __base, const char* __s, category __cat);
-# 172 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 172 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     explicit
     locale(const std::string& __s) : locale(__s.c_str()) { }
-# 187 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 187 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     locale(const locale& __base, const std::string& __s, category __cat)
     : locale(__base, __s.c_str(), __cat) { }
-# 202 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 202 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     locale(const locale& __base, const locale& __add, category __cat);
-# 215 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 215 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     template<typename _Facet>
       locale(const locale& __other, _Facet* __f);
 
 
     ~locale() throw();
-# 229 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 229 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     const locale&
     operator=(const locale& __other) throw();
-# 244 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 244 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     template<typename _Facet>
       [[__nodiscard__]]
       locale
@@ -25529,22 +25591,22 @@ namespace std
     [[__nodiscard__]] __attribute ((__abi_tag__ ("cxx11")))
     string
     name() const;
-# 275 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 275 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     [[__nodiscard__]]
     bool
     operator==(const locale& __other) const throw();
-# 286 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 286 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     [[__nodiscard__]]
     bool
     operator!=(const locale& __other) const throw()
     { return !(this->operator==(__other)); }
-# 307 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 307 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     template<typename _Char, typename _Traits, typename _Alloc>
       [[__nodiscard__]]
       bool
       operator()(const basic_string<_Char, _Traits, _Alloc>& __s1,
    const basic_string<_Char, _Traits, _Alloc>& __s2) const;
-# 324 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 324 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     static locale
     global(const locale& __loc);
 
@@ -25570,7 +25632,7 @@ namespace std
 
 
     static const char* const* const _S_categories;
-# 360 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 360 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     enum { _S_categories_size = 6 + 0 };
 
 
@@ -25602,7 +25664,7 @@ namespace std
     constexpr bool __is_facet = is_base_of_v<locale::facet, _Tp>;
   template<typename _Tp>
     constexpr bool __is_facet<volatile _Tp> = false;
-# 404 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 404 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
   class locale::facet
   {
   private:
@@ -25625,7 +25687,7 @@ namespace std
     _S_initialize_once();
 
   protected:
-# 435 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 435 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     explicit
     facet(size_t __refs = 0) throw() : _M_refcount(__refs ? 1 : 0)
     { }
@@ -25654,7 +25716,7 @@ namespace std
 
     __attribute__ ((__const__)) static const char*
     _S_get_c_name() throw();
-# 471 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 471 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
     facet(const facet&) = delete;
 
     facet&
@@ -25687,7 +25749,7 @@ namespace std
   protected:
     class __shim;
   };
-# 516 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 516 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
   class locale::id
   {
   private:
@@ -25844,7 +25906,7 @@ namespace std
 
 
   };
-# 686 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 686 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
   template<typename _CharT>
     class __cxx11:: collate : public locale::facet
     {
@@ -25864,26 +25926,26 @@ namespace std
     public:
 
       static locale::id id;
-# 713 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 713 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       explicit
       collate(size_t __refs = 0)
       : facet(__refs), _M_c_locale_collate(_S_get_c_locale())
       { }
-# 727 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 727 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       explicit
       collate(__c_locale __cloc, size_t __refs = 0)
       : facet(__refs), _M_c_locale_collate(_S_clone_c_locale(__cloc))
       { }
-# 744 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 744 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       int
       compare(const _CharT* __lo1, const _CharT* __hi1,
        const _CharT* __lo2, const _CharT* __hi2) const
       { return this->do_compare(__lo1, __hi1, __lo2, __hi2); }
-# 763 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 763 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       string_type
       transform(const _CharT* __lo, const _CharT* __hi) const
       { return this->do_transform(__lo, __hi); }
-# 777 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 777 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       long
       hash(const _CharT* __lo, const _CharT* __hi) const
       { return this->do_hash(__lo, __hi); }
@@ -25900,14 +25962,14 @@ namespace std
       virtual
       ~collate()
       { _S_destroy_c_locale(_M_c_locale_collate); }
-# 806 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 806 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       virtual int
       do_compare(const _CharT* __lo1, const _CharT* __hi1,
    const _CharT* __lo2, const _CharT* __hi2) const;
-# 820 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 820 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       virtual string_type
       do_transform(const _CharT* __lo, const _CharT* __hi) const;
-# 833 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
+# 833 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 3
       virtual long
       do_hash(const _CharT* __lo, const _CharT* __hi) const;
     };
@@ -25971,8 +26033,8 @@ namespace std
 
 }
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 #pragma GCC diagnostic ignored "-Wvariadic-macros"
@@ -26104,7 +26166,7 @@ namespace std
 
     }
 #pragma GCC diagnostic pop
-# 187 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 3
+# 187 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 3
   template<typename _Facet>
     [[__nodiscard__]]
     inline bool
@@ -26118,7 +26180,7 @@ namespace std
 
       return std::__try_use_facet<_Facet>(__loc) != 0;
     }
-# 215 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 3
+# 215 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdangling-reference"
   template<typename _Facet>
@@ -26333,16 +26395,16 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 897 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 2 3
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 2 3
+# 897 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_classes.h" 2 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 2 3
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/error_constants.h" 1 3
-# 36 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/error_constants.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/error_constants.h" 1 3
+# 36 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/error_constants.h" 3
 namespace std
 {
 
@@ -26469,10 +26531,10 @@ namespace std
 
 
 }
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 2 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdexcept" 1 3
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdexcept" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdexcept" 1 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdexcept" 3
 namespace std
 {
 
@@ -26500,7 +26562,7 @@ namespace std
   };
 
   typedef basic_string<char> __sso_string;
-# 115 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/stdexcept" 3
+# 115 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/stdexcept" 3
   class logic_error : public exception
   {
     __cow_string _M_msg;
@@ -26694,7 +26756,7 @@ namespace std
 
 
 }
-# 46 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 2 3
+# 46 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 2 3
 
 
 
@@ -26734,7 +26796,7 @@ namespace std
 
 
 inline namespace _V2 {
-# 108 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 108 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   class error_category
   {
   public:
@@ -26764,7 +26826,7 @@ inline namespace _V2 {
     __attribute ((__abi_tag__ ("cxx11")))
     virtual string
     message(int) const = 0;
-# 146 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 146 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   public:
 
     virtual error_condition
@@ -26783,7 +26845,7 @@ inline namespace _V2 {
     bool
     operator==(const error_category& __other) const noexcept
     { return this == &__other; }
-# 172 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 172 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
     bool
     operator<(const error_category& __other) const noexcept
     { return less<const error_category*>()(this, &__other); }
@@ -26819,7 +26881,7 @@ namespace __adl_only
   void make_error_code() = delete;
   void make_error_condition() = delete;
 }
-# 225 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 225 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   class error_code
   {
     template<typename _ErrorCodeEnum>
@@ -26886,12 +26948,12 @@ namespace __adl_only
     int _M_value;
     const error_category* _M_cat;
   };
-# 302 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 302 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   [[__nodiscard__]]
   inline error_code
   make_error_code(errc __e) noexcept
   { return error_code(static_cast<int>(__e), generic_category()); }
-# 325 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 325 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   inline bool
   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
   {
@@ -26910,7 +26972,7 @@ namespace __adl_only
     basic_ostream<_CharT, _Traits>&
     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
     { return (__os << __e.category().name() << ':' << __e.value()); }
-# 356 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 356 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   class error_condition
   {
     template<typename _ErrorConditionEnum>
@@ -26979,12 +27041,12 @@ namespace __adl_only
     int _M_value;
     const error_category* _M_cat;
   };
-# 435 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 435 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   [[__nodiscard__]]
   inline error_condition
   make_error_condition(errc __e) noexcept
   { return error_condition(static_cast<int>(__e), generic_category()); }
-# 449 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 449 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   [[__nodiscard__]]
   inline bool
   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
@@ -26992,7 +27054,7 @@ namespace __adl_only
     return __lhs.category() == __rhs.category()
       && __lhs.value() == __rhs.value();
   }
-# 465 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 465 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   [[__nodiscard__]]
   inline bool
   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
@@ -27000,7 +27062,7 @@ namespace __adl_only
     return __lhs.category().equivalent(__lhs.value(), __rhs)
       || __rhs.category().equivalent(__lhs, __rhs.value());
   }
-# 480 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 480 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   [[__nodiscard__]]
   inline bool
   operator==(const error_condition& __lhs,
@@ -27009,7 +27071,7 @@ namespace __adl_only
     return __lhs.category() == __rhs.category()
       && __lhs.value() == __rhs.value();
   }
-# 508 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 508 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   inline bool
   operator<(const error_condition& __lhs,
      const error_condition& __rhs) noexcept
@@ -27047,7 +27109,7 @@ namespace __adl_only
   operator!=(const error_condition& __lhs,
       const error_condition& __rhs) noexcept
   { return !(__lhs == __rhs); }
-# 558 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/system_error" 3
+# 558 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/system_error" 3
   class system_error : public std::runtime_error
   {
   private:
@@ -27130,7 +27192,7 @@ namespace std
 
 
 }
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 2 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 2 3
 
 
 namespace std
@@ -27200,7 +27262,7 @@ namespace std
   inline const _Ios_Fmtflags&
   operator^=(_Ios_Fmtflags& __a, _Ios_Fmtflags __b) noexcept
   { return __a = __a ^ __b; }
-# 127 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 127 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
   enum __attribute__((__flag_enum__)) _Ios_Openmode
     {
       _S_app = 1L << 0,
@@ -27327,12 +27389,12 @@ namespace std
   inline error_condition
   make_error_condition(io_errc __e) noexcept
   { return error_condition(static_cast<int>(__e), iostream_category()); }
-# 265 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 265 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
   class ios_base
   {
-# 283 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 283 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
   public:
-# 292 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 292 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     class __attribute ((__abi_tag__ ("cxx11"))) failure : public system_error
     {
     public:
@@ -27353,7 +27415,7 @@ namespace std
       virtual const char*
       what() const throw();
     };
-# 378 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 378 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     typedef _Ios_Fmtflags fmtflags;
 
 
@@ -27416,7 +27478,7 @@ namespace std
 
 
     static const fmtflags floatfield = _S_floatfield;
-# 453 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 453 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     typedef _Ios_Iostate iostate;
 
 
@@ -27433,7 +27495,7 @@ namespace std
 
 
     static const iostate goodbit = _S_goodbit;
-# 484 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 484 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     typedef _Ios_Openmode openmode;
 
 
@@ -27457,7 +27519,7 @@ namespace std
     static const openmode trunc = _S_trunc;
 
     static const openmode __noreplace = _S_noreplace;
-# 523 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 523 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     typedef _Ios_Seekdir seekdir;
 
 
@@ -27468,16 +27530,16 @@ namespace std
 
 
     static const seekdir end = _S_end;
-# 556 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 556 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     enum event
     {
       erase_event,
       imbue_event,
       copyfmt_event
     };
-# 573 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 573 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     typedef void (*event_callback) (event __e, ios_base& __b, int __i);
-# 585 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 585 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     void
     register_callback(event_callback __fn, int __index);
 
@@ -27589,7 +27651,7 @@ namespace std
     fmtflags
     flags() const
     { return _M_flags; }
-# 704 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 704 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     fmtflags
     flags(fmtflags __fmtfl)
     {
@@ -27597,7 +27659,7 @@ namespace std
       _M_flags = __fmtfl;
       return __old;
     }
-# 720 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 720 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     fmtflags
     setf(fmtflags __fmtfl)
     {
@@ -27605,7 +27667,7 @@ namespace std
       _M_flags |= __fmtfl;
       return __old;
     }
-# 737 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 737 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     fmtflags
     setf(fmtflags __fmtfl, fmtflags __mask)
     {
@@ -27624,7 +27686,7 @@ namespace std
     void
     unsetf(fmtflags __mask)
     { _M_flags &= ~__mask; }
-# 763 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 763 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     [[__nodiscard__]]
     streamsize
     precision() const
@@ -27666,25 +27728,25 @@ namespace std
       _M_width = __wide;
       return __old;
     }
-# 816 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 816 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     static bool
     sync_with_stdio(bool __sync = true);
-# 828 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 828 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     locale
     imbue(const locale& __loc) throw();
-# 839 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 839 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     [[__nodiscard__]]
     locale
     getloc() const
     { return _M_ios_locale; }
-# 851 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 851 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     const locale&
     _M_getloc() const
     { return _M_ios_locale; }
-# 870 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 870 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     static int
     xalloc() throw();
-# 886 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 886 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     long&
     iword(int __ix)
     {
@@ -27692,7 +27754,7 @@ namespace std
    ? _M_word[__ix] : _M_grow_words(__ix, true);
       return __word._M_iword;
     }
-# 907 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 907 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     void*&
     pword(int __ix)
     {
@@ -27700,12 +27762,12 @@ namespace std
    ? _M_word[__ix] : _M_grow_words(__ix, false);
       return __word._M_pword;
     }
-# 924 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 924 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
     virtual ~ios_base();
 
   protected:
     ios_base() throw ();
-# 938 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
+# 938 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ios_base.h" 3
   public:
     ios_base(const ios_base&) = delete;
 
@@ -27924,9 +27986,9 @@ namespace std
 
 
 }
-# 47 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 1 3
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 47 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 1 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
 namespace std
 {
 
@@ -27937,7 +27999,7 @@ namespace std
     streamsize
     __copy_streambufs_eof(basic_streambuf<_CharT, _Traits>*,
      basic_streambuf<_CharT, _Traits>*, bool&);
-# 125 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 125 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
   template<typename _CharT, typename _Traits>
     class basic_streambuf
     {
@@ -28021,7 +28083,7 @@ namespace std
       virtual
       ~basic_streambuf()
       { }
-# 217 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 217 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       locale
       pubimbue(const locale& __loc)
       {
@@ -28030,20 +28092,20 @@ namespace std
  _M_buf_locale = __loc;
  return __tmp;
       }
-# 234 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 234 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       locale
       getloc() const
       { return _M_buf_locale; }
-# 247 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 247 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       basic_streambuf*
       pubsetbuf(char_type* __s, streamsize __n)
       { return this->setbuf(__s, __n); }
-# 259 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 259 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       pos_type
       pubseekoff(off_type __off, ios_base::seekdir __way,
    ios_base::openmode __mode = ios_base::in | ios_base::out)
       { return this->seekoff(__off, __way, __mode); }
-# 271 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 271 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       pos_type
       pubseekpos(pos_type __sp,
    ios_base::openmode __mode = ios_base::in | ios_base::out)
@@ -28054,14 +28116,14 @@ namespace std
 
       int
       pubsync() { return this->sync(); }
-# 292 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 292 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       streamsize
       in_avail()
       {
  const streamsize __ret = this->egptr() - this->gptr();
  return __ret ? __ret : this->showmanyc();
       }
-# 306 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 306 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       int_type
       snextc()
       {
@@ -28071,7 +28133,7 @@ namespace std
    __ret = this->sgetc();
  return __ret;
       }
-# 324 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 324 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       int_type
       sbumpc()
       {
@@ -28085,7 +28147,7 @@ namespace std
    __ret = this->uflow();
  return __ret;
       }
-# 346 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 346 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       int_type
       sgetc()
       {
@@ -28096,11 +28158,11 @@ namespace std
    __ret = this->underflow();
  return __ret;
       }
-# 365 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 365 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       streamsize
       sgetn(char_type* __s, streamsize __n)
       { return this->xsgetn(__s, __n); }
-# 380 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 380 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       int_type
       sputbackc(char_type __c)
       {
@@ -28116,7 +28178,7 @@ namespace std
    }
  return __ret;
       }
-# 405 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 405 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       int_type
       sungetc()
       {
@@ -28130,7 +28192,7 @@ namespace std
    __ret = this->pbackfail();
  return __ret;
       }
-# 432 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 432 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       int_type
       sputc(char_type __c)
       {
@@ -28145,19 +28207,19 @@ namespace std
    __ret = this->overflow(traits_type::to_int_type(__c));
  return __ret;
       }
-# 458 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 458 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       streamsize
       sputn(const char_type* __s, streamsize __n)
       { return this->xsputn(__s, __n); }
 
     protected:
-# 472 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 472 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       basic_streambuf()
       : _M_in_beg(0), _M_in_cur(0), _M_in_end(0),
       _M_out_beg(0), _M_out_cur(0), _M_out_end(0),
       _M_buf_locale(locale())
       { }
-# 490 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 490 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       char_type*
       eback() const { return _M_in_beg; }
 
@@ -28166,10 +28228,10 @@ namespace std
 
       char_type*
       egptr() const { return _M_in_end; }
-# 506 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 506 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       void
       gbump(int __n) { _M_in_cur += __n; }
-# 517 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 517 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       void
       setg(char_type* __gbeg, char_type* __gnext, char_type* __gend)
       {
@@ -28177,7 +28239,7 @@ namespace std
  _M_in_cur = __gnext;
  _M_in_end = __gend;
       }
-# 537 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 537 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       char_type*
       pbase() const { return _M_out_beg; }
 
@@ -28186,48 +28248,48 @@ namespace std
 
       char_type*
       epptr() const { return _M_out_end; }
-# 553 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 553 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       void
       pbump(int __n) { _M_out_cur += __n; }
-# 563 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 563 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       void
       setp(char_type* __pbeg, char_type* __pend)
       {
  _M_out_beg = _M_out_cur = __pbeg;
  _M_out_end = __pend;
       }
-# 584 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 584 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual void
       imbue(const locale& __loc __attribute__ ((__unused__)))
       { }
-# 599 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 599 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual basic_streambuf<char_type,_Traits>*
       setbuf(char_type*, streamsize)
       { return this; }
-# 610 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 610 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual pos_type
       seekoff(off_type, ios_base::seekdir,
        ios_base::openmode = ios_base::in | ios_base::out)
       { return pos_type(off_type(-1)); }
-# 622 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 622 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual pos_type
       seekpos(pos_type,
        ios_base::openmode = ios_base::in | ios_base::out)
       { return pos_type(off_type(-1)); }
-# 635 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 635 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual int
       sync() { return 0; }
-# 657 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 657 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual streamsize
       showmanyc() { return 0; }
-# 673 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 673 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual streamsize
       xsgetn(char_type* __s, streamsize __n);
-# 695 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 695 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual int_type
       underflow()
       { return traits_type::eof(); }
-# 708 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 708 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual int_type
       uflow()
       {
@@ -28241,18 +28303,18 @@ namespace std
    }
  return __ret;
       }
-# 732 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 732 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual int_type
       pbackfail(int_type __c __attribute__ ((__unused__)) = traits_type::eof())
       { return traits_type::eof(); }
-# 750 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 750 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual streamsize
       xsputn(const char_type* __s, streamsize __n);
-# 776 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 776 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       virtual int_type
       overflow(int_type __c __attribute__ ((__unused__)) = traits_type::eof())
       { return traits_type::eof(); }
-# 803 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 3
+# 803 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 3
       void
       __safe_gbump(streamsize __n) { _M_in_cur += __n; }
 
@@ -28312,8 +28374,8 @@ namespace std
 
 }
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf.tcc" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf.tcc" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf.tcc" 1 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 
@@ -28448,14 +28510,14 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 863 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/streambuf" 2 3
-# 48 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 1 3
-# 39 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwctype" 1 3
-# 55 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwctype" 3
+# 863 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/streambuf" 2 3
+# 48 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 1 3
+# 39 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 1 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwctype" 1 3
+# 55 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwctype" 3
 # 1 "/usr/share/mingw-w64/include/wctype.h" 1 3
 # 12 "/usr/share/mingw-w64/include/wctype.h" 3
 extern "C" {
@@ -28468,8 +28530,8 @@ extern "C" {
 
 
 }
-# 56 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwctype" 2 3
-# 82 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/cwctype" 3
+# 56 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwctype" 2 3
+# 82 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/cwctype" 3
 namespace std
 {
   using ::wctrans_t;
@@ -28497,10 +28559,10 @@ namespace std
   using ::wctrans;
   using ::wctype;
 }
-# 42 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
+# 42 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/ctype_base.h" 1 3
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/ctype_base.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/ctype_base.h" 1 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/ctype_base.h" 3
 namespace std
 {
 
@@ -28532,15 +28594,15 @@ namespace std
 
 
 }
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
 
 
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 1 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
 namespace std
 {
 
@@ -28552,7 +28614,7 @@ namespace std
 
 
  
-# 51 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
+# 51 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
 
@@ -28563,7 +28625,7 @@ namespace std
         _CharT*, _CharT>
     {
     public:
-# 72 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
+# 72 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
       typedef _CharT char_type;
       typedef _Traits traits_type;
       typedef typename _Traits::int_type int_type;
@@ -28647,7 +28709,7 @@ namespace std
       operator*() const
       {
  int_type __c = _M_get();
-# 163 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
+# 163 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
  return traits_type::to_char_type(__c);
       }
 
@@ -28763,7 +28825,7 @@ namespace std
       bool _M_failed;
 
     public:
-# 286 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
+# 286 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h" 3
       ostreambuf_iterator(ostream_type& __s) noexcept
       : _M_sbuf(__s.rdbuf()), _M_failed(!_M_sbuf) { }
 
@@ -28960,7 +29022,7 @@ namespace std
       if (__n == 0)
  return;
 
-      do { if (__builtin_expect(!bool(__n > 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h", 482, __PRETTY_FUNCTION__, "__n > 0"); } while (false);
+      do { if (__builtin_expect(!bool(__n > 0), false)) std::__glibcxx_assert_fail("/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/streambuf_iterator.h", 482, __PRETTY_FUNCTION__, "__n > 0"); } while (false);
      
 
                            ;
@@ -28999,12 +29061,12 @@ namespace std
 
 
 }
-# 51 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
+# 51 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
 
 namespace std
 {
 
-# 76 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 76 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<typename _Tp>
     void
     __convert_to_v(const char*, _Tp&, ios_base::iostate&,
@@ -29069,7 +29131,7 @@ namespace std
  *__s = __ws[__j];
       return __s;
     }
-# 154 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 154 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<typename _CharT>
     class __ctype_abstract_base : public locale::facet, public ctype_base
     {
@@ -29077,51 +29139,51 @@ namespace std
 
 
       typedef _CharT char_type;
-# 173 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 173 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       bool
       is(mask __m, char_type __c) const
       { return this->do_is(__m, __c); }
-# 190 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 190 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       is(const char_type *__lo, const char_type *__hi, mask *__vec) const
       { return this->do_is(__lo, __hi, __vec); }
-# 206 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 206 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       scan_is(mask __m, const char_type* __lo, const char_type* __hi) const
       { return this->do_scan_is(__m, __lo, __hi); }
-# 222 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 222 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       scan_not(mask __m, const char_type* __lo, const char_type* __hi) const
       { return this->do_scan_not(__m, __lo, __hi); }
-# 236 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 236 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       toupper(char_type __c) const
       { return this->do_toupper(__c); }
-# 251 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 251 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       toupper(char_type *__lo, const char_type* __hi) const
       { return this->do_toupper(__lo, __hi); }
-# 265 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 265 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       tolower(char_type __c) const
       { return this->do_tolower(__c); }
-# 280 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 280 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       tolower(char_type* __lo, const char_type* __hi) const
       { return this->do_tolower(__lo, __hi); }
-# 297 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 297 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       widen(char __c) const
       { return this->do_widen(__c); }
-# 316 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 316 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char*
       widen(const char* __lo, const char* __hi, char_type* __to) const
       { return this->do_widen(__lo, __hi, __to); }
-# 335 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 335 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char
       narrow(char_type __c, char __dfault) const
       { return this->do_narrow(__c, __dfault); }
-# 357 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 357 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       narrow(const char_type* __lo, const char_type* __hi,
        char __dfault, char* __to) const
@@ -29133,48 +29195,48 @@ namespace std
 
       virtual
       ~__ctype_abstract_base() { }
-# 382 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 382 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual bool
       do_is(mask __m, char_type __c) const = 0;
-# 401 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 401 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_is(const char_type* __lo, const char_type* __hi,
      mask* __vec) const = 0;
-# 420 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 420 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_scan_is(mask __m, const char_type* __lo,
    const char_type* __hi) const = 0;
-# 439 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 439 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_scan_not(mask __m, const char_type* __lo,
     const char_type* __hi) const = 0;
-# 457 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 457 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_toupper(char_type __c) const = 0;
-# 474 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 474 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_toupper(char_type* __lo, const char_type* __hi) const = 0;
-# 490 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 490 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_tolower(char_type __c) const = 0;
-# 507 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 507 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_tolower(char_type* __lo, const char_type* __hi) const = 0;
-# 526 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 526 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_widen(char __c) const = 0;
-# 547 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 547 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char*
       do_widen(const char* __lo, const char* __hi, char_type* __to) const = 0;
-# 568 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 568 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char
       do_narrow(char_type __c, char __dfault) const = 0;
-# 593 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 593 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_narrow(const char_type* __lo, const char_type* __hi,
   char __dfault, char* __to) const = 0;
     };
-# 616 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 616 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<typename _CharT>
     class ctype : public __ctype_abstract_base<_CharT>
     {
@@ -29239,7 +29301,7 @@ namespace std
 
   template<typename _CharT, typename _Traits, typename _Alloc>
     class ctype<basic_string<_CharT, _Traits, _Alloc> >;
-# 690 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 690 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<>
     class ctype<char> : public locale::facet, public ctype_base
     {
@@ -29266,42 +29328,42 @@ namespace std
       static locale::id id;
 
       static const size_t table_size = 1 + static_cast<unsigned char>(-1);
-# 727 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 727 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       ctype(const mask* __table = 0, bool __del = false, size_t __refs = 0);
-# 740 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 740 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       ctype(__c_locale __cloc, const mask* __table = 0, bool __del = false,
      size_t __refs = 0);
-# 753 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 753 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       inline bool
       is(mask __m, char __c) const;
-# 768 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 768 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       inline const char*
       is(const char* __lo, const char* __hi, mask* __vec) const;
-# 782 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 782 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       inline const char*
       scan_is(mask __m, const char* __lo, const char* __hi) const;
-# 796 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 796 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       inline const char*
       scan_not(mask __m, const char* __lo, const char* __hi) const;
-# 811 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 811 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       toupper(char_type __c) const
       { return this->do_toupper(__c); }
-# 828 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 828 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       toupper(char_type *__lo, const char_type* __hi) const
       { return this->do_toupper(__lo, __hi); }
-# 844 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 844 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       tolower(char_type __c) const
       { return this->do_tolower(__c); }
-# 861 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 861 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       tolower(char_type* __lo, const char_type* __hi) const
       { return this->do_tolower(__lo, __hi); }
-# 881 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 881 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       widen(char __c) const
       {
@@ -29310,7 +29372,7 @@ namespace std
  this->_M_widen_init();
  return this->do_widen(__c);
       }
-# 908 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 908 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char*
       widen(const char* __lo, const char* __hi, char_type* __to) const
       {
@@ -29324,7 +29386,7 @@ namespace std
    _M_widen_init();
  return this->do_widen(__lo, __hi, __to);
       }
-# 940 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 940 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char
       narrow(char_type __c, char __dfault) const
       {
@@ -29335,7 +29397,7 @@ namespace std
    _M_narrow[static_cast<unsigned char>(__c)] = __t;
  return __t;
       }
-# 973 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 973 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       const char_type*
       narrow(const char_type* __lo, const char_type* __hi,
       char __dfault, char* __to) const
@@ -29372,23 +29434,23 @@ namespace std
 
       virtual
       ~ctype();
-# 1023 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1023 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_toupper(char_type __c) const;
-# 1040 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1040 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_toupper(char_type* __lo, const char_type* __hi) const;
-# 1056 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1056 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_tolower(char_type __c) const;
-# 1073 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1073 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_tolower(char_type* __lo, const char_type* __hi) const;
-# 1093 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1093 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_widen(char __c) const
       { return __c; }
-# 1116 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1116 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char*
       do_widen(const char* __lo, const char* __hi, char_type* __to) const
       {
@@ -29396,11 +29458,11 @@ namespace std
    __builtin_memcpy(__to, __lo, __hi - __lo);
  return __hi;
       }
-# 1143 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1143 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char
       do_narrow(char_type __c, char __dfault __attribute__((__unused__))) const
       { return __c; }
-# 1169 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1169 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_narrow(const char_type* __lo, const char_type* __hi,
   char __dfault __attribute__((__unused__)), char* __to) const
@@ -29414,7 +29476,7 @@ namespace std
       void _M_narrow_init() const;
       void _M_widen_init() const;
     };
-# 1195 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1195 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<>
     class ctype<wchar_t> : public __ctype_abstract_base<wchar_t>
     {
@@ -29440,10 +29502,10 @@ namespace std
 
 
       static locale::id id;
-# 1228 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1228 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       ctype(size_t __refs = 0);
-# 1239 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1239 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       ctype(__c_locale __cloc, size_t __refs = 0);
 
@@ -29454,41 +29516,41 @@ namespace std
 
       virtual
       ~ctype();
-# 1263 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1263 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual bool
       do_is(mask __m, char_type __c) const;
-# 1282 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1282 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_is(const char_type* __lo, const char_type* __hi, mask* __vec) const;
-# 1300 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1300 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_scan_is(mask __m, const char_type* __lo, const char_type* __hi) const;
-# 1318 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1318 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_scan_not(mask __m, const char_type* __lo,
     const char_type* __hi) const;
-# 1335 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1335 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_toupper(char_type __c) const;
-# 1352 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1352 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_toupper(char_type* __lo, const char_type* __hi) const;
-# 1368 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1368 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_tolower(char_type __c) const;
-# 1385 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1385 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_tolower(char_type* __lo, const char_type* __hi) const;
-# 1405 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1405 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_widen(char __c) const;
-# 1427 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1427 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char*
       do_widen(const char* __lo, const char* __hi, char_type* __to) const;
-# 1450 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1450 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char
       do_narrow(char_type __c, char __dfault) const;
-# 1476 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1476 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual const char_type*
       do_narrow(const char_type* __lo, const char_type* __hi,
   char __dfault, char* __to) const;
@@ -29561,8 +29623,8 @@ namespace std
 }
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/ctype_inline.h" 1 3
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/i686-w64-mingw32/bits/ctype_inline.h" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h" 1 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h" 3
 namespace std
 {
 
@@ -29602,7 +29664,7 @@ namespace std
 
 
 }
-# 1549 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
+# 1549 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
 
 namespace std
 {
@@ -29718,7 +29780,7 @@ namespace std
     }
 
 namespace __cxx11 {
-# 1679 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1679 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<typename _CharT>
     class numpunct : public locale::facet
     {
@@ -29747,33 +29809,33 @@ namespace __cxx11 {
       numpunct(size_t __refs = 0)
       : facet(__refs), _M_data(0)
       { _M_initialize_numpunct(); }
-# 1717 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1717 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       numpunct(__cache_type* __cache, size_t __refs = 0)
       : facet(__refs), _M_data(__cache)
       { _M_initialize_numpunct(); }
-# 1731 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1731 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       numpunct(__c_locale __cloc, size_t __refs = 0)
       : facet(__refs), _M_data(0)
       { _M_initialize_numpunct(__cloc); }
-# 1745 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1745 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       decimal_point() const
       { return this->do_decimal_point(); }
-# 1758 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1758 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       char_type
       thousands_sep() const
       { return this->do_thousands_sep(); }
-# 1789 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1789 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       string
       grouping() const
       { return this->do_grouping(); }
-# 1802 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1802 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       string_type
       truename() const
       { return this->do_truename(); }
-# 1815 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1815 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       string_type
       falsename() const
       { return this->do_falsename(); }
@@ -29782,23 +29844,23 @@ namespace __cxx11 {
 
       virtual
       ~numpunct();
-# 1832 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1832 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_decimal_point() const
       { return _M_data->_M_decimal_point; }
-# 1844 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1844 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual char_type
       do_thousands_sep() const
       { return _M_data->_M_thousands_sep; }
-# 1857 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1857 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual string
       do_grouping() const
       { return _M_data->_M_grouping; }
-# 1870 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1870 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual string_type
       do_truename() const
       { return _M_data->_M_truename; }
-# 1883 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1883 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual string_type
       do_falsename() const
       { return _M_data->_M_falsename; }
@@ -29863,7 +29925,7 @@ namespace __cxx11 {
 }
 
 
-# 1961 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1961 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<typename _CharT, typename _InIter>
     class num_get : public locale::facet
     {
@@ -29877,15 +29939,15 @@ namespace __cxx11 {
 
 
       static locale::id id;
-# 1982 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 1982 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       num_get(size_t __refs = 0) : facet(__refs) { }
-# 2008 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2008 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       get(iter_type __in, iter_type __end, ios_base& __io,
    ios_base::iostate& __err, bool& __v) const
       { return this->do_get(__in, __end, __io, __err, __v); }
-# 2045 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2045 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       get(iter_type __in, iter_type __end, ios_base& __io,
    ios_base::iostate& __err, long& __v) const
@@ -29919,7 +29981,7 @@ namespace __cxx11 {
    ios_base::iostate& __err, unsigned long long& __v) const
       { return this->do_get(__in, __end, __io, __err, __v); }
 #pragma GCC diagnostic pop
-# 2108 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2108 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       get(iter_type __in, iter_type __end, ios_base& __io,
    ios_base::iostate& __err, float& __v) const
@@ -29934,7 +29996,7 @@ namespace __cxx11 {
       get(iter_type __in, iter_type __end, ios_base& __io,
    ios_base::iostate& __err, long double& __v) const
       { return this->do_get(__in, __end, __io, __err, __v); }
-# 2151 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2151 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       get(iter_type __in, iter_type __end, ios_base& __io,
    ios_base::iostate& __err, void*& __v) const
@@ -29992,7 +30054,7 @@ namespace __cxx11 {
      }
    return __ret;
  }
-# 2224 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2224 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual iter_type
       do_get(iter_type, iter_type, ios_base&, ios_base::iostate&, bool&) const;
 
@@ -30037,7 +30099,7 @@ namespace __cxx11 {
       virtual iter_type
       do_get(iter_type, iter_type, ios_base&, ios_base::iostate&,
       double&) const;
-# 2279 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2279 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual iter_type
       do_get(iter_type, iter_type, ios_base&, ios_base::iostate&,
       long double&) const;
@@ -30045,12 +30107,12 @@ namespace __cxx11 {
 
       virtual iter_type
       do_get(iter_type, iter_type, ios_base&, ios_base::iostate&, void*&) const;
-# 2307 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2307 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
     };
 
   template<typename _CharT, typename _InIter>
     locale::id num_get<_CharT, _InIter>::id;
-# 2325 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2325 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
   template<typename _CharT, typename _OutIter>
     class num_put : public locale::facet
     {
@@ -30064,14 +30126,14 @@ namespace __cxx11 {
 
 
       static locale::id id;
-# 2346 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2346 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       explicit
       num_put(size_t __refs = 0) : facet(__refs) { }
-# 2364 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2364 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       put(iter_type __s, ios_base& __io, char_type __fill, bool __v) const
       { return this->do_put(__s, __io, __fill, __v); }
-# 2406 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2406 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       put(iter_type __s, ios_base& __io, char_type __fill, long __v) const
       { return this->do_put(__s, __io, __fill, __v); }
@@ -30093,7 +30155,7 @@ namespace __cxx11 {
    unsigned long long __v) const
       { return this->do_put(__s, __io, __fill, __v); }
 #pragma GCC diagnostic pop
-# 2472 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2472 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       put(iter_type __s, ios_base& __io, char_type __fill, double __v) const
       { return this->do_put(__s, __io, __fill, __v); }
@@ -30102,7 +30164,7 @@ namespace __cxx11 {
       put(iter_type __s, ios_base& __io, char_type __fill,
    long double __v) const
       { return this->do_put(__s, __io, __fill, __v); }
-# 2497 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2497 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       iter_type
       put(iter_type __s, ios_base& __io, char_type __fill,
    const void* __v) const
@@ -30136,7 +30198,7 @@ namespace __cxx11 {
 
       virtual
       ~num_put() { }
-# 2545 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2545 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
       virtual iter_type
       do_put(iter_type __s, ios_base& __io, char_type __fill, bool __v) const;
 
@@ -30178,7 +30240,7 @@ namespace __cxx11 {
 
       virtual iter_type
       do_put(iter_type, ios_base&, char_type, const void*) const;
-# 2600 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
+# 2600 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 3
     };
 
   template <typename _CharT, typename _OutIter>
@@ -30280,8 +30342,8 @@ namespace __cxx11 {
 
 }
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 1 3
-# 36 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 1 3
+# 36 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 
@@ -30380,7 +30442,7 @@ namespace std
    throw;
  }
     }
-# 143 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 143 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
   __attribute__ ((__pure__)) bool
   __verify_grouping(const char* __grouping, size_t __grouping_size,
       const string& __grouping_tmp) throw ();
@@ -30959,7 +31021,7 @@ namespace std
  __err |= ios_base::eofbit;
       return __beg;
     }
-# 739 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 739 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
   template<typename _CharT, typename _InIter>
     _InIter
     num_get<_CharT, _InIter>::
@@ -31002,7 +31064,7 @@ namespace std
       __v = reinterpret_cast<void*>(__ul);
       return __beg;
     }
-# 802 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 802 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
   template<typename _CharT, typename _OutIter>
     void
     num_put<_CharT, _OutIter>::
@@ -31186,7 +31248,7 @@ namespace std
  }
       __len = __newlen;
     }
-# 996 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 996 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
   template<typename _CharT, typename _OutIter>
     template<typename _ValueT>
       _OutIter
@@ -31239,7 +31301,7 @@ namespace std
        __len = std::__convert_from_v(_S_get_c_locale(), __cs, __cs_size,
          __fbuf, __v);
    }
-# 1069 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 1069 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
  const ctype<_CharT>& __ctype = use_facet<ctype<_CharT> >(__loc);
 
  _CharT* __ws = static_cast<_CharT*>(__builtin_alloca(sizeof(_CharT)
@@ -31356,7 +31418,7 @@ namespace std
     num_put<_CharT, _OutIter>::
     do_put(iter_type __s, ios_base& __io, char_type __fill, double __v) const
     { return _M_insert_float(__s, __io, __fill, char(), __v); }
-# 1194 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 1194 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
   template<typename _CharT, typename _OutIter>
     _OutIter
     num_put<_CharT, _OutIter>::
@@ -31387,9 +31449,9 @@ namespace std
       __io.flags(__flags);
       return __s;
     }
-# 1234 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 1234 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
 
-# 1243 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
+# 1243 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.tcc" 3
   template<typename _CharT, typename _Traits>
     void
     __pad<_CharT, _Traits>::_S_pad(ios_base& __io, _CharT __fill,
@@ -31594,8 +31656,8 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 2702 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 2 3
+# 2702 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/locale_facets.h" 2 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 2 3
 
 
 
@@ -31611,7 +31673,7 @@ namespace std
  __throw_bad_cast();
       return *__f;
     }
-# 68 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 68 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
   template<typename _CharT, typename _Traits>
     class basic_ios : public ios_base
     {
@@ -31659,7 +31721,7 @@ namespace std
       const __num_get_type* _M_num_get;
 
     public:
-# 123 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 123 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       [[__nodiscard__]]
       explicit operator bool() const
       { return !this->fail(); }
@@ -31672,12 +31734,12 @@ namespace std
       bool
       operator!() const
       { return this->fail(); }
-# 144 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 144 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       [[__nodiscard__]]
       iostate
       rdstate() const
       { return _M_streambuf_state; }
-# 156 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 156 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       void
       clear(iostate __state = goodbit);
 
@@ -31725,7 +31787,7 @@ namespace std
       bool
       eof() const
       { return (this->rdstate() & eofbit) != 0; }
-# 211 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 211 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       [[__nodiscard__]]
       bool
       fail() const
@@ -31741,12 +31803,12 @@ namespace std
       bool
       bad() const
       { return (this->rdstate() & badbit) != 0; }
-# 234 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 234 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       [[__nodiscard__]]
       iostate
       exceptions() const
       { return _M_exception; }
-# 270 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 270 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       void
       exceptions(iostate __except)
       {
@@ -31774,12 +31836,12 @@ namespace std
 
       virtual
       ~basic_ios() { }
-# 308 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 308 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       [[__nodiscard__]]
       basic_ostream<_CharT, _Traits>*
       tie() const
       { return _M_tie; }
-# 321 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 321 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       basic_ostream<_CharT, _Traits>*
       tie(basic_ostream<_CharT, _Traits>* __tiestr)
       {
@@ -31798,10 +31860,10 @@ namespace std
       basic_streambuf<_CharT, _Traits>*
       rdbuf() const
       { return _M_streambuf; }
-# 362 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 362 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       basic_streambuf<_CharT, _Traits>*
       rdbuf(basic_streambuf<_CharT, _Traits>* __sb);
-# 376 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 376 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       basic_ios&
       copyfmt(const basic_ios& __rhs);
 
@@ -31819,7 +31881,7 @@ namespace std
    return this->widen(' ');
  return _M_fill;
       }
-# 403 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 403 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       char_type
       fill(char_type __ch)
       {
@@ -31828,14 +31890,14 @@ namespace std
  _M_fill_init = true;
  return __old;
       }
-# 424 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 424 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       locale
       imbue(const locale& __loc);
-# 444 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 444 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       char
       narrow(char_type __c, char __dfault) const
       { return __check_facet(_M_ctype).narrow(__c, __dfault); }
-# 463 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
+# 463 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 3
       char_type
       widen(char __c) const
       { return __check_facet(_M_ctype).widen(__c); }
@@ -31904,8 +31966,8 @@ namespace std
 
 }
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.tcc" 1 3
-# 37 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.tcc" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.tcc" 1 3
+# 37 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 
@@ -32007,7 +32069,7 @@ namespace std
 
 
       _M_cache_locale(_M_ios_locale);
-# 153 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.tcc" 3
+# 153 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.tcc" 3
       if (_M_ctype)
  {
    _M_fill = _M_ctype->widen(' ');
@@ -32045,23 +32107,23 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 532 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 2 3
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 532 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/basic_ios.h" 2 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 52 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ios" 2 3
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 52 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ios" 2 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 2 3
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 48 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 48 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 2 3
 
 namespace std
 {
 
-# 65 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 65 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
   template<typename _CharT, typename _Traits>
     class basic_ostream : virtual public basic_ios<_CharT, _Traits>
     {
@@ -32080,7 +32142,7 @@ namespace std
       typedef num_put<_CharT, ostreambuf_iterator<_CharT, _Traits> >
        __num_put_type;
       typedef ctype<_CharT> __ctype_type;
-# 91 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 91 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       explicit
       basic_ostream(__streambuf_type* __sb)
       { this->init(__sb); }
@@ -32096,7 +32158,7 @@ namespace std
 
       class sentry;
       friend class sentry;
-# 115 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 115 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       operator<<(__ostream_type& (*__pf)(__ostream_type&))
       {
@@ -32125,7 +32187,7 @@ namespace std
  __pf(*this);
  return *this;
       }
-# 173 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 173 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       operator<<(long __n)
       { return _M_insert(__n); }
@@ -32171,7 +32233,7 @@ namespace std
       operator<<(unsigned long long __n)
       { return _M_insert(__n); }
 #pragma GCC diagnostic pop
-# 230 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 230 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       operator<<(double __f)
       { return _M_insert(__f); }
@@ -32187,7 +32249,7 @@ namespace std
       __ostream_type&
       operator<<(long double __f)
       { return _M_insert(__f); }
-# 300 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 300 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       operator<<(const void* __p)
       { return _M_insert(__p); }
@@ -32196,25 +32258,25 @@ namespace std
       __ostream_type&
       operator<<(nullptr_t)
       { return *this << "nullptr"; }
-# 338 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 338 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       operator<<(__streambuf_type* __sb);
-# 371 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 371 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       put(char_type __c);
-# 390 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 390 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       write(const char_type* __s, streamsize __n);
-# 403 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 403 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       flush();
-# 413 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 413 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       pos_type
       tellp();
-# 424 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 424 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       __ostream_type&
       seekp(pos_type);
-# 436 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 436 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
        __ostream_type&
       seekp(off_type, ios_base::seekdir);
 
@@ -32266,7 +32328,7 @@ namespace std
  _S_cast_flt(_From __f)
  {
    _To __d = static_cast<_To>(__f);
-# 507 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 507 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
    return __d;
  }
 #pragma GCC diagnostic pop
@@ -32292,7 +32354,7 @@ namespace std
  const ios_base::iostate _M_exception;
       };
     };
-# 540 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 540 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
   template <typename _CharT, typename _Traits>
     class basic_ostream<_CharT, _Traits>::sentry
     {
@@ -32301,7 +32363,7 @@ namespace std
       basic_ostream<_CharT, _Traits>& _M_os;
 
     public:
-# 559 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 559 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       explicit
       sentry(basic_ostream<_CharT, _Traits>& __os);
 
@@ -32336,13 +32398,13 @@ namespace std
    }
       }
 #pragma GCC diagnostic pop
-# 602 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 602 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
       explicit
 
       operator bool() const
       { return _M_ok; }
     };
-# 624 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 624 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
   template<typename _CharT, typename _Traits>
     inline basic_ostream<_CharT, _Traits>&
     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
@@ -32379,7 +32441,7 @@ namespace std
     inline basic_ostream<char, _Traits>&
     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
     { return (__out << static_cast<char>(__c)); }
-# 715 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 715 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
   template<typename _CharT, typename _Traits>
     inline basic_ostream<_CharT, _Traits>&
     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
@@ -32419,7 +32481,7 @@ namespace std
     inline basic_ostream<char, _Traits> &
     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
     { return (__out << reinterpret_cast<const char*>(__s)); }
-# 812 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 812 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
   template<typename _Tp>
     using _Require_derived_from_ios_base
       = _Require<is_class<_Tp>, __not_<is_same<_Tp, ios_base>>,
@@ -32430,7 +32492,7 @@ namespace std
     typename
       = decltype(std::declval<_Os&>() << std::declval<const _Tp&>())>
     using __rvalue_stream_insertion_t = _Os&&;
-# 834 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
+# 834 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.h" 3
   template<typename _Ostream, typename _Tp>
     inline __rvalue_stream_insertion_t<_Ostream, _Tp>
     operator<<(_Ostream&& __os, const _Tp& __x)
@@ -32442,24 +32504,24 @@ namespace std
 
 
 }
-# 43 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 2 3
+# 43 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 2 3
 
 
 
 
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
-# 49 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/version.h" 1 3
+# 49 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 2 3
 
 namespace std
 {
 
-# 64 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 3
+# 64 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 3
   template<typename _CharT, typename _Traits>
     inline basic_ostream<_CharT, _Traits>&
     endl(basic_ostream<_CharT, _Traits>& __os)
     { return flush(__os.put(__os.widen('\n'))); }
-# 76 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 3
+# 76 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 3
   template<typename _CharT, typename _Traits>
     inline basic_ostream<_CharT, _Traits>&
     ends(basic_ostream<_CharT, _Traits>& __os)
@@ -32474,12 +32536,12 @@ namespace std
     inline basic_ostream<_CharT, _Traits>&
     flush(basic_ostream<_CharT, _Traits>& __os)
     { return __os.flush(); }
-# 291 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 3
+# 291 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 3
 
 }
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.tcc" 1 3
-# 40 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/ostream.tcc" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.tcc" 1 3
+# 40 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/ostream.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 
@@ -32844,14 +32906,14 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 295 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/ostream" 2 3
-# 44 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iostream" 2 3
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 1 3
-# 45 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 295 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/ostream" 2 3
+# 44 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iostream" 2 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 1 3
+# 45 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
 namespace std
 {
 
-# 61 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 61 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _CharT, typename _Traits>
     class basic_istream : virtual public basic_ios<_CharT, _Traits>
     {
@@ -32904,7 +32966,7 @@ namespace std
 
       class sentry;
       friend class sentry;
-# 123 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 123 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       operator>>(__istream_type& (*__pf)(__istream_type&))
       { return __pf(*this); }
@@ -32922,7 +32984,7 @@ namespace std
  __pf(*this);
  return *this;
       }
-# 171 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 171 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       operator>>(bool& __n)
       { return _M_extract(__n); }
@@ -32960,7 +33022,7 @@ namespace std
       operator>>(unsigned long long& __n)
       { return _M_extract(__n); }
 #pragma GCC diagnostic pop
-# 220 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 220 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       operator>>(float& __f)
       { return _M_extract(__f); }
@@ -32972,45 +33034,45 @@ namespace std
       __istream_type&
       operator>>(long double& __f)
       { return _M_extract(__f); }
-# 329 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 329 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       operator>>(void*& __p)
       { return _M_extract(__p); }
-# 353 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 353 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       operator>>(__streambuf_type* __sb);
-# 363 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 363 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       streamsize
       gcount() const
       { return _M_gcount; }
-# 396 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 396 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       int_type
       get();
-# 410 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 410 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       get(char_type& __c);
-# 437 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 437 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       get(char_type* __s, streamsize __n, char_type __delim);
-# 448 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 448 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       get(char_type* __s, streamsize __n)
       { return this->get(__s, __n, this->widen('\n')); }
-# 471 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 471 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       get(__streambuf_type& __sb, char_type __delim);
-# 481 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 481 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       get(__streambuf_type& __sb)
       { return this->get(__sb, this->widen('\n')); }
-# 510 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 510 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       getline(char_type* __s, streamsize __n, char_type __delim);
-# 521 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 521 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       getline(char_type* __s, streamsize __n)
       { return this->getline(__s, __n, this->widen('\n')); }
-# 545 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 545 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       ignore(streamsize __n, int_type __delim);
 
@@ -33019,31 +33081,31 @@ namespace std
 
       __istream_type&
       ignore();
-# 562 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 562 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       int_type
       peek();
-# 580 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 580 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       read(char_type* __s, streamsize __n);
-# 599 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 599 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       streamsize
       readsome(char_type* __s, streamsize __n);
-# 616 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 616 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       putback(char_type __c);
-# 632 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 632 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       unget();
-# 650 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 650 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       int
       sync();
-# 665 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 665 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       pos_type
       tellg();
-# 680 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 680 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       seekg(pos_type);
-# 696 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 696 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       __istream_type&
       seekg(off_type, ios_base::seekdir);
 
@@ -33118,7 +33180,7 @@ namespace std
     basic_istream<wchar_t>&
     basic_istream<wchar_t>::
     ignore(streamsize __n, int_type __delim);
-# 780 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 780 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _CharT, typename _Traits>
     class basic_istream<_CharT, _Traits>::sentry
     {
@@ -33132,16 +33194,16 @@ namespace std
       typedef basic_istream<_CharT, _Traits> __istream_type;
       typedef typename __istream_type::__ctype_type __ctype_type;
       typedef typename _Traits::int_type __int_type;
-# 816 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 816 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       explicit
       sentry(basic_istream<_CharT, _Traits>& __is, bool __noskipws = false);
-# 827 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 827 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
       explicit
 
       operator bool() const
       { return _M_ok; }
     };
-# 845 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 845 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _CharT, typename _Traits>
     basic_istream<_CharT, _Traits>&
     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c);
@@ -33163,13 +33225,13 @@ namespace std
     __istream_extract(basic_istream<_CharT, _Traits>&, _CharT*, streamsize);
 
   void __istream_extract(istream&, char*, streamsize);
-# 895 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 895 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _CharT, typename _Traits>
     __attribute__((__nonnull__(2), __access__(__write_only__, 2)))
     inline basic_istream<_CharT, _Traits>&
     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
     {
-# 929 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 929 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
  {
 
    streamsize __n = __gnu_cxx::__numeric_traits<streamsize>::__max;
@@ -33190,7 +33252,7 @@ namespace std
     inline basic_istream<char, _Traits>&
     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
     { return __in >> reinterpret_cast<char*>(__s); }
-# 984 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 984 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _CharT, typename _Traits>
     class basic_iostream
     : public basic_istream<_CharT, _Traits>,
@@ -33253,16 +33315,16 @@ namespace std
       { __istream_type::swap(__rhs); }
 
     };
-# 1067 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 1067 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _CharT, typename _Traits>
     basic_istream<_CharT, _Traits>&
     ws(basic_istream<_CharT, _Traits>& __is);
-# 1083 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 1083 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _Is, typename _Tp,
     typename = _Require_derived_from_ios_base<_Is>,
     typename = decltype(std::declval<_Is&>() >> std::declval<_Tp>())>
     using __rvalue_stream_extraction_t = _Is&&;
-# 1099 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 3
+# 1099 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 3
   template<typename _Istream, typename _Tp>
     inline __rvalue_stream_extraction_t<_Istream, _Tp>
     operator>>(_Istream&& __is, _Tp&& __x)
@@ -33275,8 +33337,8 @@ namespace std
 
 }
 
-# 1 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/istream.tcc" 1 3
-# 41 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/istream.tcc" 3
+# 1 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/istream.tcc" 1 3
+# 41 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/istream.tcc" 3
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wc++11-extensions"
 
@@ -33781,7 +33843,7 @@ namespace std
               const int_type __eof = traits_type::eof();
               __streambuf_type* __sb = this->rdbuf();
               int_type __c = __sb->sgetc();
-# 553 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/bits/istream.tcc" 3
+# 553 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/bits/istream.tcc" 3
        bool __large_ignore = false;
        while (true)
   {
@@ -34414,13 +34476,13 @@ namespace std
 }
 
 #pragma GCC diagnostic pop
-# 1112 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/istream" 2 3
-# 45 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iostream" 2 3
+# 1112 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/istream" 2 3
+# 45 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iostream" 2 3
 
 namespace std
 {
 
-# 64 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iostream" 3
+# 64 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iostream" 3
   extern istream cin;
   extern ostream cout;
   extern ostream cerr;
@@ -34431,29 +34493,36 @@ namespace std
   extern wostream wcout;
   extern wostream wcerr;
   extern wostream wclog;
-# 87 "/usr/lib/gcc/i686-w64-mingw32/15-win32/include/c++/iostream" 3
+# 87 "/usr/lib/gcc/x86_64-w64-mingw32/15-win32/include/c++/iostream" 3
 
 }
-# 4 "components/init.cpp" 2
+# 2 "components/branch_mode.cpp" 2
+
+
+# 1 "components/branch_mode.hpp" 1
 
 
 
-# 6 "components/init.cpp"
+
+
+
+# 6 "components/branch_mode.hpp"
+void branch_mode(bool push);
+# 5 "components/branch_mode.cpp" 2
+
+
 using namespace std;
 
-void init() {
-  cout << "--- Starte Git Workflow ---" << endl;
-  cout << "Do you want to init it? (y/n) (default: n) ";
-  string init;
-  getline(cin, init);
-  if (init == "y") {
-    system("git init");
-  } else if (init == "n" || init == "") {
-    cout << "OK I will not init it" << endl;
-  } else if (init == "q") {
+void branch_mode(bool push) {
+    cout << "Switching to branch mode" << endl;
+    cout << "Whats your new branch name?: ";
+    string branch;
+    getline(cin, branch);
+    system(("git switch -c " + branch).c_str());
+    if (push) {
+      system(("git push origin " + branch).c_str());
+    }
+    cout << "Branch created" << endl;
     exit(0);
-  } else {
-    cout << "Invalid input: " << init << endl;
-    exit(0);
-  }
+
 }
