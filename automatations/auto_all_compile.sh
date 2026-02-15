@@ -67,7 +67,7 @@ for file in "${SRC_FILES[@]}"; do
   name=$(basename "$file" .cpp)
 
   $LINUX_COMPILER -E "$file" -o build/Linux/Preprocessed/$name.i
-  $LINUX_COMPILER -S "$file" -o build/Linux/Assembly/$name.asm
+  $LINUX_COMPILER -S "$file" -o build/Linux/Assembly/$name.s
   $LINUX_COMPILER -c "$file" -o build/Linux/Objectfile/$name.o
 done
 
@@ -81,7 +81,7 @@ for file in "${SRC_FILES[@]}"; do
   name=$(basename "$file" .cpp)
 
   $WIN32_COMPILER -E "$file" -o build/windows/32-bit/Preprocessed/$name.i
-  $WIN32_COMPILER -S "$file" -o build/windows/32-bit/Assembly/$name.asm
+  $WIN32_COMPILER -S "$file" -o build/windows/32-bit/Assembly/$name.s
   $WIN32_COMPILER -c "$file" -o build/windows/32-bit/Objectfile/$name.o
 done
 
@@ -95,7 +95,7 @@ for file in "${SRC_FILES[@]}"; do
   name=$(basename "$file" .cpp)
 
   $WIN64_COMPILER -E "$file" -o build/windows/64-bit/Preprocessed/$name.i
-  $WIN64_COMPILER -S "$file" -o build/windows/64-bit/Assembly/$name.asm
+  $WIN64_COMPILER -S "$file" -o build/windows/64-bit/Assembly/$name.s
   $WIN64_COMPILER -c "$file" -o build/windows/64-bit/Objectfile/$name.o
 done
 
