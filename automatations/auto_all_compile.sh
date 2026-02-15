@@ -1,46 +1,107 @@
+#!/bin/bash
+set -e
+
 cd ..
-g++ main.cpp components/init.cpp components/commit.cpp components/push.cpp -o main && \
-g++ main.cpp components/init.cpp components/commit.cpp components/push.cpp -o Linux/main && \
-x86_64-w64-mingw32-g++ main.cpp components/init.cpp components/commit.cpp components/push.cpp -o windows/64-bit/main.exe  -static-libgcc -static-libstdc++  && \
-i686-w64-mingw32-g++ main.cpp components/init.cpp components/commit.cpp components/push.cpp -o windows/32-bit/main.exe  -static-libgcc -static-libstdc++  && \
-# built Linux
-g++ -E main.cpp -o build/Linux/Preprocessed/main.i && \
-g++ -E components/init.cpp -o build/Linux/Preprocessed/init.i && \
-g++ -E components/commit.cpp -o build/Linux/Preprocessed/commit.i && \
-g++ -E components/push.cpp -o build/Linux/Preprocessed/push.i && \
-g++ -S main.cpp -o build/Linux/Assembly/main.asm && \
-g++ -S components/init.cpp -o build/Linux/Assembly/init.asm && \
-g++ -S components/commit.cpp -o build/Linux/Assembly/commit.asm && \
-g++ -S components/push.cpp -o build/Linux/Assembly/push.asm && \
-g++ -c main.cpp -o build/Linux/Objectfile/main.o && \
-g++ -c components/init.cpp -o build/Linux/Objectfile/init.o && \
-g++ -c components/commit.cpp -o build/Linux/Objectfile/commit.o && \
-g++ -c components/push.cpp -o build/Linux/Objectfile/push.o && \
-# build Windows 32-Bit
-i686-w64-mingw32-g++ -E main.cpp -o build/windows/32-bit/Preprocessed/main.i && \
-i686-w64-mingw32-g++ -E components/init.cpp -o build/windows/32-bit/Preprocessed/init.i && \
-i686-w64-mingw32-g++ -E components/commit.cpp -o build/windows/32-bit/Preprocessed/commit.i && \
-i686-w64-mingw32-g++ -E components/push.cpp -o build/windows/32-bit/Preprocessed/push.i && \
-i686-w64-mingw32-g++ -S main.cpp -o build/windows/32-bit/Assembly/main.asm && \
-i686-w64-mingw32-g++ -S components/init.cpp -o build/windows/32-bit/Assembly/init.asm && \
-i686-w64-mingw32-g++ -S components/commit.cpp -o build/windows/32-bit/Assembly/commit.asm && \
-i686-w64-mingw32-g++ -S components/push.cpp -o build/windows/32-bit/Assembly/push.asm && \
-i686-w64-mingw32-g++ -c main.cpp -o build/windows/32-bit/Objectfile/main.o && \
-i686-w64-mingw32-g++ -c components/init.cpp -o build/windows/32-bit/Objectfile/init.o && \
-i686-w64-mingw32-g++ -c components/commit.cpp -o build/windows/32-bit/Objectfile/commit.o && \
-i686-w64-mingw32-g++ -c components/push.cpp -o build/windows/32-bit/Objectfile/push.o && \
-# Windows 64-Bit
-x86_64-w64-mingw32-g++ -E main.cpp -o build/windows/64-bit/Preprocessed/main.i && \
-x86_64-w64-mingw32-g++ -E components/init.cpp -o build/windows/64-bit/Preprocessed/init.i && \
-x86_64-w64-mingw32-g++ -E components/commit.cpp -o build/windows/64-bit/Preprocessed/commit.i && \
-x86_64-w64-mingw32-g++ -E components/push.cpp -o build/windows/64-bit/Preprocessed/push.i && \
-x86_64-w64-mingw32-g++ -S main.cpp -o build/windows/64-bit/Assembly/main.asm && \
-x86_64-w64-mingw32-g++ -S components/init.cpp -o build/windows/64-bit/Assembly/init.asm && \
-x86_64-w64-mingw32-g++ -S components/commit.cpp -o build/windows/64-bit/Assembly/commit.asm && \
-x86_64-w64-mingw32-g++ -S components/push.cpp -o build/windows/64-bit/Assembly/push.asm && \
-x86_64-w64-mingw32-g++ -c main.cpp -o build/windows/64-bit/Objectfile/main.o && \
-x86_64-w64-mingw32-g++ -c components/init.cpp -o build/windows/64-bit/Objectfile/init.o && \
-x86_64-w64-mingw32-g++ -c components/commit.cpp -o build/windows/64-bit/Objectfile/commit.o && \
-x86_64-w64-mingw32-g++ -c components/push.cpp -o build/windows/64-bit/Objectfile/push.o && \
-cd automatations && \
-echo "Compilation complete" 
+
+# =========================
+# SOURCE FILES
+# =========================
+
+SRC_FILES=(
+  main.cpp
+  components/init.cpp
+  components/commit.cpp
+  components/push.cpp
+  components/branch_mode.cpp
+)
+
+# =========================
+# COMPILERS
+# =========================
+
+LINUX_COMPILER="g++"
+WIN32_COMPILER="i686-w64-mingw32-g++"
+WIN64_COMPILER="x86_64-w64-mingw32-g++"
+
+# =========================
+# OUTPUT DIRECTORIES
+# =========================
+
+mkdir -p \
+  Linux \
+  windows/64-bit \
+  windows/32-bit \
+  build/Linux/Preprocessed \
+  build/Linux/Assembly \
+  build/Linux/Objectfile \
+  build/windows/32-bit/Preprocessed \
+  build/windows/32-bit/Assembly \
+  build/windows/32-bit/Objectfile \
+  build/windows/64-bit/Preprocessed \
+  build/windows/64-bit/Assembly \
+  build/windows/64-bit/Objectfile
+
+# =========================
+# BUILD BINARIES 
+# =========================
+
+echo "[+] Building Linux main..."
+$LINUX_COMPILER "${SRC_FILES[@]}" -o main
+
+echo "[+] Building Linux/main..."
+$LINUX_COMPILER "${SRC_FILES[@]}" -o Linux/main
+
+echo "[+] Building Windows 64-bit..."
+$WIN64_COMPILER "${SRC_FILES[@]}" -o windows/64-bit/main.exe -static-libgcc -static-libstdc++
+
+echo "[+] Building Windows 32-bit..."
+$WIN32_COMPILER "${SRC_FILES[@]}" -o windows/32-bit/main.exe -static-libgcc -static-libstdc++
+
+# =========================
+# BUILD LINUX STAGES 
+# =========================
+
+echo "[+] Generating Linux Preprocessed/Assembly/Objectfile..."
+
+for file in "${SRC_FILES[@]}"; do
+  name=$(basename "$file" .cpp)
+
+  $LINUX_COMPILER -E "$file" -o build/Linux/Preprocessed/$name.i
+  $LINUX_COMPILER -S "$file" -o build/Linux/Assembly/$name.asm
+  $LINUX_COMPILER -c "$file" -o build/Linux/Objectfile/$name.o
+done
+
+# =========================
+# BUILD WINDOWS 32 STAGES 
+# =========================
+
+echo "[+] Generating Windows 32-bit stages..."
+
+for file in "${SRC_FILES[@]}"; do
+  name=$(basename "$file" .cpp)
+
+  $WIN32_COMPILER -E "$file" -o build/windows/32-bit/Preprocessed/$name.i
+  $WIN32_COMPILER -S "$file" -o build/windows/32-bit/Assembly/$name.asm
+  $WIN32_COMPILER -c "$file" -o build/windows/32-bit/Objectfile/$name.o
+done
+
+# =========================
+# BUILD WINDOWS 64 STAGES 
+# =========================
+
+echo "[+] Generating Windows 64-bit stages..."
+
+for file in "${SRC_FILES[@]}"; do
+  name=$(basename "$file" .cpp)
+
+  $WIN64_COMPILER -E "$file" -o build/windows/64-bit/Preprocessed/$name.i
+  $WIN64_COMPILER -S "$file" -o build/windows/64-bit/Assembly/$name.asm
+  $WIN64_COMPILER -c "$file" -o build/windows/64-bit/Objectfile/$name.o
+done
+
+# =========================
+# DONE
+# =========================
+
+cd automatations
+echo "Compilation complete"
