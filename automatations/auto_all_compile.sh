@@ -45,7 +45,7 @@ mkdir -p \
 # BUILD BINARIES 
 # =========================
 
-echo "[+] Building Linux main..."
+echo "[+] Building Linux main in ./ ..."
 $LINUX_COMPILER "${SRC_FILES[@]}" -o main
 
 echo "[+] Building Linux/main..."
