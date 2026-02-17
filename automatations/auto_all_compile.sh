@@ -99,6 +99,14 @@ for file in "${SRC_FILES[@]}"; do
   $WIN64_COMPILER -c "$file" -o build/windows/64-bit/Objectfile/$name.o
 done
 
+# ==================================================
+# Cout nuber of writed lines Code
+# ==================================================
+
+echo "[+] Cout number of writed code lines"
+rm count_code.txt -f
+cloc . >> count_code.txt
+
 # =========================
 # DONE
 # =========================
