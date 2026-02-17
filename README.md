@@ -4,12 +4,12 @@ An interactive C++ tool for automating Git workflows. This program allows you to
 
 ## Features
 
-- 🚀 **Automatic Git Initialization** - Optional at startup
-- 💾 **Quick Commits** - Interactive commit message input
-- 🔄 **Auto-Push** - Automatic pull & push after each commit (configurable)
-- 🔁 **Continuous Workflow** - Runs in a loop for multiple commits
-- 🪟 **Cross-Platform** - Supports Linux and Windows (32-bit & 64-bit)
-- ❌ **Easy Exit** - Type `q` to exit the program
+-  **Automatic Git Initialization** - Optional at startup
+-  **Quick Commits** - Interactive commit message input
+-  **Auto-Push** - Automatic pull & push after each commit (configurable)
+-  **Continuous Workflow** - Runs in a loop for multiple commits
+   **Cross-Platform** - Supports Linux and Windows (32-bit & 64-bit)
+-  **Easy Exit** - Type `q` to exit the program
 
 ## Project Structure
 
@@ -52,9 +52,9 @@ source auto_all_compile.sh
 ```
 
 This script automatically compiles:
-- ✅ Linux Binary (`Linux/main`)
-- ✅ Windows 64-bit Binary (`windows/64-bit/main.exe`)
-- ✅ Windows 32-bit Binary (`windows/32-bit/main.exe`)
+-  Linux Binary (`Linux/main`)
+-  Windows 64-bit Binary (`windows/64-bit/main.exe`)
+-  Windows 32-bit Binary (`windows/32-bit/main.exe`)
 
 #### Manual Compilation
 
