@@ -1,6 +1,8 @@
 #!/bin/bash
+
 set -e
 cd ..
+
 # =========================
 # SOURCE FILES
 # =========================
@@ -103,7 +105,7 @@ done
 
 echo "[+] Cout number of writed code lines"
 rm count_code.txt -f
-cloc . >> count_code.txt
+cloc . --exclude-dir=build >> count_code.txt
 
 # =========================
 # DONE
