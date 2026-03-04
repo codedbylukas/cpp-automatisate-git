@@ -91,8 +91,6 @@ i686-w64-mingw32-g++ main.cpp components/init.cpp components/commit.cpp componen
 
 **Windows:**
 ```bash
-main.exe
-# or
 windows/64-bit/main.exe
 ```
 
@@ -188,4 +186,4 @@ This project is Open Source (MIT License).
 
 ## Author 📝 
 
-Lukas
+codedbylukas
