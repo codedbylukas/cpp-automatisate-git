@@ -45,7 +45,7 @@ cpp_git_automatisate/
 
 ### Compilation
 
-#### Automatic Compilation (All Platforms)
+#### Automatic Compilation (for all Platforms on Linux)
 ```bash
 cd automatations
 source auto_all_compile.sh
