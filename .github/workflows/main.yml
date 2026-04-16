@@ -20,7 +20,7 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y g++ mingw-w64
+        sudo apt-get install -y g++ mingw-w64 cloc
     - name: Build Project
       run: |
         chmod +x ./automatations/auto_all_compile.sh
